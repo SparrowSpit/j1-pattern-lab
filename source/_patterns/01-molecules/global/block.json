@@ -1,0 +1,10 @@
+{
+  "blockStyle1" : {
+	  "blockStyle" : "",
+	  "blockId" : " block1"
+  },
+  "blockStyle2" : {
+	  "blockStyle" : " light",
+	  "blockId" : " block2"
+  }
+}

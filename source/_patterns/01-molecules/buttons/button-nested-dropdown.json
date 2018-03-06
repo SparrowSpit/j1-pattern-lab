@@ -1,0 +1,16 @@
+{
+	"buttonNestedDropdown": {
+		"buttonClass": "btn btn-default dropdown-toggle",
+		"buttonDisabled": "",
+		"buttonText": "Button",
+		"buttonCaret": " <span class=\"caret\"><\/span>",
+		"buttonGlyphicon": "<span class=\"glyphicon glyphicon-plus-sign\" aria-hidden=\"true\"><\/span> ",
+		"buttonGlyphicon2": "",
+		"buttonDataToggle": " data-toggle=\"dropdown\"",
+		"buttonAriaPopup": " aria-haspopup=\"true\"",
+		"buttonAriaExpanded": " aria-expanded=\"false\"",
+		"buttonAriaLabel": ""
+	}
+}
+	
+

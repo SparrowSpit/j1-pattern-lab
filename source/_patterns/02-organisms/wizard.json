@@ -1,0 +1,8 @@
+{
+	"wizardStyle1" : {
+  "pagebodyStyle" : " outside org-wizard"
+  },
+  "wizardStyle2" : {
+  "pagebodyStyle" : " outside org-wizard org-wizard--separate"
+  }
+}

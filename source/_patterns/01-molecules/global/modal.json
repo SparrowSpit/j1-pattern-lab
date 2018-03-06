@@ -1,0 +1,111 @@
+{
+	"modalXtag" : "x-modal",
+	"modalXtagMode" : "default",
+	"modalXtagHeaderText" : "...",
+	"modalXtagBodyText" : "...",
+	"modalXtagIsShown" : "",
+	"modalTag" : "div",
+	"modalClass" : " class=\"modal fade mol-modal\"",
+	"modalId" : " id=\"modal-default\"",
+	"modalTabIndex" : " tabindex=\"-1\"",
+	"modalRole" : " role=\"dialog\"",
+	"modalAriaLabelledBy" : " aria-labelledby=\"myModalTitle\"",
+	"modalType" : " type=\"default\"",
+	"modalLev2Tag" : "div",
+	"modalLev2Class" : " class=\"modal-dialog\"",
+	"modalLev2Role" : " role=\"document\"",
+	"modalLev3Tag" : "div",
+	"modalLev3Class" : " class=\"modal-content\"",
+	"modalHeadingTag" : "div",
+	"modalHeadingClass" : " class=\"modal-header\"",
+	"modalHeadingTitleOpen" : "<h3 class=\"modal-title\" id=\"myModalTitle\">",
+	"modalHeadingTitleGlyph" : "<span class=\"glyphicon glyphicon-ok-sign\" aria-hidden=\"true\"><\/span><span class=\"glyphicon glyphicon-exclamation-sign\" aria-hidden=\"true\"><\/span> ",
+	"modalHeadingTitleText" : "Modal Title",
+	"modalHeadingTitleClose" : "<\/h3>",
+	"modalBodyTag" : "div",
+	"modalBodyClass" : " class=\"modal-body\"",
+	"modalFooterTag" : "div",
+	"modalFooterClass" : " class=\"modal-footer\"",
+	"buttonText" : "Default modal",
+	"buttonDataToggle" : " data-toggle=\"modal\" data-target=\"#modal-default\"",
+	"buttonClose": {
+		"buttonClass": "btn btn-link mol-close",
+		"buttonDisabled": "",
+		"buttonText": "<span class=\"sr-only\">Close<\/span>",
+		"buttonCaret": "",
+		"buttonGlyphicon": "<span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"><\/span>",
+		"buttonGlyphicon2": "",
+		"buttonDataToggle": " data-dismiss=\"modal\"",
+		"buttonAriaPopup": "",
+		"buttonAriaExpanded": "",
+		"buttonAriaLabel": ""
+	},
+	"modalFooterBtn1" : {
+		"buttonText" : "Cancel",
+		"buttonClass" : "btn btn-default"
+	},
+	"modalFooterBtn2" : {
+		"buttonText" : "Action",
+		"buttonClass" : "btn btn-primary"
+	},
+	"modalSuccess" : {
+		"modalXtagMode" : "success",
+		"modalClass" : " class=\"modal fade mol-modal\"",
+		"modalId" : " id=\"modal-success\"",
+		"modalAriaLabelledBy" : " aria-labelledby=\"myModalTitleSuccess\"",
+		"modalType" : " type=\"success\"",
+		"modalHeadingTitleOpen" : "<h3 class=\"modal-title\" id=\"myModalTitleSuccess\">",
+		"modalHeadingTitleText" : "Success Modal Title",
+		"buttonText" : "Success modal",
+		"buttonClass" : "btn btn-success",
+		"buttonDataToggle" : " data-toggle=\"modal\" data-target=\"#modal-success\"",
+		"modalFooterBtn1" : {
+			"buttonText" : "Cancel",
+			"buttonClass" : "btn btn-default"
+		},
+		"modalFooterBtn2" : {
+			"buttonText" : "Action",
+			"buttonClass" : "btn btn-primary"
+		}
+	},
+	"modalWarning" : {
+		"modalXtagMode" : "warning",
+		"modalClass" : " class=\"modal fade mol-modal\"",
+		"modalId" : " id=\"modal-warning\"",
+		"modalAriaLabelledBy" : " aria-labelledby=\"myModalTitleWarning\"",
+		"modalType" : " type=\"warning\"",
+		"modalHeadingTitleOpen" : "<h3 class=\"modal-title\" id=\"myModalTitleWarning\">",
+		"modalHeadingTitleText" : "Warning Modal Title",
+		"buttonText" : "Warning modal",
+		"buttonClass" : "btn btn-warning",
+		"buttonDataToggle" : " data-toggle=\"modal\" data-target=\"#modal-warning\"",
+		"modalFooterBtn1" : {
+			"buttonText" : "Cancel",
+			"buttonClass" : "btn btn-default"
+		},
+		"modalFooterBtn2" : {
+			"buttonText" : "Action",
+			"buttonClass" : "btn btn-primary"
+		}
+	},
+	"modalDanger" : {
+		"modalXtagMode" : "danger",
+		"modalClass" : " class=\"modal fade mol-modal\"",
+		"modalId" : " id=\"modal-danger\"",
+		"modalAriaLabelledBy" : " aria-labelledby=\"myModalTitleDanger\"",
+		"modalType" : " type=\"danger\"",
+		"modalHeadingTitleOpen" : "<h3 class=\"modal-title\" id=\"myModalTitleDanger\">",
+		"modalHeadingTitleText" : "Danger Modal Title",
+		"buttonText" : "Danger modal",
+		"buttonClass" : "btn btn-danger",
+		"buttonDataToggle" : " data-toggle=\"modal\" data-target=\"#modal-danger\"",
+		"modalFooterBtn1" : {
+			"buttonText" : "Cancel",
+			"buttonClass" : "btn btn-default"
+		},
+		"modalFooterBtn2" : {
+			"buttonText" : "Action",
+			"buttonClass" : "btn btn-primary"
+		}
+	}
+}

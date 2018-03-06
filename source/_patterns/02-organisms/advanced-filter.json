@@ -1,0 +1,37 @@
+{
+	"buttonApply" : {
+		"buttonClass": "btn btn-primary btn-xs",
+		"buttonDisabled": "",
+		"buttonText": "Apply",
+		"buttonCaret": "",
+		"buttonGlyphicon": "",
+		"buttonGlyphicon2": "",
+		"buttonDataToggle": "",
+		"buttonAriaPopup": "",
+		"buttonAriaExpanded": "",
+		"buttonAriaLabel": " aria-label=\"Apply changed filters to the list\""
+	},
+	"buttonClose": {
+		"buttonClass": "btn btn-link mol-close",
+		"buttonDisabled": "",
+		"buttonText": "<span class=\"sr-only\">Close<\/span>",
+		"buttonCaret": "",
+		"buttonGlyphicon": "<span class=\"glyphicon glyphicon-remove\"><\/span>",
+		"buttonGlyphicon2": "",
+		"buttonDataToggle": "",
+		"buttonAriaPopup": "",
+		"buttonAriaExpanded": "",
+		"buttonAriaLabel": ""
+	},
+	"advfilterSublabels" : {
+		"sublabels1" : {
+			"molcoreLabelTextPos1": "Sub-Label 1"
+		},
+		"sublabels2" : {
+			"molcoreLabelTextPos1": "Sub-Label 2"
+		},
+		"sublabels3" : {
+			"molcoreLabelTextPos1": "Sub-Label 3"
+		}
+	}
+}

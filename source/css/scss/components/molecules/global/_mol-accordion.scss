@@ -1,0 +1,101 @@
+.exi-transitional {
+
+    #accnav {
+        margin: 0 0 2rem 0;
+        padding: 0;
+    }
+
+    .accordionSubMenu {
+        display:none;
+    }
+
+    ul .here .tabpanel {
+        display:block;
+    }
+
+    .level1 {
+        list-style-type: none;
+        margin: 0 0 0.75rem 0;
+    }
+
+    // GLYPH ARROW
+    .category {
+        background: #ffffff;
+        color: #666;
+        font-size: 1.8rem;
+        padding: 1rem 0.5em;
+        border: 2px solid #ddd;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+
+            &:hover {
+                background: #eeeeee;
+                cursor: pointer;
+            }
+
+            &[aria-expanded="true"] {
+                background: #eeeeee;
+                color: #2F70A9;
+            }
+
+            &:after {
+                content:"\e080";
+                font-family: 'Glyphicons Halflings';
+                position: absolute;
+                right: 20px;
+                top: 10px;
+                width: 1.875rem;
+                height: 1.875rem;
+                font-size: 1.5rem;
+                transform: rotate(90deg);
+                transition: 500ms cubic-bezier(0.44, 0.03, 0.03, 1.01);
+            }
+    }
+
+    .category[aria-expanded="true"]:after {
+        transform: rotate(-90deg) !important;
+    }
+
+    .expanded {
+        display: block;
+    }
+
+    .tabpanel {
+        width: 100%;
+        border: 2px solid #ddd;
+        box-sizing: border-box;
+        border-top: none;
+        line-height: 1.425;
+        padding: 10px;
+        transition: 300ms ease-in-out;
+    }           
+
+    // ANIMATION
+    .accFade {
+        animation-name: accFade;
+        -webkit-animation-name: accFade;  
+        animation-duration: 1.5s; 
+        -webkit-animation-duration: 1.5s;
+        animation-timing-function: ease-out; 
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    @keyframes accFade {
+    0% {
+            background: #fff;
+        }
+
+    50%{
+            background:  lighten($tab-nav--highlight, 52%);
+        }
+
+    100% {
+            background:  #fff;
+        } 
+    }
+
+}
+

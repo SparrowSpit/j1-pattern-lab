@@ -1,0 +1,20 @@
+{
+		"atomcoreType": "text",
+		"atomcoreClass": "class=\"form-control time ui-timepicker-input\"",
+		"atomcoreId": "time-input",
+		"atomcoreName": "",
+		"atomcoreArialabel": "",
+		"atomcoreAriadescribedby": "",
+		"atomcoreDisabled": "",
+		"molcoreFormGroupClass": "form-group",
+		"molcoreMolClass": "",
+		"molcoreLabelClass": "",
+		"molcoreLabelId": "",
+		"molcoreLabelFor": "default-label",
+		"molcoreLabelTextPos1": "Default Label",
+		"molcoreLabelTextPos2": "",
+		"molcoreLabelDesc": "",
+		"molcoreLabelClosePos1": "<\/label>", 
+		"molcoreLabelClosePos2": ""
+
+}

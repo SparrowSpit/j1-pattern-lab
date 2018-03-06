@@ -1,0 +1,54 @@
+.exi-transitional {
+
+	.mol-filter-by-condition {
+		
+		// defines a max-width on the overall component
+		// adjust as needed but this will affect the select's max-width and remove button
+		margin-bottom: 2.4rem;
+		max-width: 30rem;
+
+		select {
+			display: inline-block;
+			max-width: 25rem;
+		}
+
+		// Add Another Condition text button
+		.filter-add {
+			border: none;
+	    	background: none;
+	    	color: $color-text-link;
+	    	display: block;
+	    	margin-bottom: 1rem;
+		}
+
+		// sets the radio buttons in group inline
+		.radio-group > .atoms-radio-button .radio-button--wrapper {
+			display: inline-block;
+		}
+
+		.radio-group {
+			.radio-button--wrapper {
+				margin-right: 2rem;
+			}
+		}
+
+	}
+
+	// remove button next to select
+	.glyphicon-remove--circle {
+		background: #ffffff;
+		color: $color-text-link;
+		display: inline-block;
+		border-radius: 50%;
+		border: 2px solid;
+		margin-left: 0.875rem;
+		padding: 0.35rem;
+		transition: 100ms ease-in-out;
+		vertical-align: middle;
+
+			&:hover {
+				color: lighten($color-text-link, 25%);
+			}
+	}
+
+}

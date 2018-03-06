@@ -1,0 +1,27 @@
+<fieldset class="{{formGroupClass}} mol-input-radio-styled" {{molinputradio.disabled=""}}>
+  <legend class="{{molInputRadioStyled.legendClass}}">{{molInputRadioStyled.legendText}}</legend>
+  <div class="{{molInputRadioStyled.radioClass}}">
+    {{> atoms-radio-button }}
+    <label for="{{molInputRadioStyled.labelFor}}">
+      <span></span>{{molInputRadioStyled.placeholder}}
+    </label>
+  </div>
+  <div class="{{molInputRadioStyled.radioClass}}">
+    <input type="{{inputRadio.type}}" name="{{inputRadio.name}}" id="molinputradio2" value="{{inputRadio.value}}" {{inputRadio.checkedstate=""}} {{inputRadio.disabled}}>
+    <label for="molinputradio2">
+      <span></span> Styled Radio Option
+    </label>
+  </div>
+  <div class="{{molInputRadioStyled.radioClass}}">
+    <span class="jzb-radio-button-disabled-empty" id=""></span>
+    <label for="molinputradio3"> Radio Option - Disabled Empty
+      <input type="radio" name="..." id="molinputradio3" value="..." disabled>
+    </label>
+  </div>
+  <div class="{{molInputRadioStyled.radioClass}}">
+    <span class="jzb-radio-button-disabled-filled" id=""></span>
+    <label for="molinputradio4"> Radio Option - Disabled Filled
+      <input type="radio" name="..." id="molinputradio4" value="..." disabled>
+    </label>
+  </div>
+</fieldset>

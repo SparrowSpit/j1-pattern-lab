@@ -1,0 +1,16 @@
+
+
+.exi-transitional .atom-button.atom-button--text.mol-close-button {
+	margin: 0;
+	padding: $padding-xs;
+	line-height: 1;
+	/* White background for accessible contrast 
+	background: $color-default-default;
+	border-radius: 50%;
+	*/
+}
+
+.exi-transitional .atom-button.atom-button--text.mol-close-button .glyphicon.glyphicon-remove {
+	color: $color-text-link;
+}
+

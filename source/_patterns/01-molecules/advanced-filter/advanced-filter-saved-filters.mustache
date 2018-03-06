@@ -1,0 +1,125 @@
+{{{demoStateOpen}}}
+<!-- Column for demo only -->
+<div class="org-advanced-filter col-sm-3">
+
+    <div class="pl-example-container">
+        <h4>Default</h4>
+
+        <!-- Saved filters start (DEFAULT MODE) -->
+        <div class="panel mol-panel mol-advanced-filter-saved-filters">
+            <div class="panel-body">
+                {{#genSelect}}
+                {{> molecules-select-input}}
+                {{/genSelect}}
+
+                {{#genEdit}}
+                {{> atoms-button-core}}
+                {{/genEdit}}
+            </div>
+            <div class="panel-footer text-right blank">
+
+                {{#genApply}}
+                {{> atoms-button-core}}
+                {{/genApply}}
+            </div>
+        </div>
+        <!-- Saved filters end (DEFAULT MODE) -->
+
+    </div><!-- Close PL example container -->
+
+    <div class="pl-example-container">
+        <h4>Saving</h4>
+
+        <!-- Saved filters start (SAVE MODE) -->
+        <div class="panel mol-panel mol-advanced-filter-saved-filters">
+            <div class="panel-body">
+                {{#saveInput}}
+                {{> molecules-input-field-core}}
+                {{/saveInput}}
+
+                {{#saveDefault}}
+                {{> molecules-checkbox}}
+                {{/saveDefault}}
+
+            </div>
+            <div class="panel-footer blank">
+
+                {{#saveSave}}
+                {{> atoms-button-core}}
+                {{/saveSave}}
+
+                {{#saveCancel}}
+                {{> atoms-button-core}}
+                {{/saveCancel}}
+            </div>
+        </div>
+        <!-- Saved filters end (SAVE MODE) -->
+
+    </div><!-- Close PL example container -->
+
+    <div class="pl-example-container">
+        <h4>Editing</h4>
+
+        <!-- Saved filters start (EDIT MODE) -->
+        <div class="panel mol-panel mol-advanced-filter-saved-filters">
+            <div class="panel-body">
+                <h4 class="label">Manage Saved Filters</h4>
+                <span class="sr-only">The following is a list of saved filters for the accompanying list. You can rename or delete filters and set one as the default for this list.</span>
+                {{#editDone}}
+                {{> atoms-button-core}}
+                {{/editDone}}
+
+                <!-- If no saved filters
+                          <p class="text-muted">Currently, there are no saved filters</p>
+                          -->
+                <!-- Saved filter list start -->
+
+                <table class="table mol-table">
+                    <tr class="sr-only">
+                        <th scope="col">
+                            Saved Filter Name
+                        </th>
+                        <th scope="col">
+                            Options
+                        </th>
+                    </tr>
+                    <tr class="default">
+                        <td>
+                            Most Recent Overrides <span class="text-success text-size-sm">(default)</span>
+                        </td>
+                        <td>
+                            {{#editSavedList1}}
+                            {{> molecules-button-dropdown}}
+                            {{/editSavedList1}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mathematics
+                        </td>
+                        <td>
+                            {{#editSavedList2}}
+                            {{> molecules-button-dropdown}}
+                            {{/editSavedList2}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Narrowed Course List
+                        </td>
+                        <td>
+                            {{#editSavedList3}}
+                            {{> molecules-button-dropdown}}
+                            {{/editSavedList3}}
+                        </td>
+                    </tr>
+                </table>
+                <!-- Saved filter list end -->
+            </div>
+        </div>
+        <!-- Editing filters end (EDIT MODE) -->
+
+    </div><!-- Close PL example container -->
+
+</div><!-- /Column for demo only -->
+{{{demoStateClose}}}

@@ -1,0 +1,150 @@
+// demo only
+.ph-demo-container {
+	background: #eee;
+}
+
+.ph-demo-global-header {
+	padding: 5rem;
+	background: darkgray;
+}
+
+
+// begin component styles
+.exi-transitional {
+	
+	// main component begin
+	.org-page-header {
+	    background: $white;
+	    position: relative;
+	    height: 200px;
+	    margin-bottom: $margin-xl;
+	    padding: 2rem 1rem 2rem 6.5rem;	    
+	    top: 0;
+		left: 0;
+		right: 0;
+		transition: 300ms ease-in-out;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform : translate3d(0, 0, 0);
+		z-index: 1000;
+
+			@media (min-width: 992px) {
+				padding: $margin-xl 1rem $margin-xl 8.5rem;
+			}		
+		
+		// page title = h2
+		.mol-page-title {
+	    	font-size: 2.5rem;
+			line-height: .95;
+	    	margin: 0 0 $margin-lg 0;	
+	    	transition: 300ms ease-in-out;		
+
+				@media (min-width: 992px) {
+					font-size: 2.88rem;
+				}
+		}
+
+		// page icon
+		.mol-page-header-icon {
+		    position: absolute;
+		    top: 1.5rem;
+		    left: 1.5rem;
+		    width: 3.5rem;
+		    height: 3.5rem;
+		    font-size: 3.5rem;
+		    line-height: 1;
+		    transition: 300ms ease-in-out;
+
+				@media (min-width: 992px) {
+					font-size: 5rem;
+					width: 5rem;
+					height: 5rem;
+				}		    	
+		}
+
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}		
+
+		// hub options dropdown button
+		.mol-button-dropdown {
+		    margin: 0;
+		}
+
+		.hub-btn {
+			background: $color-branding-main;
+			color: #ffffff;
+
+				&:hover {
+					background: lighten($color-branding-main, 10%)
+				} 
+
+				&:focus {
+					background-color: #a09c95;
+				}
+		}		
+
+		// side nav
+		.mol-page-toolbar {
+		    position: absolute;
+		    top: 1.5rem;
+		    right: 1.5rem;
+
+		    	.btn {
+		    		background: $color-branding-main;
+		    		border-color: #fff;
+					color: #ffffff;
+					padding: 6px 12px;
+
+						&:hover {
+							background-color: lighten($color-branding-main, 10%);
+						}
+		    	}
+
+			    .glyphicon {
+			    	font-size: 14px;
+			    }
+		}
+
+	}
+
+	// class getting added with jquery to 
+	// resize on scroll
+	.page-header-shrink {
+		position: fixed;
+		height: 98px;
+		padding: 2rem 1rem 2rem 6rem;
+	 	
+	 	.mol-page-title {
+			font-size: 2.25rem;
+			line-height: .95;
+
+				@media (min-width: 992px) {
+					font-size: 2.65rem;
+				}
+	 	}
+
+	 	.mol-page-header-icon {
+	 		width: 3.25rem;
+	 		height: 3.25rem;
+	 		font-size: 3.25rem;
+	 	}
+
+	}
+
+	// accessible way to hide elements
+	.visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+	    position: absolute !important;
+	    height: 1px; width: 1px; 
+	    overflow: hidden;
+	    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	    clip: rect(1px, 1px, 1px, 1px);
+	    transition: 3s ease-in-out;
+	}
+
+}
+
+
+
+

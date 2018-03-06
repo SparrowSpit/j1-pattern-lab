@@ -1,0 +1,22 @@
+{
+	"molCheckbox" : {
+		"atomcoreType": "checkbox",
+		"atomcoreClass": "",
+		"atomcoreId": "checkbox-default",
+		"atomcoreName": "...",
+		"atomcoreArialabel": "",
+		"atomcoreAriadescribedby": "",
+		"atomcoreDisabled": "",
+		"atomcorePlaceholder": "",
+		"molcoreFormGroupClass": "",
+		"molcoreMolClass": "checkbox mol-checkbox",
+		"molcoreLabelClass": "",
+		"molcoreLabelId": "",
+		"molcoreLabelFor": "checkbox-default",
+		"molcoreLabelTextPos1": "",
+		"molcoreLabelTextPos2": "Text Label",
+		"molcoreLabelDesc": "",
+		"molcoreLabelClosePos1": "", 
+		"molcoreLabelClosePos2": "<\/label>"
+    }
+}

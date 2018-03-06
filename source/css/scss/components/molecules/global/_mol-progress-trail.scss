@@ -1,0 +1,137 @@
+
+/*
+TABLE OF CONTENTS
+- General
+- List Items
+  - Item vertical Lines (future styling commented out)
+    - Default
+    - Current
+    - Success
+  - Progress Circle (future styling commented out)
+    - Default
+    - Current
+    - Success
+*/
+
+
+
+
+/* GENERAL */
+.exi-transitional ul.mol-progress-trail {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*---------------------------------*/
+
+
+
+    /* LIST ITEMS */
+    /* Progress Line - Default */
+    .exi-transitional ul.mol-progress-trail li {
+        position: relative;
+        margin: 0;
+        font-size: $text-size-sm;
+        color: $color-text-muted;
+        padding: 0 0 $padding-lg $padding-xl;
+        background: $color-default-default;
+        /*background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 46%, #d2d6db 47%, #d2d6db 53%, #ffffff 54%, #ffffff 100%);
+            background: -webkit-linear-gradient(left, #ffffff 0%,#ffffff 46%,#d2d6db 47%,#d2d6db 53%,#ffffff 54%,#ffffff 100%);
+            background: linear-gradient(to right, #ffffff 0%,#ffffff 46%,#d2d6db 47%,#d2d6db 53%,#ffffff 54%,#ffffff 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+            background-size: 15px 100%;
+            background-repeat: no-repeat;
+            background-position: 0 0;*/
+    }
+
+        /* Progress Line - Current */
+        .exi-transitional ul.mol-progress-trail li.mol-progress-trail--current {
+            font-size: $text-size-md;
+            font-weight: $text-weight-bold;
+            color: $color-text-dark;
+            line-height: 1.2;
+        }
+
+        /* Progress Line - Success */
+        .exi-transitional ul.mol-progress-trail li.mol-progress-trail--success {
+            color: $color-success-default;
+            background: $color-default-default;
+            /*background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 46%, #007504 47%, #007504 53%, #ffffff 54%, #ffffff 100%);
+                background: -webkit-linear-gradient(left, #ffffff 0%,#ffffff 46%,#007504 47%,#007504 53%,#ffffff 54%,#ffffff 100%);
+                background: linear-gradient(to right, #ffffff 0%,#ffffff 46%,#007504 47%,#007504 53%,#ffffff 54%,#ffffff 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+                background-size: 15px 100%;
+                background-repeat: no-repeat;
+                background-position: 0 0;*/
+        }
+
+            .exi-transitional ul.mol-progress-trail li.mol-progress-trail--success a {
+                color: $color-success-default;
+            }
+
+        /* Move the line down for the first list item so it doesn't stick up above the first circle */
+        .exi-transitional ul.mol-progress-trail li:first-child {
+            background-position: 0 3px;
+        }
+
+        /* Remove the line for the last list item */
+        .exi-transitional ul.mol-progress-trail li:last-child {
+            background: none;
+        }
+
+
+
+        /*---------------------------------*/
+
+
+
+        /* Progress Circle - Default */
+        .exi-transitional ul.mol-progress-trail li:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 1rem;
+            font-family: 'Glyphicons Halflings';
+            content: "";
+            background: $color-default-default;
+            /*background: -moz-radial-gradient(center, ellipse cover, #ffffff 32%, #d2d6db 37%, #d2d6db 56%, #ffffff 61%);
+                background: -webkit-radial-gradient(center, ellipse cover, #ffffff 32%,#d2d6db 37%,#d2d6db 56%,#ffffff 61%);
+                background: radial-gradient(ellipse at center, #ffffff 32%,#d2d6db 37%,#d2d6db 56%,#ffffff 61%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+                background-size: 15px 15px;
+                background-repeat: no-repeat;
+                background-position: 0 0;*/
+        }
+
+        /* Progress Circle - Current */
+        .exi-transitional ul.mol-progress-trail li.mol-progress-trail--current:before {
+            color: $color-text-dark;
+            font-weight: $text-weight-bold;
+            background: $color-default-default;
+            /*background: -moz-radial-gradient(center, ellipse cover, #ffffff 32%, #007504 37%, #007504 56%, #ffffff 61%);
+                background: -webkit-radial-gradient(center, ellipse cover, #ffffff 32%,#007504 37%,#007504 56%,#ffffff 61%);
+                background: radial-gradient(ellipse at center, #ffffff 32%,#007504 37%,#007504 56%,#ffffff 61%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+                background-size: 15px 15px;
+                background-repeat: no-repeat;
+                background-position: 0 0;*/
+        }
+
+        /* Progress Circle - Success */
+        .exi-transitional ul.mol-progress-trail li.mol-progress-trail--success:before {
+            display: block;
+            position: absolute;
+            line-height: .7;
+            top: 0;
+            left: -.2rem;
+            padding: 0 0 $padding-xxs 0;
+            color: green;
+            font-size: $text-size-lg;
+            font-family: 'Glyphicons Halflings';
+            content: "\e013";
+            background: $color-default-default;
+        }

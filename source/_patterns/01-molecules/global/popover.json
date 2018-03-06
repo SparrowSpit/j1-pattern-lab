@@ -1,0 +1,14 @@
+{
+	
+	"buttonId" : "launch-mol-popover",
+	"buttonClass" : "btn btn-primary",
+	"buttonDataToggle" : " data-toggle=\"popover-default\" ",
+	"buttonText" : "Display popover",
+
+	"button-alert" : {
+		"buttonId" : "launch-warning-popover",
+		"buttonText" : "Display Warning popover",
+		"buttonDataToggle" : " data-toggle=\"popover-warning\" rel=popover-warning"
+	}	
+	
+}

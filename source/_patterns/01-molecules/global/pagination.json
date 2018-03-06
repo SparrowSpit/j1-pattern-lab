@@ -1,0 +1,46 @@
+{
+	"demoStateOpen2" : "<div class=\"demo-state hidden\">",
+	"paginationControl" : {
+		"buttonToolbarTag": "div",
+		"buttonGroupClass2": "",
+		"buttonGroupAria": "",
+		"checkboxType": "",
+		"checkboxId": "",
+		"checkboxName": "",
+		"checkboxValue": "",
+		"checkboxText": ""
+    },
+	"pagConPrevPage" : {
+		"buttonClass": "btn btn-default btn-sm",
+		"buttonText": "Prev",
+		"buttonSronly2": "<span class=\"sr-only\">ious list page<\/span>"
+	},
+	"pagConFirstPage" : {
+		"buttonClass": "btn btn-default btn-sm",
+		"buttonSronly1": "<span class=\"sr-only\">First page - List page <\/span>",
+		"buttonText": "1"
+	},
+	"pagConLastPage" : {
+		"buttonClass": "btn btn-default btn-sm",
+		"buttonSronly1": "<span class=\"sr-only\">Last page - list page <\/span>",
+		"buttonText": "100",
+		"buttonSronly2": ""
+	},
+	"pagConNextPage" : {
+		"buttonClass": "btn btn-default btn-sm",
+		"buttonText": "Next",
+		"buttonSronly2": "<span class=\"sr-only\"> list page<\/span>"
+	},
+	"pagConShowAll" : {
+		"buttonId": "demo-only-show-all",
+		"buttonClass": "btn btn-link btn-sm",
+		"buttonText": "Show all",
+		"buttonSronly2": "<span class=\"sr-only\"> list rows on one page<\/span>"
+	},
+	"pagConShowFifteen" : {
+		"buttonId": "demo-only-show-fifteen",
+		"buttonClass": "btn btn-default btn-sm",
+		"buttonText": "Show 15",
+		"buttonSronly2": "<span class=\"sr-only\"> list rows on one page<\/span>"
+	}
+}

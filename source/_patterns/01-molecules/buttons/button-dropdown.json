@@ -1,0 +1,22 @@
+{
+	"molBtnDropdownClass" : "",
+	"buttonDropdown": {
+		"buttonClass": "btn btn-default dropdown-toggle",
+		"buttonDisabled": "",
+		"buttonText": "Button",
+		"buttonCaret": " <span class=\"caret\"><\/span>",
+		"buttonGlyphicon": "",
+		"buttonGlyphicon2": "",
+		"buttonDataToggle": " data-toggle=\"dropdown\"",
+		"buttonAriaPopup": " aria-haspopup=\"true\"",
+		"buttonAriaExpanded": " aria-expanded=\"false\"",
+		"buttonAriaLabel": ""
+	},
+	"btnDropdownUlClass": "dropdown-menu",
+	"btnDropdownAria" : "role=\"menu\"",
+	"btnDropdownHeading": "<li class=\"dropdown-header\">Dropdown Heading<\/li>",
+	"btnDropdownOpt1": "<li><a href=\"foo.html\">Dropdown option 1<\/a><\/li>",
+	"btnDropdownOpt2": "<li><a href=\"foo2.html\">Dropdown option 2<\/a><\/li>",
+	"btnDropdownDivider": "<li role=\"separator\" class=\"divider\"><\/li>",
+	"btnDropdownOpt3": "<li><button type=\"button\" disabled>Button option<\/button><\/li>"
+}

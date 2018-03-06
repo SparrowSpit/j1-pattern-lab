@@ -1,0 +1,30 @@
+
+/*
+TABLE OF CONTENTS
+- General
+- Buttons
+*/
+
+
+/* GENERAL */
+.exi-transitional .org-advanced-filter .mol-advanced-filter-panel .mol-advanced-filter-control-bar {
+	font-size: $text-size-sm;
+}
+
+
+
+/*----------------------------------------*/
+
+
+
+/* BUTTONS */
+.exi-transitional .org-advanced-filter .mol-advanced-filter-panel .mol-advanced-filter-control-bar .btn.btn-sm:first-child {
+	margin: 0 $margin-xs 0 0;
+	padding: 0;
+}
+
+.exi-transitional .org-advanced-filter .mol-advanced-filter-panel .mol-advanced-filter-control-bar .btn.btn-sm:last-child {
+	margin: 0 0 0 $margin-xs;
+	padding: 0;
+}
+

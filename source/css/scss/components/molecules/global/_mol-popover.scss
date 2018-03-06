@@ -1,0 +1,134 @@
+
+/*
+TABLE OF CONTENTS
+- General
+- Indicator Arrow
+- Popover Heading
+  - Close Button
+- Popover Body
+  - Lists
+- Warning Popover
+*/
+
+
+/* GENERAL */
+.exi-transitional {
+    
+    // the margin applied below to .mol-popover is only to separate the buttons in the demo
+    .mol-popover {
+        padding: 0;
+        
+        .popover {
+            min-width: 16rem;
+            max-width: 32rem;
+
+            /* INDICATOR ARROW */
+            /* Set arrow inner color and outer border color for each direction */
+            &.top > .arrow:after {
+                border-top-color: $color-branding-background-2nd;
+            }
+
+            &.top > .arrow {
+                border-top-color: $color-border-default;
+            }
+
+            &.right > .arrow:after {
+                border-right-color: $color-branding-background-2nd;
+            }
+
+            &.right > .arrow {
+                border-right-color: $color-border-default;
+            }
+
+
+            &.bottom > .arrow:after {
+                border-bottom-color: $color-branding-background-2nd;
+            }
+
+            &.bottom > .arrow {
+                border-bottom-color: $color-border-default;
+            }
+
+
+            &.left > .arrow:after {
+                border-left-color: $color-branding-background-2nd;
+            }
+
+            &.left > .arrow {
+                border-left-color: $color-border-default;
+            }     
+
+            /* POPOVER HEADING */
+            h3.popover-title {
+                font-size: $text-size-lg;
+                color: $color-text-dark;
+                margin: 0;
+                padding: $padding-sm $padding-xl $padding-sm $padding-sm; 
+                background: none;
+                border: none;
+            }
+
+            /* CLOSE BUTTON */
+            .popover-title .mol-close {
+                position: absolute;
+                top: $positioning-xxs;
+                right: $positioning-xxs;
+            }
+
+            /* POPOVER BODY */
+            .popover-content {
+                margin: 0;
+                padding: 0 $padding-sm;
+            }
+
+            /* LISTS */
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin: 0 0 $margin-sm 0;
+                    padding: 0;
+                }
+            } 
+
+            // Warning popover
+            &.alert-warning {
+                background: $color-warning-background;
+                padding: $padding-sm;
+
+                .alert-popover-title {
+                    color: $color-warning-default;
+                    font-size: $text-size-lg;
+                    display: inline-block;
+                }
+
+                .mol-close {
+                    position: absolute;
+                    top: $positioning-xxs;
+                    right: $positioning-xxs;
+                }
+
+                .glyphicon-exclamation-sign {
+                    color: $color-warning-default;
+                    font-size: $text-size-lg;
+                    margin-right: $margin-sm;
+                }
+
+                .popover-content {
+                    color: $color-warning-default;
+                    display: block;
+                }
+
+                & >.arrow:after {
+                    border-bottom-color: $color-warning-background;
+                }
+            }
+            // end warning popover
+            
+        }
+    }
+}
+
+

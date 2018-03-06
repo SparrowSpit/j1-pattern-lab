@@ -1,0 +1,29 @@
+{
+	"atomSelectInput" : {
+		"id": "select-input",
+		"name": "select-input",
+		"optgroupOpen": "",
+		"optgroupClose": "",
+		"optiontextBlank": "",
+		"optiontext1": "Option 1",
+		"optiontext2": "Option 2",
+		"optiontext3": "Option 3",
+		"ariaLabel": "",
+		"ariaDescribedby": "",
+		"disabled": ""
+	},
+
+	"atomSelectInputDisabled" : {
+		"id": "select-input-disabled",
+		"name": "select-input-disabled",
+		"optgroupOpen": "",
+		"optgroupClose": "",
+		"optiontextBlank": "",
+		"optiontext1": "Option 1",
+		"optiontext2": "Option 2",
+		"optiontext3": "Option 3",
+		"ariaLabel": "",
+		"ariaDescribedby": "",
+		"disabled": "disabled"
+	}	
+}

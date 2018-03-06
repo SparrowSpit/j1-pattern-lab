@@ -1,0 +1,77 @@
+.exi-transitional {
+
+	.org-data-entry-form {
+
+		position: relative;
+
+		.panel {
+			background-color: #fff;
+			border-radius: 4px;
+			margin: 0 0 2em 0;
+			padding: 0;
+			border: 1px solid #d2d6db;
+			box-shadow: none;
+		}
+
+		.panel-body {
+			padding: 3rem;
+			max-width: 1000px;
+			width: 85%;
+		}
+
+		.org-data-entry-form--save-button {
+			position: fixed;
+			top: 50px;
+			right: 10%;
+			z-index: 600;
+		}
+
+		.form-group {
+			margin: 0 0 2rem 0;
+			max-width: 640px;
+		}
+
+		.form-section {
+			margin-bottom: 5rem;
+
+				&:after {
+					content: "";
+					border-bottom: 2px solid #D2D6DB;
+					width: 100%; 
+					height: 2px; 
+					display: block;
+					padding-top: 3rem;
+				}
+
+		}
+
+		.form-title {
+			margin-bottom: 2.6rem;
+		}	
+
+		// .form-control {
+		// 	margin-bottom: 1rem;
+		// }	
+
+		.form-section:last-of-type:after {
+			border: none;
+		}
+
+		.form-section--title {
+			margin-bottom: 1.6rem;
+		}
+
+	}
+
+	.pad-rt-2r {
+
+		@media (min-width: 768px) {
+			padding-right: 2rem;
+		}
+	}
+
+	.mar-btm-2r {
+		margin-bottom: 2rem;
+	}
+
+}

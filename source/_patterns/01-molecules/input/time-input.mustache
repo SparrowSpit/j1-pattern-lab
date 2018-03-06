@@ -1,0 +1,31 @@
+<label for="time-input">Label One</label>
+<input type="text" id="time-input" class="mol-single-time-input form-control datetime-field time ui-timepicker-input" autocomplete="on">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.css">
+
+<script type="text/javascript">
+
+	$(function() {
+		$('#time-input').timepicker({
+			'minTime': '12:00am', 
+			'maxTime': '11:30pm', 
+			'step': '30',
+			'forceRoundTime': true
+
+		});    
+
+		$('.ui-timepicker-list li').css({padding: '24px'});
+ 
+	});
+
+
+</script>
+
+

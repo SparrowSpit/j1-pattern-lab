@@ -1,0 +1,245 @@
+
+<!-- SINGLE CONDITION -->	
+<div class="pl-example-container">
+	<h4>Single Condition</h4>
+
+	<div class="mol-filter-by-condition" role="group">
+		
+		<div class="form-group">
+			<span class="sr-only">Select SR Text</span>
+			<select class="{{formClass}}" id="{{{atomSelectInput.id}}}" name="{{atomSelectInput.name}}"{{{atomSelectInput.ariaLabel}}} {{{atomSelectInput.ariaDescribedby}}} {{{atomSelectInput.disabled}}}>
+			    {{{atomSelectInput.optgroupOpen}}}
+			        <option>{{fitler-by-condition.atomSelectInput.optiontextBlank}}</option>
+					<option>{{filter-by-condition.atomSelectInput.optiontext1}}</option>
+			        <option>{{filter-by-condition.atomSelectInput.optiontext2}}</option>
+			        <option>{{filter-by-condition.atomSelectInput.optiontext3}}</option>
+			        <option>{{filter-by-condition.atomSelectInput.optiontext4}}</option>
+			        <option>{{filter-by-condition.atomSelectInput.optiontext5}}</option>
+			        <option>{{filter-by-condition.atomSelectInput.optiontext6}}</option>
+			    {{{atomSelectInput.optgroupClose}}}
+			</select>
+		</div>
+		
+		<div class="form-group">
+			{{#filter-by-condition}}
+				{{>atoms-text-field}}
+			{{/filter-by-condition}}
+		</div>
+		
+		<!-- add another text button -->
+		<button href="#" class="filter-add" aria-label="Use this to add another filter condition">Add another condition</button>
+	</div>
+</div>
+
+
+
+<!-- DOUBLE CONDITION -->
+<div class="pl-example-container">
+	<h4>Double Condition</h4>
+
+	<div class="mol-filter-by-condition" role="group">
+
+		<!-- select -->	
+		<div class="form-group">
+			<span class="sr-only">Select SR Text</span>
+			<select class="{{formClass}}" id="{{{atomSelectInput.id}}}" name="{{atomSelectInput.name}}"{{{atomSelectInput.ariaLabel}}} {{{atomSelectInput.ariaDescribedby}}} {{{atomSelectInput.disabled}}}>
+			    {{{atomSelectInput.optgroupOpen}}}
+		        <option>{{fitler-by-condition.atomSelectInput.optiontextBlank}}</option>
+				<option>{{filter-by-condition.atomSelectInput.optiontext1}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext2}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext3}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext4}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext5}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext6}}</option>
+			    {{{atomSelectInput.optgroupClose}}}
+			</select>
+		</div>
+		
+		<!-- numeric input -->
+		<div class="form-group">
+			{{#filter-by-condition}}
+				{{>atoms-text-field}}
+			{{/filter-by-condition}}
+		</div>
+
+		<!-- radio group -->
+		<div class="form-group radio-group">
+			<div class="atoms-radio-button">
+				<fieldset>
+<!-- 					<legend class="sr-only">Descriptive Sr Text</legend>
+ -->					<span class="sr-only">Descriptive SR Text</span>
+					<div class="radio-button--wrapper">
+						<input type="{{inputRadioGroup.type}}" name="radio-group1" id="double-condition-radio1" value="{{inputRadioGroup.value}}" {{inputRadioGroup.checkedstate}} {{{arialabel}}} {{{ariadescribedby}}} {{{inputRadioGroup.disabled}}}>
+						<label for="double-condition-radio1">And</label>
+					</div>			
+
+					<div class="radio-button--wrapper">
+						<input type="{{inputRadioGroup.type}}" name="radio-group1" id="double-condition-radio2" value="{{inputRadioGroup.value}}" {{inputRadioGroup.checkedstate}} {{{arialabel}}} {{{ariadescribedby}}} {{{inputRadioGroup.disabled}}}>
+						<label for="double-condition-radio2">Or</label>	
+					</div>
+				</fieldset>		
+
+			</div>
+		</div>	
+
+		<!-- select -->
+		<div class="form-group">
+			<span class="sr-only">Select SR Text</span>			
+			<select class="{{formClass}}" id="{{{atomSelectInput.id}}}" name="{{atomSelectInput.name}}"{{{atomSelectInput.ariaLabel}}} {{{atomSelectInput.ariaDescribedby}}} {{{atomSelectInput.disabled}}}>
+			    {{{atomSelectInput.optgroupOpen}}}
+		        <option>{{fitler-by-condition.atomSelectInput.optiontextBlank}}</option>
+				<option>{{filter-by-condition.atomSelectInput.optiontext1}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext2}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext3}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext4}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext5}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext6}}</option>
+			    {{{atomSelectInput.optgroupClose}}}
+			</select>
+			<button class="glyphicon glyphicon-remove glyphicon-remove--circle">
+				<span class="sr-only">Remove this condition</span>
+			</button>
+		</div>		
+
+		<!-- numeric input -->
+		<div class="form-group">
+			{{#filter-by-condition}}
+				{{>atoms-text-field}}
+			{{/filter-by-condition}}
+		</div>
+		
+		<!-- add another text button -->
+		<button href="#" class="filter-add" aria-label="Use this to add another filter condition">Add another condition</button>
+	</div>
+</div>	
+
+
+
+<!-- MULTI CONDITION -->
+<div class="pl-example-container">
+	<h4>Multi Condition</h4>
+
+	<div class="mol-filter-by-condition" role="group">
+
+		<!-- select -->	
+		<div class="form-group">
+			<span class="sr-only">Select SR Text</span>			
+			<select class="{{formClass}}" id="{{{atomSelectInput.id}}}" name="{{atomSelectInput.name}}"{{{atomSelectInput.ariaLabel}}} {{{atomSelectInput.ariaDescribedby}}} {{{atomSelectInput.disabled}}}>
+			    {{{atomSelectInput.optgroupOpen}}}
+		        <option>{{fitler-by-condition.atomSelectInput.optiontextBlank}}</option>
+				<option>{{filter-by-condition.atomSelectInput.optiontext1}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext2}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext3}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext4}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext5}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext6}}</option>
+
+			    {{{atomSelectInput.optgroupClose}}}
+			</select>
+		</div>
+		
+		<!-- numeric input -->
+		<div class="form-group">
+			{{#filter-by-condition}}
+				{{>atoms-text-field}}
+			{{/filter-by-condition}}
+		</div>
+
+		<!-- radio group -->
+		<div class="form-group radio-group">
+			<div class="atoms-radio-button">
+				<fieldset>
+					<span class="sr-only">Descriptive SR Text</span>
+					<div class="radio-button--wrapper">
+						<input type="{{inputRadioGroup.type}}" name="radio-group2" id="multi-condition-radio1" value="{{inputRadioGroup.value}}" {{inputRadioGroup.checkedstate}} {{{arialabel}}} {{{ariadescribedby}}} {{{inputRadioGroup.disabled}}}>
+						<label for="multi-condition-radio1">And</label>
+					</div>			
+
+					<div class="radio-button--wrapper">
+						<input type="{{inputRadioGroup.type}}" name="radio-group2" id="multi-condition-radio2" value="{{inputRadioGroup.value}}" {{inputRadioGroup.checkedstate}} {{{arialabel}}} {{{ariadescribedby}}} {{{inputRadioGroup.disabled}}}>
+						<label for="multi-condition-radio2">Or</label>	
+					</div>
+				</fieldset>		
+
+			</div>
+		</div>	
+
+		<!-- select -->
+		<div class="form-group">
+			<span class="sr-only">Select SR Text</span>			
+			<select class="{{formClass}}" id="{{{atomSelectInput.id}}}" name="{{atomSelectInput.name}}"{{{atomSelectInput.ariaLabel}}} {{{atomSelectInput.ariaDescribedby}}} {{{atomSelectInput.disabled}}}>
+			    {{{atomSelectInput.optgroupOpen}}}
+		        <option>{{fitler-by-condition.atomSelectInput.optiontextBlank}}</option>
+				<option>{{filter-by-condition.atomSelectInput.optiontext1}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext2}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext3}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext4}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext5}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext6}}</option>
+
+			    {{{atomSelectInput.optgroupClose}}}
+			</select>
+			<button class="glyphicon glyphicon-remove glyphicon-remove--circle">
+				<span class="sr-only">Remove this condition</span>
+			</button>
+		</div>		
+
+		<!-- numeric input -->
+		<div class="form-group">
+			{{#filter-by-condition}}
+				{{>atoms-text-field}}
+			{{/filter-by-condition}}
+		</div>
+
+		<!-- radio group -->
+		<div class="form-group radio-group">
+			<div class="atoms-radio-button">
+				<fieldset>
+					<span class="sr-only">Descriptive SR Text</span>
+					<div class="radio-button--wrapper">
+						<input type="{{inputRadioGroup.type}}" name="radio-group3" id="multi-condition-radio3" value="{{inputRadioGroup.value}}" {{inputRadioGroup.checkedstate}} {{{arialabel}}} {{{ariadescribedby}}} {{{inputRadioGroup.disabled}}}>
+						<label for="multi-condition-radio3">And</label>
+					</div>			
+
+					<div class="radio-button--wrapper">
+						<input type="{{inputRadioGroup.type}}" name="radio-group3" id="multi-condition-radio4" value="{{inputRadioGroup.value}}" {{inputRadioGroup.checkedstate}} {{{arialabel}}} {{{ariadescribedby}}} {{{inputRadioGroup.disabled}}}>
+						<label for="multi-condition-radio4">Or</label>	
+					</div>
+				</fieldset>		
+
+			</div>
+		</div>	
+
+		<!-- select -->
+		<div class="form-group">
+			<span class="sr-only">Select SR Text</span>			
+			<select class="{{formClass}}" id="{{{atomSelectInput.id}}}" name="{{atomSelectInput.name}}"{{{atomSelectInput.ariaLabel}}} {{{atomSelectInput.ariaDescribedby}}} {{{atomSelectInput.disabled}}}>
+			    {{{atomSelectInput.optgroupOpen}}}
+		        <option>{{fitler-by-condition.atomSelectInput.optiontextBlank}}</option>
+				<option>{{filter-by-condition.atomSelectInput.optiontext1}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext2}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext3}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext4}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext5}}</option>
+		        <option>{{filter-by-condition.atomSelectInput.optiontext6}}</option>
+
+			    {{{atomSelectInput.optgroupClose}}}
+			</select>
+			<button class="glyphicon glyphicon-remove glyphicon-remove--circle">
+				<span class="sr-only">Remove this condition</span>
+			</button>
+		</div>	
+
+		<!-- numeric input -->
+		<div class="form-group">
+			{{#filter-by-condition}}
+				{{>atoms-text-field}}
+			{{/filter-by-condition}}
+		</div>							
+		
+		<!-- add another text button -->
+		<button href="#" class="filter-add" aria-label="Use this to add another filter condition">Add another condition</button>
+	</div>
+</div>	
+
+

@@ -1,0 +1,35 @@
+{
+		"inputRadio" : {
+			"type": "radio",
+			"name": "...",
+			"id": "inputRadio",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"disabled": ""
+	    },
+
+	 	"inputRadioDisabled" : {
+			"type": "radio",
+			"name": "...",
+			"id": "inputRadioDisabled",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"disabled": "disabled"
+	    },
+
+	 	"inputRadioGroup" : {
+			"type": "radio",
+			"name": "...",
+			"id": "inputRadioGroup",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"disabled": ""
+	}
+	           
+}	

@@ -1,0 +1,15 @@
+{
+	"buttonClose": {
+		"buttonClass": "atom-button atom-button--text mol-close-button",
+		"buttonDisabled": "",
+		"buttonText": "<span class=\"sr-only\">Close<\/span>",
+		"buttonCaret": "",
+		"buttonGlyphicon": "<span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"><\/span>",
+		"buttonGlyphicon2": "",
+		"buttonDataToggle": "",
+		"buttonAriaPopup": "",
+		"buttonAriaExpanded": "",
+		"buttonAriaLabel": ""
+	}	
+}
+

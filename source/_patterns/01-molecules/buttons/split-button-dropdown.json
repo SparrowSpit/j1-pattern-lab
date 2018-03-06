@@ -1,0 +1,14 @@
+{
+	"buttonDropdown": {
+		"buttonClass": "btn btn-default dropdown-toggle",
+		"buttonDisabled": "",
+		"buttonText": "",
+		"buttonCaret": " <span class=\"caret\"><\/span>",
+		"buttonGlyphicon": "",
+		"buttonGlyphicon2": "",
+		"buttonDataToggle": " data-toggle=\"dropdown\"",
+		"buttonAriaPopup": " aria-haspopup=\"true\"",
+		"buttonAriaExpanded": " aria-expanded=\"false\"",
+		"buttonAriaLabel": ""
+	}
+}

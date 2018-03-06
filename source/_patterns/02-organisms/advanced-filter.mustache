@@ -1,0 +1,72 @@
+<div class="exi-transitional">
+  
+<div class="org-advanced-filter">
+    <!-- Control group row start -->
+    <div class="row mol-advanced-filter-control-row">
+        {{> molecules-advanced-filter-toggle}}
+    </div>
+    <!-- Control group row end -->
+    <div class="row">
+        <!-- Filter panel start -->
+        <div class="hidden-xs hidden-sm col-md-3 mol-advanced-filter-panel">
+            <section class="panel panel-default">
+                <div class="panel-heading blank">
+                    <!-- Filter panel title -->
+                    <h3>[Entity] Filter</h3>
+                    {{> molecules-close}}
+                    {{> molecules-advanced-filter-control-bar}}
+                </div>
+                <div class="panel-body">
+                    <fieldset>
+                        <legend class="sr-only">Filter the list of results</legend>
+                      {{> molecules-advanced-filter-text-input}}
+
+                      {{> molecules-advanced-filter-expandable-date-input}}
+
+                      {{> molecules-advanced-filter-expandable-date-range-input}}
+
+                      {{> molecules-advanced-filter-select-input}}
+
+                      {{> molecules-advanced-filter-typeahead-dropdown}}
+
+                      {{> molecules-advanced-filter-multiselect-dropdown}}
+
+                      <div class="form-group mol-advanced-filter-text-input">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" id="switch-sublabels" name="" value=""> Multi-Field Sub-Labels
+                          </label>
+                        </div>
+                        <div class="form-group mol-text-input sublabels showhide">
+                          <label for="sub-label1">
+                            Sub-Label 1
+                          </label>
+                          <input type="text" class="form-control" id="sub-label1" name="sub-label1">                          
+                        </div>
+                        <div class="form-group mol-text-input sublabels showhide">
+                          <label for="sub-label2">
+                            Sub-Label 2
+                          </label>
+                          <input type="text" class="form-control" id="sub-label2" name="sub-label1">
+                        </div>
+                        <div class="form-group mol-text-input sublabels showhide">
+                          <label for="sub-label3">
+                            Sub-Label 3
+                          </label>
+                          <input type="text" class="form-control" id="sub-label3" name="sub-label1">
+                        </div>
+                      </div>
+                    </fieldset>
+                </div>
+                <div class="panel-footer text-right blank">
+                  {{#buttonApply}}
+					          {{> atoms-button-core}}
+                  {{/buttonApply}}
+                </div>
+            </section>
+        </div>
+        <!-- Filter panel end -->
+    </div>
+</div>
+
+</div>

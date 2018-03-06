@@ -1,0 +1,7 @@
+{
+	"molSelectInput" : {
+		"labelClass": "",
+		"labelFor": "select-input",
+		"labelText": "Text Label"
+    }
+}

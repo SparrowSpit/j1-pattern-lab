@@ -1,0 +1,200 @@
+
+/*
+TABLE OF CONTENTS
+- General
+  - Default Styling
+  - Separated Styling
+- Wizard Body
+  - Progress Trail
+  - Form Area
+  - Action Buttons
+*/
+
+
+/* GENERAL */
+/* DEFAULT STYLING */
+.exi-transitional main .org-wizard .org-page-body--body {
+    position: relative;
+}
+
+.exi-transitional .org-wizard .org-wizard--col1 {
+    float: left;
+    width: 22rem;
+    margin-right: 3rem;
+}
+
+.exi-transitional .org-wizard .org-wizard--col2 {
+    float: left;
+    width: calc(100% - 44rem);
+}
+
+.exi-transitional .org-wizard .org-wizard--col3 {
+    float: left;
+    width: 16rem;
+    margin-left: 3rem;
+}
+
+/* Default styling - mobile */
+@media (max-width: 768px) {
+    .exi-transitional .org-wizard .org-wizard--col1,
+    .exi-transitional .org-wizard .org-wizard--col2,
+    .exi-transitional .org-wizard .org-wizard--col3 {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+/*----------------------------*/
+
+
+
+/* SEPARATED STYLING */
+.exi-transitional .org-wizard.org-wizard--separate .org-page-body--body {
+    position: relative;
+    margin-left: 25rem;
+}
+
+.exi-transitional .org-wizard.org-wizard--separate .org-wizard--col1 {
+    position: absolute;
+    top: 0;
+    left: -25rem;
+    width: 22rem;
+    margin: 0;
+    padding: $padding-lg;
+    background: $color-default-default;
+    @extend %border-default;
+    border-radius: $border-radius-default;
+}
+
+.exi-transitional .org-wizard.org-wizard--separate .org-wizard--col2 {
+    width: calc(100% - 19rem);
+}
+
+/* Separated styling - mobile */
+@media (max-width: 768px) {
+    .exi-transitional .org-wizard.org-wizard--separate .org-page-body--body {
+        position: relative;
+        margin-left: 0;
+    }
+
+    .exi-transitional .org-wizard .org-wizard--col1,
+    .exi-transitional .org-wizard .org-wizard--col2,
+    .exi-transitional .org-wizard.org-wizard--separate .org-wizard--col1,
+    .exi-transitional .org-wizard.org-wizard--separate .org-wizard--col2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        margin: 0 0 $margin-xl 0;
+        padding: 0;
+        background: none;
+        border: none;
+    }
+}
+
+
+
+/*----------------------------------*/
+
+
+
+/* WIZARD BODY */
+/* PROGRESS TRAIL */
+.exi-transitional .org-wizard--col1 .mol-progress-trail {
+    position: relative;
+    padding: 0 2rem 0 0;
+}
+
+    .exi-transitional .org-wizard--col1 h4 {
+        font-size: 1.6rem;
+    }
+
+
+
+/*--------------------------------*/
+
+
+
+/* FORM AREA */
+/* Give extra white space between section headings and form inputs themselves for readability */
+.exi-transitional .org-wizard .org-page-body--body h4:first-child,
+.exi-transitional .org-wizard .org-page-body--body .form-group {
+    margin-bottom: $margin-lg;
+}
+
+    /* Allow two form inputs side-by-side in desktop layouts */
+    .exi-transitional .org-wizard .org-page-body--body .org-wizard--sidebyside .form-group {
+        float: left;
+        width: calc(50% - 1.6rem);
+        margin: 0 $margin-lg $margin-xl 0;
+    }
+
+        .exi-transitional .org-wizard .org-page-body--body .org-wizard--sidebyside .form-group + .form-group {
+            width: calc(50% - 1.6rem);
+            margin: 0 0 $margin-xl $margin-lg;
+        }
+
+/* Restack side-by-side form inputs in a single column for mobile */
+@media (max-width: 768px) {
+    .exi-transitional .org-wizard .org-page-body--body .org-wizard--sidebyside .form-group,
+    .exi-transitional .org-wizard .org-page-body--body .org-wizard--sidebyside .form-group + .form-group {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+
+/*----------------------------------*/
+
+
+
+/* WIZARD BODY - ACTION BUTTONS */
+/* Desktop nav displayed */
+.exi-transitional .org-wizard .org-page-body--body .mol-wizard-action-buttons-desktop {
+    position: fixed;
+    min-width: 16rem;
+}
+
+    .exi-transitional .org-wizard .org-page-body--body .mol-wizard-action-buttons-desktop button,
+    .exi-transitional .org-wizard .org-page-body--body .mol-wizard-action-buttons-desktop a {
+        display: block;
+        width: 100%;
+        margin: 0 0 $margin-lg 0;
+    }
+
+/* Mobile nav hidden */
+.exi-transitional .org-wizard .org-page-body--body .mol-wizard-action-buttons-mobile {
+    display: none;
+}
+
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    /* Desktop nav hidden */
+    .exi-transitional .org-wizard .org-page-body--body .mol-wizard-action-buttons-desktop {
+        display: none;
+    }
+
+    /* Mobile nav displayed */
+    .exi-transitional .org-wizard .org-page-body--body .mol-wizard-action-buttons-mobile {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    .exi-transitional .org-wizard .org-page-body--body .mol-wizard-action-buttons-mobile button:first-child,
+    .exi-transitional .org-wizard .org-page-body--body .mol-wizard-action-buttons-mobile a:first-child {
+        border-radius: $border-radius-default 0 0 0;
+    }
+
+	.exi-transitional .org-wizard .org-page-body--body .mol-wizard-action-buttons-mobile button:last-child,
+    .exi-transitional .org-wizard .org-page-body--body .mol-wizard-action-buttons-mobile a:last-child {
+        border-radius: 0;
+    }
+}

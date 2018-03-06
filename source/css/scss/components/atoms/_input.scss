@@ -1,0 +1,72 @@
+
+/*
+TABLE OF CONTENTS
+- General
+  - Disabled
+- Form Group 
+- Form Control 
+*/
+
+
+/* GENERAL */
+.exi-transitional label {
+    cursor: pointer;
+	display: inline-block;
+	max-width: 100%;
+	font-weight: $text-weight-bold;
+	margin: 0 0 $margin-xxs 0;
+}
+
+.exi-transitional legend {
+    font-size: $text-size-md;
+    border: none;
+    margin: 0 0 $margin-sm 0;
+}
+
+/* Disabled */
+.exi-transitional input:disabled {
+    cursor: not-allowed;
+	color: $color-text-muted;
+}
+
+
+/*----------------------------------------*/
+
+
+/* FORM GROUP */
+/* Color change to pass contrast validation */
+.exi-transitional .form-group .help-block {
+    color: $mineshaft-gray;
+}
+
+.exi-transitional .form-group, .exi-transitional .form-group:last-child {
+    margin: 0 0 $margin-md 0;
+	padding: 0;
+}
+
+/* Controlling max widths of input fields in different layouts 
+@media (min-width: 769px) {
+    .exi-transitional .form-group input, .exi-transitional .form-group textarea, .exi-transitional .form-group select {
+        max-width: 35rem;
+    }
+}*/
+
+/* Added for Page Control Bar component 
+@media (max-width: 768px) {
+    .exi-transitional .form-group:last-child {
+        margin: 0 0 $margin-sm 0;
+    }
+}*/
+
+
+
+/*----------------------------------------*/
+
+
+
+/* FORM CONTROL */
+.exi-transitional .form-control {
+    height: 3.5rem;
+    padding: $padding-sm $padding-md;
+	@extend %border-default;
+}

@@ -1,0 +1,180 @@
+
+/*
+TABLE OF CONTENTS
+- General
+- Heading
+- Body
+  - Inner Column Spacing
+- Footer
+- Alternate Styles
+  - Outside
+  - Filled 
+*/
+
+
+
+/* GENERAL */
+/* Generic Page Panel styles (Page Banner, Alerts, Main Page Panel, etc.) */
+.exi-transitional main .mol-block {
+    position: relative;
+    margin: 0 0 $margin-xl 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/* Put space between blocks on rows */
+@media (min-width: 769px) {
+    .exi-transitional main [class^="col-"]:first-of-type .mol-block {
+        margin: 0 $margin-xl $margin-xl 0;
+    }
+}
+
+
+
+/*----------------------------------*/
+
+
+
+/* HEADING */
+.exi-transitional main .mol-block .mol-block--heading {
+    position: relative;
+    margin: 0;
+    padding: $padding-sm 4rem $padding-sm $padding-lg;
+    background: $color-branding-header;
+    border-radius: $border-radius-default $border-radius-default 0 0;
+    border: none;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+    /* Page Body Title */
+    .exi-transitional main .mol-block .mol-block--heading h3 {
+        font-size: $text-size-xxl;
+        color: $color-text-light;
+        font-weight: 400;
+    }
+
+    /* Help Button */
+    .exi-transitional main .mol-block .mol-block--heading .mol-help-button {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: $color-text-light;
+    }
+
+
+
+/*----------------------------------*/
+
+
+
+/* BODY */
+.exi-transitional main .mol-block .mol-block--body {
+    position: relative;
+	margin: 0;
+    padding: $padding-lg $padding-lg .1rem $padding-lg;
+    background: $color-default-default;
+    border-radius: 0 0 $border-radius-default $border-radius-default;
+    @extend %border-default;
+    border-top: none;
+	@include clearfix;
+}
+
+/* Heading Styles */
+.exi-transitional main .mol-block .mol-block--body h4 {
+	font-size: 2rem;
+}
+
+.exi-transitional main .mol-block .mol-block--body h5 {
+	font-size: 1.6rem;
+}
+
+.exi-transitional main .mol-block .mol-block--body h6 {
+	font-size: 1.4rem;
+}
+
+/* Inner Column Spacing */
+
+    /* Create a gutter between columns */
+    .exi-transitional .mol-block .mol-block--body [class^="col-"]:first-of-type {
+        width: calc(50% - 1.6rem);
+        margin-right: $margin-lg;
+    }
+
+/* Set columns to full body width to avoid columns that are too narrow while block is still 50% viewport width */
+@media (max-width: 992px) {
+    .exi-transitional .mol-block .mol-block--body [class^="col-"],
+    .exi-transitional .mol-block .mol-block--body [class^="col-"]:first-of-type {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Set columns back to half body width to take advantage of available real estate due to block becoming 100% viewport width */
+@media (max-width: 768px) {
+    .exi-transitional .mol-block .mol-block--body [class^="col-"] {
+        float: left;
+        width: 50%;
+    }
+
+        .exi-transitional .mol-block .mol-block--body [class^="col-"]:first-of-type {
+            float: left;
+            width: calc(50% - 1.6rem);
+            margin-right: $margin-lg;
+        }
+}
+
+/* Set columns back to full body width for smallest viewport size */
+@media (max-width: 512px) {
+    .exi-transitional .mol-block .mol-block--body [class^="col-"],
+    .exi-transitional .mol-block .mol-block--body [class^="col-"]:first-of-type {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+
+/*----------------------------------*/
+
+
+
+/* FOOTER */
+.exi-transitional main .mol-block .mol-block--footer {
+    text-align: right;
+    margin: $margin-neg-xxs 0 0 0;
+    padding: 0 $padding-lg $padding-lg $padding-lg;
+    background: $color-default-default;
+    border-radius: 0 0 $border-radius-default $border-radius-default;
+    @extend %border-default;
+    border-top: none;
+    box-shadow: none;
+}
+
+
+
+/*----------------------------------*/
+
+
+/* ALTERNATE STYLES */
+/* LIGHT STYLE */
+.exi-transitional main .mol-block.light .mol-block--heading {
+    padding: $padding-md 4rem 0 $padding-lg;
+    background: $color-default-default;
+    @extend %border-default;
+    border-bottom: none;
+}
+
+    /* Page Body Title */
+    .exi-transitional main .mol-block.light .mol-block--heading h3 {
+        color: $color-text-dark;
+        margin: 0;
+    }
+
+    /* Help Button */
+    .exi-transitional main .mol-block.light .mol-block--heading .mol-help-button {
+        color: $color-text-link;
+    }

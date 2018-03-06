@@ -1,0 +1,47 @@
+/* Container */
+.exi-transitional .mol-numeric-range-input .mol-text-input {
+    display: inline-block;
+}
+
+/* Input fields */
+.exi-transitional .mol-numeric-range-input .mol-text-input input {
+    width: 7em;
+}
+
+/* Hint text */
+.exi-transitional .mol-numeric-range-input .mol-text-input label {
+	width: 10rem;
+}
+
+/* "to" horizontal layout */
+.exi-transitional .mol-numeric-range-input .to {
+    display: inline-block;
+    width: 2.4rem;
+    text-align: center;
+}
+
+/* Validation alert */
+.exi-transitional .mol-numeric-range-input .alert {
+    margin: 0 0 1.2rem 0;
+    width: 22.8rem;
+}
+
+/* Vertical layout */
+@media (max-width: 420px) {
+    .exi-transitional .mol-numeric-range-input .mol-text-input {
+        display: block;
+    }
+
+    .exi-transitional .mol-numeric-range-input .to {
+        display: block;
+        text-align: left;
+        margin: 0 0 $margin-xxs 0;
+    }
+}
+
+/* Optional vertical layout - Add class "block" to force a vertical layout at any viewport size */
+.exi-transitional .mol-numeric-range-input .to.block {
+    display: block;
+    text-align: left;
+    margin: 0 0 $margin-xxs 0;
+}

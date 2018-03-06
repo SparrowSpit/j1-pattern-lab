@@ -1,0 +1,243 @@
+<!-- Page Structure MAIN start (here for context, not part of this organism) -->
+<main aria-label="Main Content">
+
+    <div class="row">
+        {{#wizardStyle1}}
+        {{> organisms-page-body-open}}
+        {{/wizardStyle1}}
+
+        {{> organisms-page-body-heading-open}}
+        <!-- Page Body Title -->
+        <h3>Wizard Title (Default Style)</h3>
+
+        {{> molecules-help-button}}
+        {{> organisms-page-body-heading-close}}
+
+        {{> organisms-page-body-body-open}}
+        <!-- Left wizard column start -->
+        <section class="org-wizard--col1" role="region" aria-labelledby="org-wizard--progressdescription">
+            {{> molecules-progress-trail}}
+        </section>
+        <!-- Left wizard column end -->
+        <!-- Central wizard column start -->
+        <div class="org-wizard--col2" role="form" aria-labelledby="org-wizard--formdescription">
+
+            <!-- Wizard Section Title -->
+            <h4 id="org-wizard--formdescription">
+                <span class="sr-only">Form Inputs for Step 3 of 6 - </span>
+                Resources
+            </h4>
+
+            <!-- Side-by-side fields start -->
+            <div class="org-wizard--sidebyside">
+                <!-- Text Input -->
+                <div class="form-group mol-text-input">
+                    <label for="text-label1">
+                        Text Field 1
+                    </label>
+                    <input type="text" class="form-control" id="text-label1" name="text-label">
+                </div>
+
+                <!-- Text Input -->
+                <div class="form-group mol-text-input">
+                    <label for="text-label2">
+                        Text Field 2
+                    </label>
+                    <input type="text" class="form-control" id="text-label2" name="text-label">
+                </div>
+
+            </div>
+            <!-- Side-by-side fields end -->
+            <!-- Text Input -->
+            <div class="form-group mol-text-input">
+                <label for="text-label3">
+                    Text Field 3
+                </label>
+                <input type="text" class="form-control" id="text-label3" name="text-label">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group mol-text-input">
+                <label for="text-label4">
+                    Text Field 4
+                </label>
+                <input type="text" class="form-control" id="text-label4" name="text-label">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group mol-text-input">
+                <label for="text-label5">
+                    Text Field 5
+                </label>
+                <input type="text" class="form-control" id="text-label5" name="text-label">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group mol-text-input">
+                <label for="text-label6">
+                    Text Field 6
+                </label>
+                <input type="text" class="form-control" id="text-label6" name="text-label">
+            </div>
+
+        </div>
+        <!-- Central wizard column end -->
+        <!-- Right wizard column start -->
+        <div class="org-wizard--col3">
+            <!-- Wizard Action Button(s) -->
+            <!-- Desktop nav start -->
+            <nav class="mol-wizard-action-buttons-desktop" aria-label="Wizard navigation options">
+                <button type="button" class="atom-button atom-button--primary">
+                    Save and continue
+                </button>
+                <button type="button" class="atom-button">
+                    Save and finish later
+                </button>
+            </nav>
+            <!-- Desktop nav end -->
+            <!-- Mobile nav start -->
+            <nav class="mol-wizard-action-buttons-mobile" aria-label="Wizard navigation options">
+                <!-- Split button -->
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-primary">Save and continue</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#">Save and finish later</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Mobile nav end -->
+        </div>
+        <!-- Right wizard column end -->
+        {{> organisms-page-body-body-close}}
+
+        {{> organisms-page-body-close}}
+
+    </div>
+    <!-- row end -->
+
+
+    <div class="row">
+        {{#wizardStyle2}}
+        {{> organisms-page-body-open}}
+        {{/wizardStyle2}}
+
+        {{> organisms-page-body-heading-open}}
+        <!-- Page Body Title -->
+        <h3>Wizard Title (Separate Style)</h3>
+
+        {{> molecules-help-button}}
+        {{> organisms-page-body-heading-close}}
+
+        {{> organisms-page-body-body-open}}
+        <!-- Left wizard column start -->
+        <section class="org-wizard--col1" role="region" aria-labelledby="org-wizard--progressdescription">
+            {{> molecules-progress-trail}}
+        </section>
+        <!-- Left wizard column end -->
+        <!-- Central wizard column start -->
+        <div class="org-wizard--col2" role="form" aria-labelledby="org-wizard--formdescription">
+
+            <!-- Wizard Section Title -->
+            <h4 id="org-wizard--formdescription">
+                <span class="sr-only">Form Inputs for Step 3 of 6 - </span>
+                Resources
+            </h4>
+
+            <!-- Side-by-side fields start -->
+            <div class="org-wizard--sidebyside">
+                <!-- Text Input -->
+                <div class="form-group mol-text-input">
+                    <label for="text-label1">
+                        Text Field 1
+                    </label>
+                    <input type="text" class="form-control" id="text-label1" name="text-label">
+                </div>
+
+                <!-- Text Input -->
+                <div class="form-group mol-text-input">
+                    <label for="text-label2">
+                        Text Field 2
+                    </label>
+                    <input type="text" class="form-control" id="text-label2" name="text-label">
+                </div>
+
+            </div>
+            <!-- Side-by-side fields end -->
+            <!-- Text Input -->
+            <div class="form-group mol-text-input">
+                <label for="text-label3">
+                    Text Field 3
+                </label>
+                <input type="text" class="form-control" id="text-label3" name="text-label">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group mol-text-input">
+                <label for="text-label4">
+                    Text Field 4
+                </label>
+                <input type="text" class="form-control" id="text-label4" name="text-label">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group mol-text-input">
+                <label for="text-label5">
+                    Text Field 5
+                </label>
+                <input type="text" class="form-control" id="text-label5" name="text-label">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group mol-text-input">
+                <label for="text-label6">
+                    Text Field 6
+                </label>
+                <input type="text" class="form-control" id="text-label6" name="text-label">
+            </div>
+
+        </div>
+        <!-- Central wizard column end -->
+        <!-- Right wizard column start -->
+        <div class="org-wizard--col3">
+            <!-- Wizard Action Button(s) -->
+            <!-- Desktop nav start -->
+            <nav class="mol-wizard-action-buttons-desktop" aria-label="Wizard navigation options">
+                <button type="button" class="atom-button atom-button--primary">
+                    Save and continue
+                </button>
+                <button type="button" class="atom-button">
+                    Save and finish later
+                </button>
+            </nav>
+            <!-- Desktop nav end -->
+            <!-- Mobile nav start -->
+            <nav class="mol-wizard-action-buttons-mobile" aria-label="Wizard navigation options">
+                <!-- Split button -->
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-primary">Save and continue</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#">Save and finish later</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Mobile nav end -->
+        </div>
+        <!-- Right wizard column end -->
+        {{> organisms-page-body-body-close}}
+
+        {{> organisms-page-body-close}}
+
+    </div>
+    <!-- row end -->
+
+
+</main>
+<!-- Page Structure MAIN end -->

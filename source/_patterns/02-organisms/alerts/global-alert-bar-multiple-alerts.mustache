@@ -1,0 +1,147 @@
+<!-- Modal triggers start -->
+<div class="col-sm-3 mol-select-input">
+  <label for="alert-trigger">Launch an Alert Bar example!</label>
+  <select class="form-control" id="alert-trigger" name="alert-trigger">
+    <option value="" disabled selected>Choose your alert</option>
+    <option value="single-alert">Single Alert Bar</option>
+    <option value="multiple-alerts">Multiple Alert Bar</option>
+    <option value="alert-header">Alert Header</option>
+  </select>
+</div>
+<!-- Modal triggers end -->
+
+
+  <div id="single-alert" class="alert-hide">
+
+  <!-- BEGIN SINGLE ALERT BAR -->
+  {{> organisms-global-alert-bar-open(styleModifier: "org-global-alert-bar slideInUp") }}
+
+    <x-alert-bar-message-list class="alert-single warning-alert container-message" mode="single">
+      <x-alert-bar-message id="" status="warning">
+        {{{ glyphicon-warning }}} 
+        <p>A message of warning for the user. It may inclue a link <a href="#">to somewhere helpful</a>. But this one could be longer so here goes.</p>
+
+          <!-- Close notification button -->
+        {{> molecules-close}}
+      </x-alert-bar-message>
+    </x-alert-bar-message-list> 
+
+  {{>organisms-global-alert-bar-close}}
+  <!-- END SINGLE ALERT BAR -->
+  </div>
+
+
+<div id="multiple-alerts" class="alert-hide">
+
+<!-- BEGIN MULTIPLE ALERTS BAR -->
+{{> organisms-global-alert-bar-open(styleModifier: "org-global-alert-bar slideInUp ") }}
+
+  <p class="init-alert"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> 
+    You have <b>4 alerts</b>.
+    {{#buttonHide}}
+      {{> atoms-button-core}}
+    {{/buttonHide}} 
+  </p>
+
+  <!-- BEGIN CONTAINER MESSAGE -->
+  <!-- devs using mode="all", so utilitzing this for css too -->
+  <x-alert-bar-message-list class="container-message" mode="all">
+
+    <!-- ALERT ITEM -->
+  <x-alert-bar-message status="danger">
+    <div class="alert-single danger-alert">
+      {{{ glyphicon-danger }}} 
+      <p>A message of danger for the user. It may inclue a link <a href="#">to somewhere necessary</a>.</p>
+
+      <!-- Close notification button -->
+      {{> molecules-close}}
+    </div>
+  </x-alert-bar-message>     
+
+
+  <!-- ALERT ITEM -->
+  <x-alert-bar-message status="warning">
+    <div class="alert-single warning-alert">
+      {{{ glyphicon-warning }}} 
+      <p>A message of warning for the user. It may inclue a link <a href="#">to somewhere helpful</a>. But this one could be longer so here goes. And maybe some more text like this so that it's even longer.</p>
+
+      <!-- Close notification button -->
+      {{> molecules-close}}
+
+    </div>
+  </x-alert-bar-message> 
+
+  <!-- ALERT ITEM -->
+  <x-alert-bar-message status="warning">
+    <div class="alert-single warning-alert">
+      {{{ glyphicon-success }}} 
+      <p>A message of warning for the user. It may inclue a link <a href="#">to somewhere helpful</a>. It's not always easy to predict how much text could appear somewhere. They're a mystery.</p>
+
+      <!-- Close notification button -->
+      {{> molecules-close}}
+    </div>
+  </x-alert-bar-message>
+
+    <!-- ALERT ITEM -->
+  <x-alert-bar-message status="success">
+    <div class="alert-single success-alert">
+      {{{ glyphicon-success }}} 
+      <p>A message of success for the user. It may inclue a link <a href="#">to somewhere delightful</a>.</p>
+
+      <!-- Close notification button -->
+      {{> molecules-close}}
+    </div>
+  </x-alert-bar-message>  
+
+    <!-- ALERT ITEM -->
+  <x-alert-bar-message status="success">
+    <div class="alert-single success-alert">
+      {{{ glyphicon-success }}} 
+      <p>A message of success for the user. It may inclue a link <a href="#">to somewhere delightful</a>.</p>
+
+      <!-- Close notification button -->
+      {{> molecules-close}}
+    </div>
+  </x-alert-bar-message>             
+
+
+  </x-alert-bar-message-list>
+  <!-- END CONTAINER MESSAGE -->
+  
+
+{{>organisms-global-alert-bar-close}}
+<!-- END MULTIPLE ALERTS BAR -->
+</div>
+
+
+
+<div id="alert-header" class="alert-hide">
+
+<!-- BEGIN ALERT HEADER -->
+{{>organisms-global-alert-bar-open(styleModifier: "org-global-alert-bar alert-dismissable slideInUp ")  }}
+
+  <p class="init-alert"><span class="glyphicon glyphicon-chevron-down"></span> 
+    You have <b>3 alerts</b>.
+      {{#buttonShow}}
+        {{> atoms-button-core}}
+      {{/buttonShow}} 
+  </p>
+
+{{>organisms-global-alert-bar-close}}
+<!-- END ALERT HEADER -->
+</div>
+
+<script type="text/javascript"> 
+
+  $(function() {
+    $('#alert-trigger').change(function() {
+      $('.alert-hide').hide();
+      $('#' + $(this).val()).show();
+    });
+  });
+
+</script>
+    
+
+
+  

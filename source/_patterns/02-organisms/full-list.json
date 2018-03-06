@@ -1,0 +1,23 @@
+{
+	"panelTag" : "article",
+	"panelClass" : "panel mol-panel org-full-list",
+	"panelAttribute" : "",
+	"panelHeadingTag" : "div",
+	"panelHeadingClass" : "panel-heading",
+	"panelHeadingTitle" : "<h3 class=\"panel-title\" id=\"full-list-title\">Full List Title<\/h3>",
+	"panelHeadingAttribute" : "",
+	"panelBodyTag" : "div",
+	"panelBodyClass" : "panel-body",
+	"panelBodyAttribute" : "",
+	"panelFooterTag" : "div",
+	"panelFooterClass" : "panel-footer",
+	"panelFooterAttribute" : "",
+	"fullListControlBar" : {
+		"panelTag" : "div",
+		"panelClass" : "panel mol-panel mol-full-list-control-bar",
+		"panelAttribute" : "",
+		"panelBodyTag" : "div",
+		"panelBodyClass" : "panel-body",
+		"panelBodyAttribute" : ""
+	}
+}

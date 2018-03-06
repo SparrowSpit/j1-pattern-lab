@@ -1,0 +1,10 @@
+{
+	"molClass": " mol-full-list-quick-filter",
+	"molLabel": "<label for=\"quick-filter\">Quick Filters<\/label>",
+	"molId": "id=\"quick-filter\"",
+	"option1": "<option value=\"AL\">Alabama (23)<\/option>",
+	"option2": "<option value=\"AK\">Alaska (1)<\/option>",
+	"option3": "<option value=\"TX\">Texas (12)<\/option>",
+	"option4": "<option value=\"VA\">Virginia (200)<\/option>",
+	"option5": "<option value=\"WY\">Wyoming (32)<\/option>"
+}

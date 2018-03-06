@@ -1,0 +1,56 @@
+
+/*
+TABLE OF CONTENTS
+- Button
+- Popover
+  - Available states
+*/
+
+
+/* BUTTON */
+.exi-transitional .mol-list-key > .btn {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*-------------------------------------------*/
+
+
+
+/* POPOVER */
+.exi-transitional .mol-list-key .list li span {
+    display: inline-block;
+    margin-right: $margin-md;
+    width: 2.4rem;
+    height: 2.4rem;
+    vertical-align: middle;
+    @extend %border-default;
+}
+
+/* Available States */
+/* Success */
+.exi-transitional .mol-list-key .list li.full-list-key-success span {
+    background: $color-success-background;
+}
+
+/* Warning */
+.exi-transitional .mol-list-key .list li.full-list-key-warning span {
+    background: $color-warning-background;
+}
+
+/* Danger */
+.exi-transitional .mol-list-key .list li.full-list-key-danger span {
+    background: $color-danger-background;
+}
+
+/* Past */
+.exi-transitional .mol-list-key .list li.full-list-key-past span {
+    background: $color-past-background;
+}
+
+/* Inactive */
+.exi-transitional .mol-list-key .list li.full-list-key-inactive span {
+    @extend %gradient-inactive;
+}

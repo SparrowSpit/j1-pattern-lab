@@ -1,0 +1,52 @@
+
+/* TABLE OF CONTENTS 
+- Resets
+- Demo Only
+*/
+
+
+/* RESETS */
+/* Set panel header or footer to no BG color or border */
+.panel .blank {
+    color: #000 !important;
+    background: none !important;
+	border: none !important;
+}
+
+
+
+/*--------------------------------*/
+
+
+
+/* CLEARFIX (used to clear floats within an element) */
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+
+
+/*  DEMO ONLY */
+.pl-example-container {
+	margin: 0 0 2.5rem 0;
+}
+
+.pl-example-container > h4 {
+	color: red !important;
+}
+
+
+// LABEL WITH A CLASS OF DISABLED
+.exi-transitional label.disabled {
+  color: #767676;
+    
+    &:hover {
+      cursor: not-allowed;
+    }
+}
+
+

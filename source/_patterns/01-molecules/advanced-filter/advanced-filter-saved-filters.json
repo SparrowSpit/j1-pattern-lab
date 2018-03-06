@@ -1,0 +1,135 @@
+{
+	"genSelect" : {
+		"molSelectInput" : {
+			"labelClass": "",
+			"labelFor": "genSelect",
+			"labelText": "Saved Filters"
+		},
+		"atomSelectInput" : {
+			"id": "genSelect"
+		}
+    },
+	"genEdit" : {
+		"buttonClass": "btn btn-link btn-sm saved-filter-editing",
+		"buttonText": "Edit",
+		"buttonSronly2": "<span class=\"sr-only\"> the saved filters for the accompanying list<\/span>"
+	},
+	"genApply" : {
+		"buttonClass": "btn btn-primary btn-xs",
+		"buttonText": "Apply",
+		"buttonSronly2": "<span class=\"sr-only\"> a saved set of filters to the accompanying list from the following selections<\/span>"
+	},
+	"saveInput" : {
+		"atomcoreType": "text",
+		"atomcoreClass": "class=\"form-control\"",
+		"atomcoreId": "text-label",
+		"atomcoreName": "text-label",
+		"atomcoreArialabel": "",
+		"atomcoreAriadescribedby": "",
+		"atomcoreDisabled": "",
+		"atomcorePlaceholder": "",
+		"molcoreFormGroupClass": "form-group",
+		"molcoreMolClass": " mol-text-input",
+		"molcoreLabelClass": "",
+		"molcoreLabelId": "",
+		"molcoreLabelFor": "saveEdit",
+		"molcoreLabelTextPos1": "Save the Current Filters As...",
+		"molcoreLabelDesc": "",
+		"molcoreLabelClosePos1": "<\/label>",
+		"molcoreLabelClosePos2": ""
+    },
+	"saveDefault" : {
+		"molCheckbox" : {
+			"atomcoreType": "checkbox",
+			"atomcoreClass": "",
+			"atomcoreId": "saveDefault",
+			"atomcoreName": "Set as default",
+			"atomcoreArialabel": "",
+			"atomcoreAriadescribedby": "",
+			"atomcoreDisabled": "",
+			"atomcorePlaceholder": "",
+			"molcoreFormGroupClass": "",
+			"molcoreMolClass": "checkbox mol-checkbox",
+			"molcoreLabelClass": "",
+			"molcoreLabelId": "",
+			"molcoreLabelFor": "saveDefault",
+			"molcoreLabelTextPos1": "",
+			"molcoreLabelTextPos2": "Set as default",
+			"molcoreLabelDesc": "",
+			"molcoreLabelClosePos1": "", 
+			"molcoreLabelClosePos2": "<\/label>"
+		}
+	},
+	"saveSave" : {
+		"buttonClass": "btn btn-primary btn-xs",
+		"buttonText": "Save",
+		"buttonSronly2": "<span class=\"sr-only\"> the currently selected filters for later use<\/span>"
+	},
+	"saveCancel" : {
+		"buttonClass": "btn btn-default btn-xs",
+		"buttonText": "Cancel",
+		"buttonSronly2": "<span class=\"sr-only\"> saving the current filters<\/span>"
+	},
+	"editDone" : {
+		"buttonClass": "btn btn-link btn-sm saved-filter-editing",
+		"buttonText": "Done editing",
+		"buttonSronly2": "<span class=\"sr-only\"> the saved filters<\/span>"
+	},
+	"editSavedList1" : {
+		"buttonDropdown": {
+			"buttonClass": "btn btn-link",
+			"buttonDisabled": "",
+			"buttonText": "<span class=\"sr-only\">Saved filter options<\/span>",
+			"buttonCaret": "",
+			"buttonGlyphicon": "",
+			"buttonGlyphicon2": "<span class=\"glyphicon glyphicon-option-horizontal\" aria-hidden=\"true\"><\/span>",
+			"buttonDataToggle": " data-toggle=\"dropdown\"",
+			"buttonAriaPopup": " aria-haspopup=\"true\"",
+			"buttonAriaExpanded": " aria-expanded=\"false\"",
+			"buttonAriaLabel": ""
+		},
+		"btnDropdownHeading": "",
+		"btnDropdownOpt1": "<li><button type=\"button\">Delete<\/button><\/li>",
+		"btnDropdownOpt2": "",
+		"btnDropdownDivider": "",
+		"btnDropdownOpt3": "<li><button type=\"button\" disabled>Set as default<\/button><\/li>"
+	},
+	"editSavedList2" : {
+		"buttonDropdown": {
+			"buttonClass": "btn btn-link",
+			"buttonDisabled": "",
+			"buttonText": "<span class=\"sr-only\">Saved filter options<\/span>",
+			"buttonCaret": "",
+			"buttonGlyphicon": "",
+			"buttonGlyphicon2": "<span class=\"glyphicon glyphicon-option-horizontal\" aria-hidden=\"true\"><\/span>",
+			"buttonDataToggle": " data-toggle=\"dropdown\"",
+			"buttonAriaPopup": " aria-haspopup=\"true\"",
+			"buttonAriaExpanded": " aria-expanded=\"false\"",
+			"buttonAriaLabel": ""
+		},
+		"btnDropdownHeading": "",
+		"btnDropdownOpt1": "<li><button type=\"button\">Delete<\/button><\/li>",
+		"btnDropdownOpt2": "",
+		"btnDropdownDivider": "",
+		"btnDropdownOpt3": "<li><button type=\"button\">Set as default<\/button><\/li>"
+	},
+	"editSavedList3" : {
+		"buttonDropdown": {
+			"buttonClass": "btn btn-link",
+			"buttonDisabled": "",
+			"buttonText": "<span class=\"sr-only\">Saved filter options<\/span>",
+			"buttonCaret": "",
+			"buttonGlyphicon": "",
+			"buttonGlyphicon2": "<span class=\"glyphicon glyphicon-option-horizontal\" aria-hidden=\"true\"><\/span>",
+			"buttonDataToggle": " data-toggle=\"dropdown\"",
+			"buttonAriaPopup": " aria-haspopup=\"true\"",
+			"buttonAriaExpanded": " aria-expanded=\"false\"",
+			"buttonAriaLabel": ""
+		},
+		"btnDropdownHeading": "",
+		"btnDropdownOpt1": "<li><button type=\"button\">Delete<\/button><\/li>",
+		"btnDropdownOpt2": "",
+		"btnDropdownDivider": "",
+		"btnDropdownOpt3": "<li><button type=\"button\">Set as default<\/button><\/li>"
+	}
+}

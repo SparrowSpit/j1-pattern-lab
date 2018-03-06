@@ -1,0 +1,111 @@
+
+/*
+TABLE OF CONTENTS
+- Color Variables (The colors themselves)
+- Global Purpose Variables (How the colors get used)
+*/
+
+
+/* COLOR VARIABLES */
+$white: #ffffff;
+$black: #000000;
+$concrete: #f2f2f2;
+$athens-gray: #eceef1;
+$gallery-gray: #ededed;
+$iron-gray: #d2d6db;
+$dawn-gray: #a09c95;
+$boulder-gray: #767676;
+$shuttle-gray: #5c6368;
+$mako-gray: #42494e;
+$space-gray: #393f43;
+$mineshaft-gray: #333333;
+$taupe-gray: #afa991; /* task icon color */
+$dusty-gray: #9c9c9c; /* Calendar course */
+$anakiwa-blue: #94d2ff;
+$astral-blue: #0a8dff;
+$tropaz-blue: #0069c4;
+$pattens-blue: #d7edff;
+$mystic-blue: #e1e9ef; /* message icon background */
+$casper-blue: #a1b6c6; /* message icon color */
+$cornflower-blue: #88c2e6; /* message block */
+$shakespeare-blue: #4294ca; /* message badge */
+$fountain-blue: #6aa4c1; /* Calendar meetings */
+$halfbaked-blue: #7fbbce; /* Progress bar 1 */
+$fuschia-blue: #7fbbce; /* Calendar items - Employee */
+$laurel-green: #007504;
+$romance-green: #def8df;
+$bermuda-green: #7cdcba; /* Progress bar 5 */
+$persian-green: #00a79b; /* Calendar events */
+$brown: #965800;
+$papaya-brown: #ffeed2;
+$cumin-brown: #994121; /* Progress bar 6 */
+$guardsman-red: #ba0000;
+$cosmos-red: #ffd5d5;
+$carmine-red: #a8383b; /* Progress bar 9 */
+$citrine-white: #fbf8e0; /* task body */
+$whiterock-white: #e5e3cd; /* task icon background */
+$robroy-orange: #eac075; /* task heading */
+$golden-orange: #d98517; /* task badge-button */
+$macncheese-orange: #fcbb78; /* Progress bar 4 */
+$lavender-purple: #c77ed0; /* Calendar highlight */
+$mulberry-purple: #bb4b85; /* Calendar external */
+$rum-purple: #846e90; /* Calendar block heading */
+$scampi-purple: #5e63a1; /* Progress bar 8 */
+$deluge-purple: #8a63a9; /* Progress bar 10 */
+$buddha-gold: #b4a000; /* Calendar advising */
+$energy-yellow: #f6d96b; /* Progress bar 2 */
+$turmeric-yellow: #d1cb4d; /* Progress bar 7 */
+$charisma-pink: #e37cb8; /* Progress bar 3 */
+
+
+/*--------------------------------*/
+
+
+/* GLOBAL PURPOSE VARIABLES */
+/* Branding */
+$color-branding-main: $shuttle-gray;
+$color-branding-secondary: $mako-gray;
+$color-branding-tertiary: $mineshaft-gray;
+$color-branding-highlight1: $tropaz-blue;
+$color-branding-highlight2: $anakiwa-blue;
+$color-branding-highlight3: $tropaz-blue;
+$color-branding-header: $dawn-gray;
+$color-branding-background: $athens-gray;
+$color-branding-background-2nd: $white;
+$color-branding-background-3rd: $iron-gray;
+$color-branding-background-4th: $shuttle-gray;
+
+/* Utility */
+$color-default-default: $white;
+$color-primary-default: $tropaz-blue;
+$color-past-default: $mineshaft-gray;
+$color-past-background: $iron-gray;
+$color-success-default: $laurel-green;
+$color-success-background: $romance-green;
+$color-warning-default: $brown;
+$color-warning-background: $papaya-brown;
+$color-danger-default: $guardsman-red;
+$color-danger-background: $cosmos-red;
+
+/* Text */
+$color-text-default: $mineshaft-gray;
+$color-text-link: $tropaz-blue;
+$color-text-link-highlight: $astral-blue;
+$color-text-muted: $boulder-gray;
+$color-text-muted-2nd: $iron-gray; /* Use only for non-read text like pipe separators! */
+$color-heading-default: $mineshaft-gray;
+$color-text-light: $white;
+$color-text-dark: $mineshaft-gray;
+
+/* Borders */
+$color-border-default: $iron-gray;
+
+/* Gradients */
+%gradient-inactive { 
+	background: $white;
+	background-image: repeating-linear-gradient(-45deg, transparent, transparent .5em, $athens-gray .5em, $athens-gray 1em);
+}
+
+/* Hover States */
+$color-hover-background-light: rgba(255, 255, 255, 0.5);
+$color-hover-background-dark: rgba(0, 0, 0, 0.5);

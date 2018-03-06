@@ -1,0 +1,16 @@
+
+
+.exi-transitional .atom-button.atom-button--text.mol-help-button {
+    font-size: 2.08rem;
+    opacity: .5;
+    text-decoration: none;
+    @extend %transition-default;
+}
+
+    .exi-transitional .atom-button.atom-button--text.mol-help-button:hover, 
+	.exi-transitional .atom-button.atom-button--text.mol-help-button:active, 
+	.exi-transitional .atom-button.atom-button--text.mol-help-button:focus {
+        opacity: 1;
+		text-decoration: none;
+    }
+

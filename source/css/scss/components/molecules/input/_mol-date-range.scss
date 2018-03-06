@@ -1,0 +1,38 @@
+
+/* Container */
+.exi-transitional .mol-date-range-input .mol-date-input {
+    display: inline-block;
+}
+
+/* Input fields */
+.exi-transitional .mol-date-range-input .mol-date-input input {
+    width: 7em;
+}
+
+/* "to" horizontal layout */
+.exi-transitional .mol-date-range-input .to {
+    display: inline-block;
+    width: 2.4rem;
+    text-align: center;
+}
+
+/* Vertical layout */
+@media (max-width: 420px) {
+    .exi-transitional .mol-date-range-input .mol-date-input {
+        display: block;
+        width: 7em;
+    }
+
+    .exi-transitional .mol-date-range-input .to {
+        display: block;
+        text-align: left;
+        margin: 0 0 $margin-xxs 0;
+    }
+}
+
+/* Optional vertical layout - Add class "block" to force a vertical layout at any viewport size */
+.exi-transitional .mol-date-range-input .to.block {
+    display: block;
+    text-align: left;
+    margin: $margin-neg-sm 0 $margin-xs 0;
+}

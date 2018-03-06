@@ -1,0 +1,26 @@
+{
+	"buttonAdvFilterControlBarClear": {
+		"buttonClass": "btn btn-link btn-sm filter-reset",
+		"buttonDisabled": "",
+		"buttonText": "Clear all",
+		"buttonCaret": "",
+		"buttonGlyphicon": "",
+		"buttonGlyphicon2": "",
+		"buttonDataToggle": "",
+		"buttonAriaPopup": "",
+		"buttonAriaExpanded": "",
+		"buttonAriaLabel": " aria-label=\"Clear all current filter selections\""
+	},
+	"buttonAdvFilterControlBarReset": {
+		"buttonClass": "btn btn-link btn-sm filter-reset",
+		"buttonDisabled": "",
+		"buttonText": "Reset filters",
+		"buttonCaret": "",
+		"buttonGlyphicon": "",
+		"buttonGlyphicon2": "",
+		"buttonDataToggle": "",
+		"buttonAriaPopup": "",
+		"buttonAriaExpanded": "",
+		"buttonAriaLabel": " aria-label=\"Reset all filters to their system default\""
+	}
+}

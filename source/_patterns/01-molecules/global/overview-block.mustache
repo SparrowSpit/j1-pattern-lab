@@ -1,0 +1,195 @@
+<!-- Page Structure MAIN start (here for context, not part of this organism) -->
+<main aria-label="Main Content">
+
+  <div class="row">
+
+    <div class="col-sm-6">
+
+      <!-- EMPTY BLOCK START -->
+      {{#blockStyle1}}
+      {{> molecules-block-open}}
+      {{/blockStyle1}}
+
+      {{> molecules-block-heading-open}}
+      <!-- Block Title -->
+      <h3 id="block1">
+        <span class="glyphicon glyphicon-eye-open"></span> 
+        Overview
+      </h3>
+
+      {{> molecules-help-button}}
+      {{> molecules-block-heading-close}}
+
+      {{> molecules-block-body-open}}
+
+        <!-- Standard "nothing to show" message -->
+        <h4 class="mol-overview-block--empty">Currently, there is no information available.</h4>
+
+      {{> molecules-block-body-close}}
+
+      {{> molecules-block-close}}
+      <!-- EMPTY BLOCK END -->
+
+
+      <!-- SIMPLE BLOCK START -->
+      {{#blockStyle2}}
+      {{> molecules-block-open}}
+      {{/blockStyle2}}
+
+      {{> molecules-block-heading-open}}
+      <!-- Block Title -->
+      <h3 id="block2">
+        <span class="glyphicon glyphicon-eye-open"></span> 
+        Overview
+      </h3>
+
+      {{> molecules-help-button}}
+      {{> molecules-block-heading-close}}
+
+      {{> molecules-block-body-open}}
+
+      <h4>Initial Subheading (H4)</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices, velit dictum posuere molestie, lacus turpis porta quam, nec bibendum ligula dolor vitae magna.</p>
+
+    <hr />
+
+    <h5>Secondary Subheading (H5)</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices, velit dictum posuere molestie, lacus turpis porta quam, nec bibendum ligula dolor vitae magna.</p>
+
+    <table>
+      <tr>
+        <th scope="row">Maximum Capacity</th>
+        <td>256</td>
+      </tr>
+      <tr>
+        <th>Square Feet</th>
+        <td>12,324</td>
+      </tr>
+      <tr>
+        <th>Dimensions</th>
+        <td>122 x 64</td>
+      </tr>
+      <tr>
+        <th>On Which Floor</th>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <h6>Tertiary Subheading (H6)</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices, velit dictum posuere molestie, lacus turpis porta quam, nec bibendum ligula dolor vitae magna.</p>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices, velit dictum posuere molestie, lacus turpis porta quam, nec bibendum ligula dolor vitae magna.</p>
+
+      {{> molecules-block-body-close}}
+
+      {{> molecules-block-close}}
+      <!-- SIMPLE BLOCK END -->
+
+    </div>
+    <!-- Closing column -->
+
+    <div class="col-sm-6">
+
+      <!-- VARIETY BLOCK START -->
+      {{#blockStyle3}}
+      {{> molecules-block-open}}
+      {{/blockStyle3}}
+
+      {{> molecules-block-heading-open}}
+      <!-- Block Title -->
+      <h3 id="block3">
+        <span class="glyphicon glyphicon-eye-open"></span> 
+        Overview
+      </h3>
+
+      <!-- Edit overview button -->
+      <button type="button" class="atom-button atom-button--xs mol-edit-overview-button">
+        Edit
+      </button>
+
+      {{> molecules-help-button}}
+      {{> molecules-block-heading-close}}
+
+      {{> molecules-block-body-open}}
+
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>Academic Plans</h4>
+          <h5>of 358 total employees</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices, velit dictum posuere molestie, lacus turpis porta quam, nec bibendum ligula dolor vitae magna.</p>
+        </div>
+        <div class="col-sm-6">
+          <h4>Additional Characteristics</h4>
+
+          <table class="table-checklist">
+            <tr>
+              <th scope="row">Maximum Capacity</th>
+              <td>
+                <span class="glyphicon glyphicon-ok"></span>
+              </td>
+            </tr>
+            <tr>
+              <th>Square Feet</th>
+              <td>
+                <span class="glyphicon glyphicon-ok"></span>
+              </td>
+            </tr>
+            <tr>
+              <th>Dimensions</th>
+              <td>
+                <span class="glyphicon glyphicon-remove"></span>
+              </td>
+            </tr>
+            <tr>
+              <th>On Which Floor</th>
+              <td>
+                <span class="glyphicon glyphicon-ok"></span>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+
+      </div>
+
+      <h4>Initial Subheading (H4)</h4>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices, velit dictum posuere molestie, lacus turpis porta quam, nec bibendum ligula dolor vitae magna.</p>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 35%">
+          <span class="sr-only">35% Complete (success)</span>
+        </div>
+        <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+          <span class="sr-only">20% Complete (warning)</span>
+        </div>
+        <div class="progress-bar progress-bar-danger" style="width: 10%">
+          <span class="sr-only">10% Complete (danger)</span>
+        </div>
+      </div>
+
+      <h4>Employees Out Today</h4>
+      <p class="mol-overview-block--emptysection">No employees out today</p>
+
+      {{> molecules-block-body-close}}
+
+      {{> molecules-block-footer-open}}
+      <a href="page-body-footer-link.html">Optional footer link</a>
+      {{> molecules-block-footer-close}}
+
+      {{> molecules-block-close}}
+      <!-- VARIETY BLOCK END -->
+
+    </div>
+    <!-- Closing column -->
+
+  </div>
+  <!-- row end -->
+
+</main>
+<!-- Page Structure MAIN end -->

@@ -1,0 +1,169 @@
+{
+	"labSettings": {
+        "exiServerBase":  "http://hbg-pdex64-dev/EXi" 
+    },
+    "siteTitle": "EXi Pattern Lab",
+    "pageTitle": "Page Title",
+    "htmlClass": "pl",
+    "bodyClass": "body exi-transitional",
+	"demoStateOpen": "<div class=\"demo-state\">",
+	"demoStateClose": "<\/div>",
+	"exiTransOpen": "<div class=\"exi-transitional\">",
+	"exiTransClose": "<\/div>",
+	"toBeFilled": "...",
+    "progress": true,
+    "max": "100",
+    "progressValue": "85",
+	"formClass": "form-control",
+	"formGroup": "form-group",
+	"glyphicon": "glyphicon",
+	"textSize": {
+		"xsmall": "text-xs",
+		"small": "text-sm",
+		"large": "text-lg",
+		"xlarge": "text-xl",
+		"xsmall-left": "text-xs-left",
+		"xsmall-right": "text-xs-right",
+		"small-left": "text-sm-left",
+		"small-right": "text-sm-right",
+		"medium-left": "text-md-left",
+		"medium-right": "text-md-right",
+		"large-left": "text-lg-left",
+		"large-right": "text-lg-right"
+	},
+	"buttonClass": "btn btn-default",
+	"buttonDisabled": "",
+	"buttonSrOnly1": "",
+	"buttonText": "Button",
+	"buttonGlyphicon": "",
+	"buttonSrOnly2": "",
+	"buttonGlyphicon2": "",
+	"buttonCaret": "",
+	"buttonDropdownToggle": "",
+	"buttonDataToggle": "",
+	"buttonAriaPopup": "",
+	"buttonAriaExpanded": "",
+	"buttonAriaLabel": "",
+	"buttonToolbarTag": "div",
+	"buttonGroupTag": "div",
+	"buttonGroupClass": "btn-group",
+	"buttonGroupRole": " role=\"group\"",
+	"buttonGroupAria": "",
+	"molDefaultInput" : {
+		"atomcoreType": "text",
+		"atomcoreClass": "class=\"form-control\"",
+		"atomcoreId": "default-label",
+		"atomcoreName": "",
+		"atomcoreArialabel": "",
+		"atomcoreAriadescribedby": "",
+		"atomcoreDisabled": "",
+		"atomcorePlaceholder": "",
+		"molcoreFormGroupClass": "form-group",
+		"molcoreMolClass": "",
+		"molcoreLabelClass": "",
+		"molcoreLabelId": "",
+		"molcoreLabelFor": "default-label",
+		"molcoreLabelTextPos1": "Default Label",
+		"molcoreLabelTextPos2": "",
+		"molcoreLabelDesc": "",
+		"molcoreLabelClosePos1": "<\/label>", 
+		"molcoreLabelClosePos2": ""
+    },
+	"inputPassword" : {
+        "type": "password",
+		"class": "form-control",
+		"id": "...",
+		"name": "...",
+		"arialabel": "",
+		"ariadescribedby": "",
+		"disabled": "",
+		"placeholder": "Text input"
+    },
+	"molInputPassword" : {
+		"labelClass": "...",
+		"labelFor": "...",
+		"labelText": "Text Label"
+    },
+	"inputTextarea" : {
+		"class": "form-control",
+		"id": "...",
+		"name": "...",
+		"placeholder": "",
+		"rows": "...",
+		"cols": "...",
+		"arialabel": "",
+		"ariadescribedby": "",
+		"disabled": ""
+    },
+	"molInputTextArea" : {
+		"labelClass": "...",
+		"labelFor": "...",
+		"labelText": "Text Label"
+    },
+	"inputRadio" : {
+		"type": "radio",
+		"name": "...",
+		"id": "inputradio",
+		"value": "...",
+		"checkedstate": "checked",
+		"arialabel": "",
+		"ariadescribedby": "",
+		"disabled": ""
+    },
+	"molInputRadio" : {
+		"legendClass": "",
+		"legendText": "Example legend text...",
+		"radioClass": "radio",
+		"disabled": "",
+		"placeholder": "Radio Option"
+    },
+	"molInputRadioStyled" : {
+		"legendClass": "...",
+		"radioClass": "radio",
+		"labelFor": "inputradio",
+		"placeholder": "Styled Radio Option"
+    },
+	"inputCheckbox" : {
+		"type": "checkbox",
+		"name": "...",
+		"id": "inputcheckbox",
+		"value": "...",
+		"checkedstate": "",
+		"arialabel": "",
+		"ariadescribedby": "",
+		"placeholder": "Checkbox Option",
+		"disabled": ""
+    },
+	"molInputCheckbox" : {
+		"legendClass": "",
+		"legendText": "Example legend text...",
+		"checkboxClass": "checkbox",
+		"disabled": "",
+		"placeholder": "Checkbox Option"
+    },
+	"molInputCheckboxStyled" : {
+		"legendClass": "...",
+		"checkboxClass": "checkbox",
+		"labelFor": "inputcheckbox",
+		"placeholder": "Styled Checkbox Option"
+    },
+	"inputFileInput" : {
+		"type": "file",
+		"name": "...",
+		"id": "...",
+		"value": "...",
+		"arialabel": "",
+		"ariadescribedby": "",
+		"disabled": ""
+    },
+	"molInputFileInput" : {
+		"labelClass": "...",
+		"labelFor": "...",
+		"labelText": "Text Label",
+		"helpTextClass": "help-block",
+		"helpText": "Example block-level help text..."
+    }
+	
+}
+	
+

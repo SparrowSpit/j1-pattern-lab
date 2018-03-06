@@ -1,0 +1,29 @@
+{
+	"advfilterCheckbox" : {
+		"checkboxClass": "checkbox",
+		"checkboxType": "checkbox",
+		"checkboxId": "switch-mol-select-input",
+		"checkboxName": "",
+		"checkboxValue": "",
+		"checkboxText": "Select Dropdown"
+    },
+	"atomSelectInput" : {
+		"id": "select-input",
+		"name": "select-input",
+		"optgroupOpen": "",
+		"optgroupClose": "",
+		"optiontextBlank": "",
+		"optiontext1": "Option 1",
+		"optiontext2": "Option 2",
+		"optiontext3": "Option 3",
+		"ariaLabel": "",
+		"ariaDescribedby": "",
+		"disabled": ""
+	},
+	"molSelectInput" : {
+		"showHide": " showhide",
+		"labelClass": "class=\"sr-only\" ",
+		"labelFor": "select-input",
+		"labelText": "Make a Selection"
+    }
+}

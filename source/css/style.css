@@ -1,0 +1,89 @@
+
+
+iframe.sg-viewport {
+    padding: 1em !important;
+}
+
+ul.list-unstyled.icons li {
+    float: left;
+    padding: 1em;
+    width: 20em;
+    text-align: center;
+}
+
+ul.list-unstyled.icons li span.glyphicon {
+    font-size: 2em;
+    vertical-align: middle;
+    display: block;
+    margin-bottom: .5em;
+}
+
+
+
+@font-face {
+	font-family: 'jzb-icon-set';
+	src:url('http://hbg-pdex70-dev/EXi/Content/fonts/jzb-icon-set.eot?-2q0owe');
+	src:url('http://hbg-pdex70-dev/EXi/Content/fonts/jzb-icon-set.eot?#iefix-2q0owe') format('embedded-opentype'),
+		url('http://hbg-pdex70-dev/EXi/Content/fonts/jzb-icon-set.woff?-2q0owe') format('woff'),
+		url('http://hbg-pdex70-dev/EXi/Content/fonts/jzb-icon-set.ttf?-2q0owe') format('truetype'),
+		url('http://hbg-pdex70-dev/EXi/Content/fonts/jzb-icon-set.svg?-2q0owe#jzb-icon-set') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="jzbglyph-"], [class*=" jzbglyph-"] {
+	font-family: 'jzb-icon-set';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.jzbglyph-glyphicon-filter:before {
+	content: "\e613";
+}
+.jzbglyph-glyphicon-course:before {
+	content: "\e612";
+    
+}.jzbglyph-glyphicon-idcard:before {
+	content: "\e611";
+}
+.jzbglyph-glyphicon-childparent:before {
+	content: "\e610";
+}
+.jzbglyph-glyphicon-parentchild:before {
+	content: "\e609";
+}
+.jzbglyph-glyphicon-permission:before {
+	content: "\e608";
+}
+.jzbglyph-glyphicon-session:before {
+	content: "\e607";
+}
+.jzbglyph-glyphicon-events:before {
+	content: "\e606";
+}
+.jzbglyph-glyphicon-reassign:before {
+	content: "\e605";
+}
+.jzbglyph-glyphicon-flip:before {
+	content: "\e604";
+}
+.jzbglyph-glyphicon-space:before {
+	content: "\e603";
+}
+.jzbglyph-glyphicon-place:before {
+	content: "\e602";
+}
+.jzbglyph-glyphicon-hub:before {
+	content: "\e601";
+}
+.jzbglyph-glyphicon-lock:before {
+	content: "\e600";
+}

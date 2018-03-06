@@ -1,0 +1,285 @@
+
+/*
+TABLE OF CONTENTS
+- General
+- Modal Header
+- Modal Body
+  - Columns
+  - Section Headings
+	- H4
+	- H5
+	- H6
+  - Section Heading Subtext
+- Modal Footer
+- Feedback States
+  - Success
+  - Warning
+  - Danger
+*/
+
+
+/* GENERAL */
+/* Modal Content Container */
+.exi-transitional .modal.mol-modal {
+    padding: $padding-md;
+    border: $border-width-default solid $color-border-default;
+}
+
+.exi-transitional .modal.mol-modal .modal-content {
+        max-height: 85vh;
+		min-height: 29.5rem;
+}
+
+/* Spacing between columns for larger 2-column layout. Negate below 768px */
+@media (max-width: 575px){
+	.exi-transitional .modal.mol-modal .modal-dialog, 
+    .exi-transitional .modal.mol-modal .modal-content {
+		margin: 0;
+	}
+}
+
+
+
+/*-----------------------------------*/
+
+
+
+/* MODAL HEADER */
+/* Modal header */
+.exi-transitional .modal.mol-modal .modal-header {
+    display: block;
+	padding: $padding-md;
+	text-align: left;
+    border: none;
+}
+
+/* Modal header > Title */
+.exi-transitional .modal.mol-modal .modal-header .modal-title {
+    margin: 0;
+	padding: 0 $padding-xl 0 0;
+	font-size: $text-size-lg;
+	font-weight: $text-weight-semibold;
+	line-height: 1;
+}
+
+/* Modal header > Title > Icon */
+.exi-transitional .modal.mol-modal .modal-header .modal-title .glyphicon {
+    font-size: $text-size-xl;
+    vertical-align: text-top;
+    display: none;
+}
+
+/* Modal header > Close button */
+.exi-transitional .modal.mol-modal .modal-header .mol-close {
+    position: absolute;
+	top: $positioning-md;
+	right: $positioning-md;
+}
+
+
+
+/*-----------------------------------*/
+
+
+
+/* MODAL BODY */
+.exi-transitional .modal.mol-modal .modal-body {
+    margin: 0;
+    padding: 0 $padding-md;
+    max-height: calc(85vh - 11rem);
+	min-height: 18.3rem;
+    overflow-y: auto;
+}
+
+/* Spacing between columns for larger 2-column layout. Negate below 768px */
+@media (min-width: 768px){
+	.exi-transitional .modal.mol-modal .modal-body .modal-col-1 {
+		padding-right: $padding-md;
+	}
+	.exi-transitional .modal.mol-modal .modal-body .modal-col-2 {
+		padding-left: $padding-md;
+	}
+}
+
+/* Section Headings */
+.exi-transitional .modal.mol-modal .modal-body h4, 
+.exi-transitional .modal.mol-modal .modal-body h5, 
+.exi-transitional .modal.mol-modal .modal-body h6 {
+	font-weight: $text-weight-bold;
+	margin: 0 0 $margin-sm 0;
+}
+
+.exi-transitional .modal.mol-modal .modal-body h4 {
+	font-size: $text-size-lg;
+}
+
+.exi-transitional .modal.mol-modal .modal-body h5 {
+	font-size: $text-size-md;
+}
+
+.exi-transitional .modal.mol-modal .modal-body h6 {
+	font-size: $text-size-sm;
+}
+
+/* Section Heading Subtext */
+.exi-transitional .modal.mol-modal .modal-body .modal-section-heading-subtext {
+	font-size: $text-size-sm;
+	font-weight: $text-weight-default;
+	color: $color-text-muted;
+	margin: 0 0 $margin-md 0;
+}
+
+
+
+/*-----------------------------------*/
+
+
+
+/* MODAL FOOTER */
+.exi-transitional .modal.mol-modal .modal-footer {
+    padding: $padding-md;
+    border: none;
+	clear: both;
+}
+
+.exi-transitional .modal.mol-modal .modal-footer button:last-child {
+    margin-left: $margin-md;
+}
+
+
+
+/*-----------------------------------*/
+
+
+
+/* FEEDBACK STATES */
+/* Success */
+/* Success modal panel > Background and border colors */
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content {
+    color: $color-success-default;
+	background: $color-success-background;
+    border-top: $border-width-medium solid $color-success-default;
+}
+
+/* Header title glyphicon */
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content .modal-header .modal-title .glyphicon.glyphicon-ok-sign {
+    display: inline-block;
+}
+
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-header .modal-title, 
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-body h4, 
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-body h5, 
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-body h6 {
+    color: $color-success-default;
+}
+
+/* Action button */
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content .modal-footer .btn-primary {
+    @extend %btn-style-success;
+}
+
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content .modal-footer .btn-primary:hover, 
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content .modal-footer .btn-primary:focus,
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content .modal-footer .btn-primary:active,
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content .modal-footer .btn-primary:active:focus, 
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content .modal-footer .btn-primary:active:hover,
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content .modal-footer .btn-primary:active.focus,
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content .modal-footer .btn-primary.focus, 
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content .modal-footer .btn-primary.active,
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content .modal-footer .btn-primary.active:focus, 
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content .modal-footer .btn-primary.active:hover,
+.exi-transitional x-modal[mode=success] .modal.mol-modal .modal-content .modal-footer .btn-primary.active.focus {
+    background-color: darken( $color-success-default, 10% );
+}
+
+
+
+/*-----------------------------------*/
+
+
+
+/* Warning */
+/* Warning modal panel > Background and border colors */
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content {
+    color: $color-warning-default;
+	background: $color-warning-background;
+    border-top: $border-width-medium solid $color-warning-default;
+}
+
+/* Header title glyphicon */
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content .modal-header .modal-title .glyphicon.glyphicon-exclamation-sign {
+    display: inline-block;
+}
+
+/* Header title */
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-header .modal-title, 
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-body h4, 
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-body h5, 
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-body h6 {
+    color: $color-warning-default;
+}
+
+/* Action button */
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content .modal-footer .btn-primary {
+    @extend %btn-style-warning;
+}
+
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content .modal-footer .btn-primary:hover, 
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content .modal-footer .btn-primary:focus,
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content .modal-footer .btn-primary:active,
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content .modal-footer .btn-primary:active:focus, 
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content .modal-footer .btn-primary:active:hover,
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content .modal-footer .btn-primary:active.focus,
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content .modal-footer .btn-primary.focus, 
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content .modal-footer .btn-primary.active,
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content .modal-footer .btn-primary.active:focus, 
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content .modal-footer .btn-primary.active:hover,
+.exi-transitional x-modal[mode=warning] .modal.mol-modal .modal-content .modal-footer .btn-primary.active.focus {
+    background-color: darken( $color-warning-default, 10% );
+}
+
+
+
+/*-----------------------------------*/
+
+
+
+/* Danger */
+/* Danger modal panel > Background and border colors */
+.exi-transitional x-modal[mode=danger] .modal.mol-modal .modal-content {
+    color: $color-danger-default;
+	background: $color-danger-background;
+    border-top: $border-width-medium solid $color-danger-default;
+}
+
+/* Header title glyphicon */
+.exi-transitional x-modal[mode=danger] .modal-content .modal-header .modal-title .glyphicon.glyphicon-exclamation-sign {
+    display: inline-block;
+}
+
+/* Header title */
+.exi-transitional x-modal[mode=danger] .modal-header .modal-title, 
+.exi-transitional x-modal[mode=danger] .modal-body h4, 
+.exi-transitional x-modal[mode=danger] .modal-body h5, 
+.exi-transitional x-modal[mode=danger] .modal-body h6 {
+    color: $color-danger-default;
+}
+
+/* Action button */
+.exi-transitional x-modal[mode=danger] .modal-content .modal-footer .btn-primary {
+    @extend %btn-style-danger;
+}
+
+.exi-transitional x-modal[mode=danger] .modal.mol-modal .modal-content .modal-footer .btn-primary:hover, 
+.exi-transitional x-modal[mode=danger] .modal.mol-modal .modal-content .modal-footer .btn-primary:focus,
+.exi-transitional x-modal[mode=danger] .modal.mol-modal .modal-content .modal-footer .btn-primary:active,
+.exi-transitional x-modal[mode=danger] .modal.mol-modal .modal-content .modal-footer .btn-primary:active:focus, 
+.exi-transitional x-modal[mode=danger] .modal.mol-modal .modal-content .modal-footer .btn-primary:active:hover,
+.exi-transitional x-modal[mode=danger] .modal.mol-modal .modal-content .modal-footer .btn-primary:active.focus,
+.exi-transitional x-modal[mode=danger] .modal.mol-modal .modal-content .modal-footer .btn-primary.focus, 
+.exi-transitional x-modal[mode=danger] .modal.mol-modal .modal-content .modal-footer .btn-primary.active,
+.exi-transitional x-modal[mode=danger] .modal.mol-modal .modal-content .modal-footer .btn-primary.active:focus, 
+.exi-transitional x-modal[mode=danger] .modal.mol-modal .modal-content .modal-footer .btn-primary.active:hover,
+.exi-transitional x-modal[mode=danger] .modal.mol-modal .modal-content .modal-footer .btn-primary.active.focus {
+    background-color: darken( $color-danger-default, 10% );
+}

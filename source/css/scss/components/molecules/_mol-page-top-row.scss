@@ -1,0 +1,23 @@
+
+
+
+/* Minimalize the row's inner panel */
+.container .row.mol-page-top-row .panel {
+    margin: 0;
+	padding: 0;
+    background: none;
+    border: none;
+	box-shadow: none;
+}
+
+.container .row.mol-page-top-row .panel .panel-body {
+    margin: 0;
+	padding: 0 1.6rem;
+}
+
+/* Set the title H3's margin/padding */
+.container .row.mol-page-top-row .panel .panel-body h3 {
+	margin: 0;
+	padding-right: 2.4rem;
+}
+

@@ -1,0 +1,95 @@
+
+/* TABLE OF CONTENTS
+- Input Field
+- Dropdown Section
+- Selection Chips
+*/
+
+
+/* INPUT FIELD */
+/* Initial input field styling */
+.exi-transitional .select2-container--default .select2-selection, .exi-transitional .select2-container--default .select2-selection--multiple {
+    height: auto;
+    min-height: 2.5em;
+    border: 1px solid #d2d6db;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+/* Initial input field on-focus styling */
+.exi-transitional .select2-container--default .select2-selection--multiple:focus, .exi-transitional .select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+/* Padding within main input field */
+.exi-transitional .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    padding: 0 0 0 .25em;
+}
+
+
+/*--------------------------------*/
+
+
+/* DROPDOWN SECTION */
+/* Dropdown border coloring */
+.exi-transitional .select2-dropdown {
+    border: 1px solid #d2d6db;
+}
+
+/* Dropdown options */
+.exi-transitional .select2-container--default .select2-results__options .select2-results__option {
+    width: 100%;
+}
+
+/* Dropdown option (on-hover) styling */
+.exi-transitional .select2-container .select2-results__options .select2-results__option--highlighted[aria-selected] {
+    color: #333;
+    background: #eceef1;
+}
+
+/* Dropdown option (selected) styling */
+.exi-transitional .select2-container .select2-results__option[aria-selected=true] {
+    color: #767676;
+    background-color: #fff;
+}
+
+/* Dropdown option (selected & on-hover) styling */
+.exi-transitional .select2-container--default .select2-results__option.select2-results__option--highlighted[aria-selected=true] {
+    color: #767676;
+    background: #eceef1;
+}
+
+
+/*--------------------------------*/
+
+
+/* SELECTION CHIPS */
+/* Chips */
+.exi-transitional .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    position: relative;
+    background: #d7edff;
+    border: 1px solid #a1b6c6;
+    border-radius: 4px;
+    cursor: default;
+    float: left;
+    font-size: 12px;
+    margin: .25em .5em 0 0;
+	max-width: 98.5%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    padding: .4em 2.3em .25em .55em;
+}
+
+/* Chip "remove" icon */
+.exi-transitional .select2-container--default .select2-selection--multiple .select2-selection__choice span.select2-selection__choice__remove {
+    position: absolute;
+    top: 50%;
+    right: .5em;
+    font-weight: 700;
+    color: #337ab7;
+    font-size: 1.15em;
+    margin: -.45em 0 0 0;
+}

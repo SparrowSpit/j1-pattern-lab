@@ -1,0 +1,43 @@
+{
+	"molDateInputStart" : {
+		"atomcoreType": "text",
+		"atomcoreClass": "class=\"form-control datepicker\"",
+		"atomcoreId": "start-date",
+		"atomcoreName": "start-date",
+		"atomcoreArialabel": "",
+		"atomcoreAriadescribedby": "",
+		"atomcoreDisabled": "",
+		"atomcorePlaceholder": "",
+		"molcoreFormGroupClass": "form-group",
+		"molcoreMolClass": " mol-date-input",
+		"molcoreLabelClass": "",
+		"molcoreLabelId": "",
+		"molcoreLabelFor": "start-date",
+		"molcoreLabelTextPos1": "Start Date",
+		"molcoreLabelTextPos2": "",
+		"molcoreLabelDesc": " <span class=\"sr-only\" id=\"date-desc\">. Unavailable dates will be indicated by a message.<\/span>",
+		"molcoreLabelClosePos1" : "<\/label>",
+		"molcoreLabelClosePos2" : ""
+    },
+	"molDateRangeToClass" : "to",
+	"molDateInputEnd" : {
+		"atomcoreType": "text",
+		"atomcoreClass": "class=\"form-control datepicker\"",
+		"atomcoreId": "end-date",
+		"atomcoreName": "end-date",
+		"atomcoreArialabel": "",
+		"atomcoreAriadescribedby": "",
+		"atomcoreDisabled": "",
+		"atomcorePlaceholder": "",
+		"molcoreFormGroupClass": "form-group",
+		"molcoreMolClass": " mol-date-input",
+		"molcoreLabelClass": "",
+		"molcoreLabelId": "",
+		"molcoreLabelFor": "end-date",
+		"molcoreLabelTextPos1": "End Date",
+		"molcoreLabelTextPos2": "",
+		"molcoreLabelDesc": " <span class=\"sr-only\" id=\"date-desc\">. Unavailable dates will be indicated by a message.<\/span>",
+		"molcoreLabelClosePos1" : "<\/label>",
+		"molcoreLabelClosePos2" : ""
+    }
+}

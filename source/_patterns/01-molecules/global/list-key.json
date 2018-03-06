@@ -1,0 +1,6 @@
+{
+	"buttonId" : "launch-list-key",
+	"buttonClass" : "btn btn-sm btn-link",
+	"buttonDataToggle" : " data-toggle=\"popover\"",
+	"buttonText" : "List key"
+}

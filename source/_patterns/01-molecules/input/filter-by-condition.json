@@ -1,0 +1,45 @@
+{
+	"filter-by-condition" : {
+
+		"atomSelectInput" : {
+			"id": "select-input",
+			"name": "select-input",
+			"optgroupOpen": "",
+			"optgroupClose": "",
+			"optiontextBlank": "",
+			"optiontext1": "Greater than",
+			"optiontext2": "Greater than or equal to",
+			"optiontext3": "Less than",
+			"optiontext4": "Less than or equal to",
+			"optiontext5": "Equal to",
+			"optiontext6": "Is not equal to",
+			"ariaLabel": "",
+			"ariaDescribedby": "",
+			"disabled": ""			
+		},
+
+		"atomcoreType" : "number",
+		"inputRadioGroup" : {
+		"type": "radio",
+		"name": "...",
+		"id": "inputRadioGroup",
+		"value": "...",
+		"checkedstate": "",
+		"arialabel": "",
+		"ariadescribedby": "",
+		"disabled": ""
+    	} 
+
+	},
+
+	 	"inputRadioGroup" : {
+			"type": "radio",
+			"name": "...",
+			"id": "inputRadioGroup",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"disabled": ""
+	}	
+}

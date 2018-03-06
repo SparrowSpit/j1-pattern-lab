@@ -1,0 +1,8 @@
+{
+	"fullListSortIcon" : {
+		"buttonClass" : "btn btn-link",
+		"buttonGlyphicon" : "<span class=\"fooicon fooicon-sort\" aria-hidden=\"true\"><\/span>",
+		"buttonText" : "",
+		"buttonSronly2" : "<span class=\"sr-only\">No sort applied - Click to sort ascending<\/span>"
+    }
+}

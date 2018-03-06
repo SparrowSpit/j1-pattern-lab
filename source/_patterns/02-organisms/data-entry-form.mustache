@@ -1,0 +1,153 @@
+<form action="" id="" method="" class="org-data-entry-form">
+	<div class="panel">
+		<div class="panel-body">
+			<h3 class="form-title">Data Entry Form Title</h3>
+
+			<div class="form-group">
+				<span class="text-danger">Required *</span>
+			</div>
+
+			<button class="org-data-entry-form--save-button btn btn-primary btn-lg">Save</button>
+			{{#atoms-button-core}}
+				{{> data-entry-form.atom-buttonPrimary}}
+			{{/atoms-button-core}}
+
+			<section class="form-section" id="">
+				<h4 class="form-section--title">First Section Title</h4>
+
+				<!-- wrap form elements within .form-group -->
+				<div class="form-group">
+					<div class="row">
+						<div class="col-sm-12 col-md-6 pad-rt-2r">
+							<label for="" class="">Course Title<span class="jzb-required-text text-danger"> *</span></label>
+							<input type="text" id="" class="form-control">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="row">
+						<div class="col-sm-6 pad-rt-2r mar-btm-2r">
+		 					<label for="" class="">Short Label</label>
+							<input type="text" id="" class="form-control">
+						</div>
+					
+						<div class="col-sm-6">
+		 					<label for="" class="">Short Label</label>
+							<input type="text" id="" class="form-control">
+						</div>
+					</div>	
+				</div>			
+
+			</section>
+
+			<section class="form-section" id="">
+				<h4 class="form-section--title">Second Section Title</h4>
+				<div class="form-group">
+					<label for="">Course Division</label>
+					<select name="" id="" class="form-control"></select>
+				</div>
+				<div class="form-group">
+					<label for="">Institutional Division<span class="jzb-required-text text-danger"> *</span></label>
+					<select name="" id="" class="form-control"></select>
+				</div>
+			</section>
+
+			<section class="form-section" id="">
+				<h4 class="form-section--title">Third Section Title</h4>
+					<div class="row">
+						<div class="col-sm-4 pad-rt-2r form-group">
+							<label for="">Capacity<span class="jzb-required-text text-danger"> *</span></label>
+							<input type="number" id="" class="form-control">
+						</div>
+						
+						<div class="col-sm-4 pad-rt-2r form-group">
+							<label for="">Max Enrollment<span class="jzb-required-text text-danger"> *</span></label>
+							<input type="number" id="" class="form-control">
+						</div>
+
+						<div class="col-sm-4 form-group">
+							<label for="">Min Enrollment<span class="jzb-required-text text-danger"> *</span></label>
+							<input type="number" id="" class="form-control">
+						</div>						
+					</div>
+			</section>
+
+			<section class="form-section" id="">
+				<h4 class="form-section--title">Fourth Section Title</h4>
+					<div class="row">
+						<div class="col-sm-6 pad-rt-2r form-group">
+								<label for="">Status</label>
+								<select class="form-control"></select>
+						</div>
+						<div class="col-sm-6 form-group">
+							<label for="select1">Date Inactive</label>
+							<select class="{{formClass}}" id="select1" name="{{atomSelectInput.name}}"{{{atomSelectInput.ariaLabel}}} {{{atomSelectInput.ariaDescribedby}}} {{{atomSelectInput.disabled}}}>
+							    {{{atomSelectInput.optgroupOpen}}}
+							        <option>{{atomSelectInput.optiontextBlank}}</option>
+									<option>Option 1</option>
+							        <option>Option 2</option>
+							        <option>Option 3</option>
+							    {{{atomSelectInput.optgroupClose}}}
+							</select>
+						</div>
+					</div>
+
+				<div class="form-group">
+					<div class="row">
+						<div class="col-sm-6 pad-rt-2r">
+							<label for="">Date Approved</label>
+							<select class="form-control"></select>
+						</div>
+					</div>
+				</div>
+
+			</section>				
+
+			<section class="form-section">
+				<h4 class="form-section--title">Fifth Section Title</h4>
+				<div class="form-group">
+					{{#data-entry-form}}
+						<div class="atom-checkbox-toggle checkbox-toggle--sm">
+							<input type="{{checkboxSmall.type}}" name="{{checkboxSmall.name}}" id="cb1" value="{{checkboxSmall.value}}" {{checkboxSmall.checkedstate}}{{{checkboxSmall.arialabel}}}{{{checkboxSmall.ariadescribedby}}}{{{checkboxSmall.disabled}}}>
+							<label class="" for="cb1">Checkbox Toggle Small</label>
+						</div>
+					{{/data-entry-form}}
+				</div>
+				<div class="form-group">
+					{{#data-entry-form}}
+						<div class="atom-checkbox-toggle checkbox-toggle--sm">
+							<input type="{{checkboxSmall.type}}" name="{{checkboxSmall.name}}" id="cb2" value="{{checkboxSmall.value}}" {{checkboxSmall.checkedstate}}{{{checkboxSmall.arialabel}}}{{{checkboxSmall.ariadescribedby}}}{{{checkboxSmall.disabled}}}>
+							<label class="" for="cb2">Checkbox Toggle Small</label>
+						</div>
+					{{/data-entry-form}}					
+
+				</div>
+			</section>		
+
+			<section class="form-section">
+				<h4 class="form-section--title">Six Section Title</h4>
+				<div class="form-group">
+					{{#data-entry-form}}
+						<div class="atoms-radio-button">
+							<div class="radio-group">
+							{{>atoms-radio-button-open}}
+								{{>atoms-radio-button-core-group}}
+							{{>atoms-radio-button-close}}
+							</div>
+						</div>
+					{{/data-entry-form}}
+				</div>
+			</section>			
+
+			<section class="form-section">
+				<h4 class="form-section--title">Seventh Section Title</h4>
+				<div class="form-group">
+					{{#data-entry-form}}
+						{{> atoms-text-area }}
+					{{/data-entry-form}}
+				</div>
+			</section>						
+
+		</div>
+	</div>

@@ -1,0 +1,30 @@
+{
+	"panelTag" : "article",
+	"panelClass" : "panel mol-panel",
+	"panelAttribute" : "",
+	"panelHeadingTag" : "div",
+	"panelHeadingClass" : "panel-heading",
+	"panelHeadingTitle" : "",
+	"panelHeadingAttribute" : "",
+	"panelBodyTag" : "div",
+	"panelBodyClass" : "panel-body",
+	"panelBodyAttribute" : "",
+	"molBtnDropdownClass" : " mol-title-dropdown",
+	"buttonDropdown": {
+		"buttonClass": "btn btn-link dropdown-toggle",
+		"buttonDisabled": "",
+		"buttonText": "Title Dropdown",
+		"buttonCaret": " <span class=\"caret\"><\/span>",
+		"buttonGlyphicon": "",
+		"buttonGlyphicon2": "",
+		"buttonDataToggle": " data-toggle=\"dropdown\"",
+		"buttonAriaPopup": " aria-haspopup=\"true\"",
+		"buttonAriaExpanded": " aria-expanded=\"false\"",
+		"buttonAriaLabel": ""
+	},
+	"btnDropdownHeading": "<li class=\"dropdown-header\">Dropdown Heading<\/li>",
+	"btnDropdownOpt1": "<li><a href=\"foo.html\">Dropdown option 1<\/a><\/li>",
+	"btnDropdownOpt2": "<li><a href=\"foo2.html\">Dropdown option 2<\/a><\/li>",
+	"btnDropdownDivider": "<li role=\"separator\" class=\"divider\"><\/li>",
+	"btnDropdownOpt3": "<li><button type=\"button\">Button option<\/button><\/li>"
+}

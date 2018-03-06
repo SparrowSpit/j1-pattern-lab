@@ -1,0 +1,16 @@
+{
+	"buttonCreate": {
+		"buttonClass": "atom-button atom-button--success mol-create-button",
+		"buttonDisabled": "",
+		"buttonText": "Create [text]",
+		"buttonCaret": "",
+		"buttonGlyphicon": "<span class=\"glyphicon glyphicon-plus-sign\" aria-hidden=\"true\"><\/span> ",
+		"buttonGlyphicon2": "",
+		"buttonDataToggle": "",
+		"buttonAriaPopup": "",
+		"buttonAriaExpanded": "",
+		"buttonAriaLabel": ""
+	}
+}
+	
+

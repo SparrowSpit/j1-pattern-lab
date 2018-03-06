@@ -1,0 +1,55 @@
+
+/*
+TABLE OF CONTENTS
+- Basic HTML Tags
+- Breadcrumbs (move to component!!!)
+*/
+
+
+/* BASIC HTML TAGS */
+html {
+	font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: $text-size-md;
+    background: $color-branding-background;
+}
+
+.exi-transitional section {
+	margin: 0;
+}
+
+.exi-transitional hr {
+    margin: 1em 0;
+}
+
+.exi-transitional p {
+	margin: 0 0 $margin-lg 0;
+}
+
+.exi-transitional a {
+	color: $color-text-link;
+	text-decoration: none;
+	 @extend %transition-default;
+}
+
+.exi-transitional a:hover, .exi-transitional a:focus, .exi-transitional a:active {
+	color: $color-text-link-highlight;
+}
+
+
+
+/*--------------------------------------*/
+
+
+
+/* Breadcrumbs */
+.exi-transitional .list-inline.mol-page-level-breadcrumbs li::after {
+    border-left: .5em solid #c4c4c4;
+}
+
+

@@ -1,0 +1,24 @@
+<div class="fpo-checkbox-wrapper mol-select-input">
+	<label for="{{{atomSelectInput.id}}}">Select Component</label>
+	<select class="{{formClass}}" id="{{{atomSelectInput.id}}}" name="{{atomSelectInput.name}}"{{{atomSelectInput.ariaLabel}}} {{{atomSelectInput.ariaDescribedby}}} {{{atomSelectInput.disabled}}}>
+	    {{{atomSelectInput.optgroupOpen}}}
+	        <option>{{atomSelectInput.optiontextBlank}}</option>
+			<option>{{atomSelectInput.optiontext1}}</option>
+	        <option>{{atomSelectInput.optiontext2}}</option>
+	        <option>{{atomSelectInput.optiontext3}}</option>
+	    {{{atomSelectInput.optgroupClose}}}
+	</select>
+</div>
+
+<div class="fpo-checkbox-wrapper mol-select-input mol-select-input--disabled">
+
+	<label for="{{{atomSelectInputDisabled.id}}}" class="disabled">Disabled Select Component</label>
+	<select class="{{formClass}}" id="{{{atomSelectInputDisabled.id}}}" name="{{atomSelectInputDisabled.name}}"{{{atomSelectInputDisabled.ariaLabel}}} {{{atomSelectInputDisabled.ariaDescribedby}}} {{{atomSelectInputDisabled.disabled}}}>
+	    {{{atomSelectInputDisabled.optgroupOpen}}}
+	        <option>{{atomSelectInputDisabled.optiontextBlank}}</option>
+			<option>{{atomSelectInputDisabled.optiontext1}}</option>
+	        <option>{{atomSelectInputDisabled.optiontext2}}</option>
+	        <option>{{atomSelectInputDisabled.optiontext3}}</option>
+	    {{{atomSelectInputDisabled.optgroupClose}}}
+	</select>
+</div>

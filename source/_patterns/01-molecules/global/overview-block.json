@@ -1,0 +1,14 @@
+{
+  "blockStyle1" : {
+	  "blockStyle" : " mol-overview-block",
+	  "blockId" : "block1"
+  },
+  "blockStyle2" : {
+	  "blockStyle" : " mol-overview-block",
+	  "blockId" : "block2"
+  },
+  "blockStyle3" : {
+	  "blockStyle" : " mol-overview-block",
+	  "blockId" : "block3"
+  }
+}

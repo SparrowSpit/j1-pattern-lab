@@ -1,0 +1,147 @@
+
+/*------------------------------
+NEEDS REFACTORING INTO SASS!!!
+------------------------------*/
+
+/*
+TABLE OF CONTENTS
+- General Organism (Panel title, etc.)
+  - Panel Heading
+  - Panel Footer
+- Molecules
+    - Control Row
+    - Close Dialogue
+    - Toggle
+    - Date Range
+    - "or" separator
+*/
+
+
+/* GENERAL ORGANISM */
+/* Panel Heading */
+.exi-transitional .mol-advanced-filter-panel .panel .panel-heading.blank {
+    position: relative;
+	padding: $padding-md $padding-md 0 $padding-md;
+}
+
+.exi-transitional .org-advanced-filter .mol-advanced-filter-panel .panel .panel-heading h3 {
+    font-size: $text-size-lg;
+	font-weight: $text-weight-semibold;
+	margin: 0 0 $margin-md 0;
+	padding: 0;
+}
+
+/* Panel Footer */
+.exi-transitional .mol-advanced-filter-panel .panel .panel-footer {
+    position: relative;
+	padding-top: 0;
+	display: inherit;
+}
+
+
+/*---------------------------------------------*/
+
+
+
+/* CONTROL ROW MOLECULE START */
+.exi-transitional .org-advanced-filter .row.mol-advanced-filter-control-row {
+    margin: 0 1em 1em 0;
+}
+/* CONTROL ROW MOLECULE END */
+
+
+/*---------------------------------------------*/
+
+
+/* CLOSE DIALOG START */
+.exi-transitional .org-advanced-filter button.mol-close {
+        position: absolute;
+        top: $positioning-sm;
+        right: $positioning-sm;
+    }
+/* CLOSE DIALOG END */
+
+
+/*---------------------------------------------*/
+
+
+
+/* MEDIA-SPECIFIC STYLING */
+@media (max-width: 996px) {
+    /* Adjust margin for toggle and control row molecules */
+    .exi-transitional .org-advanced-filter .row.mol-advanced-filter-control-row, .exi-transitional .org-advanced-filter .row .mol-advanced-filter-toggle {
+        margin: 0 0 1em 0;
+    }
+}
+
+
+/*---------------------------------------------*/
+
+
+/* DATE RANGE START */
+
+/* DATE RANGE END */
+
+
+/*---------------------------------------------*/
+
+
+/* Adjust margin and padding for all advanced filter molecules */
+.exi-transitional [class^="form-group mol-advanced-filter"], .exi-transitional [class^="form-group mol-advanced-filter"]:last-child {
+    margin-bottom: .5rem;
+    padding-left: 1.25em;
+}
+
+    .exi-transitional [class^="form-group mol-advanced-filter"] div.checkbox, .exi-transitional [class^="form-group mol-advanced-filter"] div.radio {
+        margin-top: 0;
+        margin-left: -2.1rem;
+        margin-bottom: 0;
+    }
+
+    .exi-transitional [class^="form-group mol-advanced-filter"] .form-group {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+	
+	.exi-transitional [class^="form-group mol-advanced-filter"] .form-control {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+
+
+/* Subheading Labels */
+.exi-transitional [class^="form-group mol-advanced-filter"] [class^="form-group mol-"] label, .exi-transitional [class^="form-group mol-advanced-filter"] [class^="mol-"] label {
+        font-weight: 400;
+    }
+
+
+
+/* "OR" SEPARATOR MOLECULE START */
+.exi-transitional .org-advanced-filter .mol-advanced-filter-or-separator {
+    position: relative;
+    text-align: center;
+    margin: 2em 0;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+    .exi-transitional .org-advanced-filter .mol-advanced-filter-or-separator > div {
+        position: absolute;
+        top: -.8em;
+        left: 50%;
+        margin-left: -1.3em;
+        padding: 0 .7em;
+        background: #fff;
+    }
+/* "OR" SEPARATOR MOLECULE END */
+
+
+/*---------------------------------------------*/
+
+
+/* DATE RANGE MOLECULE START */
+.exi-transitional .mol-advanced-filter-date-range .form-group {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+/* DATE RANGE MOLECULE END */

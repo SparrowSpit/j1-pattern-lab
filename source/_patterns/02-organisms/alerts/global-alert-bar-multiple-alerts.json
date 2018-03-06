@@ -1,0 +1,58 @@
+{
+
+	"buttonText": {
+		"buttonShow" : "View all alerts",
+		"buttonHide" : "Hide alerts"
+	} ,
+
+	"buttonHide": {
+		"buttonClass": "atom-button",
+		"buttonDisabled": "",
+		"buttonSrOnly1": "",
+		"buttonText": "Button",
+		"buttonGlyphicon": "",
+		"buttonSrOnly2": "",
+		"buttonGlyphicon2": "",
+		"buttonCaret": "",
+		"buttonDropdownToggle": "",
+		"buttonDataToggle": "",
+		"buttonAriaPopup": "",
+		"buttonAriaExpanded": "",
+		"buttonAriaLabel": "",
+		"buttonToolbarTag": "div",
+		"buttonGroupTag": "div",
+		"buttonGroupClass": "atom-button--group",
+		"buttonGroupRole": " role=\"group\"",
+		"buttonGroupAria": "",
+		"buttonText": "Hide alerts"		
+	},
+
+	"buttonShow": {
+		"buttonClass": "atom-button",
+		"buttonDisabled": "",
+		"buttonSrOnly1": "",
+		"buttonText": "Button",
+		"buttonGlyphicon": "",
+		"buttonSrOnly2": "",
+		"buttonGlyphicon2": "",
+		"buttonCaret": "",
+		"buttonDropdownToggle": "",
+		"buttonDataToggle": "",
+		"buttonAriaPopup": "",
+		"buttonAriaExpanded": "",
+		"buttonAriaLabel": "",
+		"buttonToolbarTag": "div",
+		"buttonGroupTag": "div",
+		"buttonGroupClass": "atom-button--group",
+		"buttonGroupRole": " role=\"group\"",
+		"buttonGroupAria": "",
+		"buttonText": "View all alerts"
+	},
+
+	
+ 	"glyphicon-success" : "<span class=\"alert-single-icon glyphicon glyphicon-ok-sign\" aria-hidden=\"true\"> </span>",
+ 	"glyphicon-warning" : "<span class=\"alert-single-icon glyphicon glyphicon-exclamation-sign \" aria-hidden=\"true\"> </span>",
+ 	"glyphicon-info" : "<span class=\"alert-single-icon glyphicon glyphicon-info-sign\" aria-hidden=\"true\"> </span>", 
+ 	"glyphicon-danger" : "<span class=\"alert-single-icon glyphicon glyphicon-exclamation-sign\" aria-hidden=\"true\"> </span>"
+
+}

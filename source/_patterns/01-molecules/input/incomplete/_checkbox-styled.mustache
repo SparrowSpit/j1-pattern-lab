@@ -1,0 +1,21 @@
+<fieldset class="{{formGroupClass}} mol-input-checkbox-styled" {{molinputCheckbox.disabled}}>
+  <legend class="{{molInputCheckboxStyled.legendClass}}">{{molInputCheckboxStyled.legendText}}</legend>
+  <div class="{{molInputCheckboxStyled.checkboxClass}}">
+    {{> atoms-checkbox-basic }}
+    <label for="{{molInputCheckboxStyled.labelFor}}">
+      <span></span>{{molInputCheckboxStyled.placeholder}}
+    </label>
+  </div>
+  <div class="{{molInputCheckboxStyled.checkboxClass}}">
+    <span class="jzb-checkbox-toggle-disabled-empty" id=""></span>
+    <label for="molinputCheckbox3"> Checkbox Option - Disabled Empty
+      <input type="checkbox" name="..." id="molinputCheckbox3" value="..." disabled>
+    </label>
+  </div>
+  <div class="{{molInputCheckboxStyled.checkboxClass}}">
+    <span class="jzb-checkbox-toggle-disabled-filled" id=""></span>
+    <label for="molinputCheckbox4"> Checkbox Option - Disabled Filled
+      <input type="checkbox" name="..." id="molinputCheckbox4" value="..." disabled>
+    </label>
+  </div>
+</fieldset>

@@ -1,0 +1,126 @@
+
+/*
+TABLE OF CONTENTS
+- Font Stack
+- Sizes
+- Weights
+- Headings
+- Utility
+*/
+
+
+/* FONT STACK */
+$font-stack: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+
+
+/*----------------------------------*/
+
+
+/* SIZES */
+/* 16px root text size - Use once conversion is complete
+$text-size-xs: .625rem; 10px
+$text-size-sm: .75rem; 12px
+$text-size-md: .875rem; 14px
+$text-size-lg: 1.125rem; 18px
+$text-size-xl: 1.375rem; 22px
+*/
+
+/* 10 px root text size - Shared with pre-component EXi */
+$text-size-xs: 1rem; /* 10px */
+$text-size-sm: 1.2rem; /* 12px */
+$text-size-md: 1.4rem; /* 14px */
+$text-size-lg: 1.8rem; /* 18px */
+$text-size-xl: 2rem; /* 20px */
+$text-size-xxl: 2.2rem; /* 22px */
+
+/*----------------------------------*/
+
+
+/* WEIGHTS */
+$text-weight-light: 200;
+$text-weight-default: 400;
+$text-weight-semibold: 500;
+$text-weight-bold: 700;
+
+
+/*----------------------------------*/
+
+
+/* HEADINGS */
+.exi-transitional h1 {
+	color: $color-heading-default;
+	font-size: 3.2rem;
+	font-weight: 400;
+	line-height: 1.1;
+	margin: 0 0 $margin-xxs 0;
+	padding: 0;
+	border: none;
+	}
+
+.exi-transitional h2 {
+	color: $color-heading-default;
+	font-size: 2.88rem;
+	font-weight: 400;
+	line-height: 1.1;
+	margin: 0 0 $margin-xxs 0;
+	padding: 0;
+	border: none;
+	}
+
+.exi-transitional h3 {
+	color: $color-heading-default;
+	font-size: 2.4rem;
+	font-weight: 400;
+	line-height: 1.1;
+	margin: 0 0 $margin-xxs 0;
+	padding: 0;
+	border: none;
+	}
+
+.exi-transitional h4 {
+	color: $color-heading-default;
+	font-size: 2.08rem;
+	font-weight: 500;
+	line-height: 1.1;
+	margin: 0 0 $margin-xxs 0;
+	padding: 0;
+	border: none;
+	}
+
+.exi-transitional h5 {
+	color: $color-heading-default;
+	font-size: 1.92rem;
+	font-weight: 500;
+	line-height: 1.1;
+	margin: 0 0 $margin-xxs 0;
+	padding: 0;
+	border: none;
+	}
+
+.exi-transitional h6 {
+	color: $color-heading-default;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.1;
+	margin: 0 0 $margin-xxs 0;
+	padding: 0;
+	border: none;
+	}
+
+
+/* UTILITY */
+.exi-transitional .text-size-xs {
+	font-size: $text-size-xs;
+}
+
+.exi-transitional .text-size-sm {
+	font-size: $text-size-sm;
+}
+
+.exi-transitional .text-size-lg {
+	font-size: $text-size-lg;
+}
+
+.exi-transitional .text-size-xl {
+	font-size: $text-size-xl;
+}

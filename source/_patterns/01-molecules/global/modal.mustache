@@ -1,0 +1,235 @@
+<!-- Modal triggers start -->
+<div class="col-sm-3 mol-select-input">
+  <label for="modal-trigger">Launch a modal example!</label>
+  <select class="form-control" id="modal-trigger" name="modal-trigger">
+    <option></option>
+    <option value="modal-default">Default</option>
+    <option value="modal-success">Success</option>
+    <option value="modal-warning">Warning</option>
+    <option value="modal-danger">Danger</option>
+  </select>
+</div>
+<!-- Modal triggers end -->
+
+
+<!-- DEFAULT MODAL START -->
+{{> molecules-modal-container-open}}
+
+
+<!-- MODAL HEADING START -->
+{{> molecules-modal-heading-open}}
+{{> molecules-modal-heading-close}}
+
+<!-- MODAL HEADING END -->
+
+<!-- MODAL BODY START -->
+{{> molecules-modal-body-open}}
+<h4>Section Heading (H4)</h4>
+<h5 class="modal-section-heading-subtext">This is a helpful section subtext based on the H5 heading class</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu erat in magna ornare hendrerit. Quisque id nulla cursus, dictum nisi in, malesuada lectus. Ut ullamcorper suscipit nisl id blandit. Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Nullam eget diam a magna maximus tempor. Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+
+<div class="row">
+  <div class="col-sm-6 modal-col-1">
+    <h4>Column 1 Heading (H4)</h4>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h5>Third-Level Subheading (H5)</h5>
+    <p>Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h6>Fourth-Level Subheading (H6)</h6>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Nullam eget diam a magna maximus tempor.</p>
+  </div>
+  <div class="col-sm-6 modal-col-1">
+    <h4>Column 2 Heading (H4)</h4>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h5>Third-Level Subheading (H5)</h5>
+    <p>Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h6>Fourth-Level Subheading (H6)</h6>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Nullam eget diam a magna maximus tempor.</p>
+  </div>
+</div>
+
+{{> molecules-modal-body-close}}
+<!-- MODAL BODY END -->
+
+<!-- MODAL FOOTER START -->
+{{> molecules-modal-footer-open}}
+{{#modalFooterBtn1}}
+{{> atoms-button-core}}
+{{/modalFooterBtn1}}
+{{#modalFooterBtn2}}
+{{> atoms-button-core}}
+{{/modalFooterBtn2}}
+{{> molecules-modal-footer-close}}
+
+<!-- MODAL FOOTER END -->
+
+{{> molecules-modal-container-close}}
+
+<!-- DEFAULT MODAL START -->
+
+
+<!-- SUCCESS MODAL START -->
+{{#modalSuccess}}
+{{> molecules-modal-container-open}}
+
+
+<!-- MODAL HEADING START -->
+{{> molecules-modal-heading-open}}
+{{> molecules-modal-heading-close}}
+
+<!-- MODAL HEADING END -->
+
+<!-- MODAL BODY START -->
+{{> molecules-modal-body-open}}
+<h4>Section Heading (H4)</h4>
+<h5 class="modal-section-heading-subtext">This is a helpful section subtext based on the H5 heading class</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu erat in magna ornare hendrerit. Quisque id nulla cursus, dictum nisi in, malesuada lectus. Ut ullamcorper suscipit nisl id blandit. Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Nullam eget diam a magna maximus tempor. Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+
+<div class="row">
+  <div class="col-sm-6 modal-col-1">
+    <h4>Column 1 Heading (H4)</h4>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h5>Third-Level Subheading (H5)</h5>
+    <p>Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h6>Fourth-Level Subheading (H6)</h6>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Nullam eget diam a magna maximus tempor.</p>
+  </div>
+  <div class="col-sm-6 modal-col-1">
+    <h4>Column 2 Heading (H4)</h4>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h5>Third-Level Subheading (H5)</h5>
+    <p>Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h6>Fourth-Level Subheading (H6)</h6>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Nullam eget diam a magna maximus tempor.</p>
+  </div>
+</div>
+{{> molecules-modal-body-close}}
+<!-- MODAL BODY END -->
+
+<!-- MODAL FOOTER START -->
+{{> molecules-modal-footer-open}}
+{{#modalFooterBtn1}}
+{{> atoms-button-core}}
+{{/modalFooterBtn1}}
+{{#modalFooterBtn2}}
+{{> atoms-button-core}}
+{{/modalFooterBtn2}}
+{{> molecules-modal-footer-close}}
+
+<!-- MODAL FOOTER END -->
+
+{{> molecules-modal-container-close}}
+{{/modalSuccess}}
+
+<!-- SUCCESS MODAL END -->
+
+
+<!-- WARNING MODAL START -->
+{{#modalWarning}}
+{{> molecules-modal-container-open}}
+
+
+<!-- MODAL HEADING START -->
+{{> molecules-modal-heading-open}}
+{{> molecules-modal-heading-close}}
+
+<!-- MODAL HEADING END -->
+
+<!-- MODAL BODY START -->
+{{> molecules-modal-body-open}}
+<h4>Section Heading (H4)</h4>
+<h5 class="modal-section-heading-subtext">This is a helpful section subtext based on the H5 heading class</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu erat in magna ornare hendrerit. Quisque id nulla cursus, dictum nisi in, malesuada lectus. Ut ullamcorper suscipit nisl id blandit. Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Nullam eget diam a magna maximus tempor. Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+
+<div class="row">
+  <div class="col-sm-6 modal-col-1">
+    <h4>Column 1 Heading (H4)</h4>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h5>Third-Level Subheading (H5)</h5>
+    <p>Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h6>Fourth-Level Subheading (H6)</h6>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Nullam eget diam a magna maximus tempor.</p>
+  </div>
+  <div class="col-sm-6 modal-col-1">
+    <h4>Column 2 Heading (H4)</h4>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h5>Third-Level Subheading (H5)</h5>
+    <p>Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h6>Fourth-Level Subheading (H6)</h6>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Nullam eget diam a magna maximus tempor.</p>
+  </div>
+</div>
+{{> molecules-modal-body-close}}
+<!-- MODAL BODY END -->
+
+<!-- MODAL FOOTER START -->
+{{> molecules-modal-footer-open}}
+{{#modalFooterBtn1}}
+{{> atoms-button-core}}
+{{/modalFooterBtn1}}
+{{#modalFooterBtn2}}
+{{> atoms-button-core}}
+{{/modalFooterBtn2}}
+{{> molecules-modal-footer-close}}
+
+<!-- MODAL FOOTER END -->
+
+{{> molecules-modal-container-close}}
+{{/modalWarning}}
+
+<!-- WARNING MODAL END -->
+
+
+<!-- DANGER MODAL START -->
+{{#modalDanger}}
+{{> molecules-modal-container-open}}
+
+
+<!-- MODAL HEADING START -->
+{{> molecules-modal-heading-open}}
+{{> molecules-modal-heading-close}}
+
+<!-- MODAL HEADING END -->
+
+<!-- MODAL BODY START -->
+{{> molecules-modal-body-open}}
+<h4>Section Heading (H4)</h4>
+<h5 class="modal-section-heading-subtext">This is a helpful section subtext based on the H5 heading class</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu erat in magna ornare hendrerit. Quisque id nulla cursus, dictum nisi in, malesuada lectus. Ut ullamcorper suscipit nisl id blandit. Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Nullam eget diam a magna maximus tempor. Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+
+<div class="row">
+  <div class="col-sm-6 modal-col-1">
+    <h4>Column 1 Heading (H4)</h4>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h5>Third-Level Subheading (H5)</h5>
+    <p>Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h6>Fourth-Level Subheading (H6)</h6>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Nullam eget diam a magna maximus tempor.</p>
+  </div>
+  <div class="col-sm-6 modal-col-1">
+    <h4>Column 2 Heading (H4)</h4>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h5>Third-Level Subheading (H5)</h5>
+    <p>Etiam faucibus felis laoreet enim auctor posuere non a metus. Nulla placerat arcu velit, tincidunt porttitor odio convallis eu.</p>
+    <h6>Fourth-Level Subheading (H6)</h6>
+    <p>Duis ligula risus, ultrices a venenatis ac, facilisis vitae sem. Nullam eget diam a magna maximus tempor.</p>
+  </div>
+</div>
+{{> molecules-modal-body-close}}
+<!-- MODAL BODY END -->
+
+<!-- MODAL FOOTER START -->
+{{> molecules-modal-footer-open}}
+{{#modalFooterBtn1}}
+{{> atoms-button-core}}
+{{/modalFooterBtn1}}
+{{#modalFooterBtn2}}
+{{> atoms-button-core}}
+{{/modalFooterBtn2}}
+{{> molecules-modal-footer-close}}
+
+<!-- MODAL FOOTER END -->
+
+{{> molecules-modal-container-close}}
+{{/modalDanger}}
+
+<!-- DANGER MODAL END -->

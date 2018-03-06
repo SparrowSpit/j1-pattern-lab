@@ -1,0 +1,40 @@
+.fpo-checkbox-init {
+	padding: 200px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+
+.exi-transitional {
+	
+	.mol-page-header-toolbar {
+		&.jzb-layout-header-toolbar {
+			position: fixed;
+			top: 1.5em;
+			right: .8em;
+			z-index: 200;
+		}
+
+		&.jzb-layout-header-toolbar .btn {
+		    color: #fff;
+		    background: $color-branding-main;
+		}
+
+		.btn-navigation {
+			border-color: #fff;
+			
+			&:hover {
+				color: #fff;
+		    background-color: $color-branding-header;
+			}
+		}		
+	}
+	
+
+}

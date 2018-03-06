@@ -1,0 +1,49 @@
+
+/* TABLE OF CONTENTS
+- Framework (container/row/column...)
+- Miscellaneous
+*/
+
+
+/* FRAMEWORK */
+.exi-transitional .container {
+    position: relative;
+}
+
+.exi-transitional .row {
+    margin: 0;
+}
+
+.exi-transitional .col-lg-1, .exi-transitional .col-lg-10, .exi-transitional .col-lg-11, .exi-transitional .col-lg-12, .exi-transitional .col-lg-2, .exi-transitional .col-lg-3, .exi-transitional .col-lg-4, .exi-transitional .col-lg-5, .exi-transitional .col-lg-6, .exi-transitional .col-lg-7, .exi-transitional .col-lg-8, .exi-transitional .col-lg-9, .exi-transitional .col-md-1, .exi-transitional .col-md-10, .exi-transitional .col-md-11, .exi-transitional .col-md-12, .exi-transitional .col-md-2, .exi-transitional .col-md-3, .exi-transitional .col-md-4, .exi-transitional .col-md-5, .exi-transitional .col-md-6, .exi-transitional .col-md-7, .exi-transitional .col-md-8, .exi-transitional .col-md-9, .exi-transitional .col-sm-1, .exi-transitional .col-sm-10, .exi-transitional .col-sm-11, .exi-transitional .col-sm-12, .exi-transitional .col-sm-2, .exi-transitional .col-sm-3, .exi-transitional .col-sm-4, .exi-transitional .col-sm-5, .exi-transitional .col-sm-6, .exi-transitional .col-sm-7, .exi-transitional .col-sm-8, .exi-transitional .col-sm-9, .exi-transitional .col-xs-1, .exi-transitional .col-xs-10, .exi-transitional .col-xs-11, .exi-transitional .col-xs-12, .exi-transitional .col-xs-2, .exi-transitional .col-xs-3, .exi-transitional .col-xs-4, .exi-transitional .col-xs-5, .exi-transitional .col-xs-6, .exi-transitional .col-xs-7, .exi-transitional .col-xs-8, .exi-transitional .col-xs-9 {
+    padding: 0;
+}
+
+
+
+/*--------------------------------------------*/
+
+
+
+/* MISCELLANEOUS */
+.exi-transitional .disabled label, fieldset[disabled] label {
+	color: $color-text-muted;
+}
+
+
+.exi-transitional .progress {
+    background-color: #e5e5e5;
+}
+
+.exi-transitional .progress-bar-danger {
+    background-color: #d30000;
+}
+
+.exi-transitional .badge {
+    background: #4c5256;
+}
+
+
+
+
+
+

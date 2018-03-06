@@ -1,0 +1,61 @@
+{	"inputCheckbox" : {
+		"type": "checkbox",
+		"name": "...",
+		"id": "inputcheckbox",
+		"value": "...",
+		"checkedstate": "",
+		"arialabel": "",
+		"ariadescribedby": "",
+		"placeholder": "Checkbox Option",
+		"disabled": ""
+    },
+
+	"checkboxSmall" : {
+			"type": "checkbox",
+			"name": "...",
+			"id": "checkboxSmall",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"placeholder": "Checkbox Option",
+			"disabled": ""
+	    },
+
+	"checkboxLarge" : {
+			"type": "checkbox",
+			"name": "...",
+			"id": "checkboxLarge",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"placeholder": "Checkbox Option",
+			"disabled": ""
+	    },  
+
+	"checkboxLargeDisabled" : {
+			"type": "checkbox",
+			"name": "...",
+			"id": "checkboxLargeDisabled",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"placeholder": "Checkbox Option",
+			"disabled": "disabled"
+	    },  
+	
+	"checkboxDisabledChecked" : {
+			"type": "checkbox",
+			"name": "...",
+			"id": "checkboxDisabledChecked",
+			"value": "...",
+			"checkedstate": "checked",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"placeholder": "Checkbox Option",
+			"disabled": "disabled"
+	    }     
+
+}

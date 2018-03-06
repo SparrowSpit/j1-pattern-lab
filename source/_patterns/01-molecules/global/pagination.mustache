@@ -1,0 +1,51 @@
+{{{demoStateOpen}}}
+
+{{# paginationControl}}
+<{{buttonToolbarTag}} class="btn-toolbar mol-pagination" role="toolbar" aria-label="List pagination controls">
+    {{> molecules-button-group-core-open}}
+
+    {{# pagConPrevPage}}
+    {{> atoms-button-core}}
+    {{/ pagConPrevPage}}
+
+    {{# pagConFirstPage}}
+    {{> atoms-button-core}}
+    {{/ pagConFirstPage}}
+
+    <div id="" class="btn btn-link btn-sm" aria-hidden="true">
+      <span class="glyphicon glyphicon-option-horizontal"></span>
+    </div>
+    <div id="" class="btn btn-primary btn-sm">
+        <span class="sr-only">Current page - List page </span>Page 5
+    </div>
+    <div id="" class="btn btn-link btn-sm" aria-hidden="true">
+      <span class="glyphicon glyphicon-option-horizontal"></span>
+    </div>
+    {{# pagConLastPage}}
+    {{> atoms-button-core}}
+    {{/ pagConLastPage}}
+
+    {{# pagConNextPage}}
+    {{> atoms-button-core}}
+    {{/ pagConNextPage}}
+    {{> molecules-button-group-core-close}}
+
+    {{> molecules-button-group-core-open}}
+    {{# pagConShowAll}}
+    {{> atoms-button-core}}
+    {{/ pagConShowAll}}
+    {{> molecules-button-group-core-close}}
+    
+  </{{buttonToolbarTag}}>
+{{/ paginationControl}}
+
+{{{demoStateClose}}}
+
+
+{{{demoStateOpen2}}}
+
+	{{# pagConShowFifteen}}
+	{{> atoms-button-core}}
+	{{/ pagConShowFifteen}}
+
+{{{demoStateClose}}}

@@ -1,0 +1,14 @@
+{
+	
+	"buttonId" : "launch-mol-popover",
+	"buttonClass" : "...",
+	"buttonDataToggle" : " data-toggle=\"popover-default\" ",
+	"buttonText" : "Display popover",
+
+	"button-alert" : {
+		"buttonId" : "launch-warning-popover",
+		"buttonText" : "Display Calendar popover",
+		"buttonDataToggle" : " data-toggle=\"popover-default\" "
+	}	
+	
+}

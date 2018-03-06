@@ -1,0 +1,36 @@
+{{> molecules-panel-main-open}}
+
+	{{> molecules-panel-heading-open}}
+
+		{{> molecules-help-link}}
+
+	{{> molecules-panel-heading-close}}
+
+	{{> molecules-panel-body-open}}
+
+		{{#fullListControlBar}}
+		{{> molecules-panel-main-open}}
+			{{> molecules-panel-body-open}}
+				<div class="row">
+                    <div class="col-sm-6">
+						{{> molecules-full-list-quick-filter}}
+						{{> molecules-full-list-viewing-indicator}}
+					</div>
+					{{> molecules-list-key}}
+				</div>
+			{{> molecules-panel-body-close}}
+		{{> molecules-panel-main-close}}
+		{{/fullListControlBar}}
+		<div class="row">
+			<div class="col-sm-12">
+				{{> molecules-pagination}}
+				{{> molecules-full-list-batch-options-dropdown}}
+			</div>
+		</div>
+        {{> molecules-full-list-table}}
+
+        {{> molecules-pagination}}
+
+	{{> molecules-panel-body-close}}
+
+{{> molecules-panel-main-close}}

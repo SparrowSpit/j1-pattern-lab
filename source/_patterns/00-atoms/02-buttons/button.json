@@ -1,0 +1,88 @@
+{
+	"buttonClass": "atom-button",
+	"buttonDisabled": "",
+	"buttonSrOnly1": "",
+	"buttonText": "Button",
+	"buttonGlyphicon": "",
+	"buttonSrOnly2": "",
+	"buttonGlyphicon2": "",
+	"buttonCaret": "",
+	"buttonDropdownToggle": "",
+	"buttonDataToggle": "",
+	"buttonAriaPopup": "",
+	"buttonAriaExpanded": "",
+	"buttonAriaLabel": "",
+	"buttonToolbarTag": "div",
+	"buttonGroupTag": "div",
+	"buttonGroupClass": "atom-button--group",
+	"buttonGroupRole": " role=\"group\"",
+	"buttonGroupAria": "",
+	"atom-buttonDefault" : {
+		"buttonText": "Default"
+	},
+	"atom-buttonPrimary" : {
+		"buttonClass": "atom-button atom-button--primary",
+		"buttonText": "Primary"
+	},
+	"atom-buttonSuccess" : {
+		"buttonClass": "atom-button atom-button--success",
+		"buttonText": "Success"
+	},
+	"atom-buttonWarning" : {
+		"buttonClass": "atom-button atom-button--warning",
+		"buttonText": "Warning"
+	},
+	"atom-buttonDanger" : {
+		"buttonClass": "atom-button atom-button--danger",
+		"buttonText": "Danger"
+	},
+	"atom-buttonText" : {
+		"buttonClass": "atom-button atom-button--text",
+		"buttonText": "Text only"
+	},
+	"atom-buttonDefaultDisabled" : {
+		"buttonText": "Default",
+		"buttonDisabled": "disabled"
+	},
+	"atom-buttonPrimaryDisabled" : {
+		"buttonClass": "atom-button atom-button--primary",
+		"buttonText": "Primary",
+		"buttonDisabled": "disabled"
+	},
+	"atom-buttonSuccessDisabled" : {
+		"buttonClass": "atom-button atom-button--success",
+		"buttonText": "Success",
+		"buttonDisabled": "disabled"
+	},
+	"atom-buttonWarningDisabled" : {
+		"buttonClass": "atom-button atom-button--warning",
+		"buttonText": "Warning",
+		"buttonDisabled": "disabled"
+	},
+	"atom-buttonDangerDisabled" : {
+		"buttonClass": "atom-button atom-button--danger",
+		"buttonText": "Danger",
+		"buttonDisabled": "disabled"
+	},
+	"atom-buttonTextDisabled" : {
+		"buttonClass": "atom-button atom-button--text",
+		"buttonText": "Text only",
+		"buttonDisabled": "disabled"
+	},
+	"atom-buttonSizeXsmall" : {
+		"buttonClass": "atom-button atom-button--primary atom-button--xs",
+		"buttonText": "XSmall"
+	},
+	"atom-buttonSizeSmall" : {
+		"buttonClass": "atom-button atom-button--primary atom-button--sm",
+		"buttonText": "Small"
+	},
+	"atom-buttonSizeDefault" : {
+		"buttonClass": "atom-button atom-button--primary",
+		"buttonText": "Default"
+	},
+	"atom-buttonSizeLarge" : {
+		"buttonClass": "atom-button atom-button--primary atom-button--lg",
+		"buttonText": "Large"
+	}
+}

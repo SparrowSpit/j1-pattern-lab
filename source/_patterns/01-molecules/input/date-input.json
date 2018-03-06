@@ -1,0 +1,22 @@
+{
+	"molDefaultInput" : {
+		"atomcoreType": "text",
+		"atomcoreClass": "class=\"form-control datepicker\"",
+		"atomcoreId": "datepicker",
+		"atomcoreName": "datepicker",
+		"atomcoreArialabel": "",
+		"atomcoreAriadescribedby": "",
+		"atomcoreDisabled": "",
+		"atomcorePlaceholder": "",
+		"molcoreFormGroupClass": "form-group",
+		"molcoreMolClass": " mol-date-input",
+		"molcoreLabelClass": "",
+		"molcoreLabelId": "",
+		"molcoreLabelFor": "datepicker",
+		"molcoreLabelTextPos1": "Date",
+		"molcoreLabelTextPos2": "",
+		"molcoreLabelDesc": " <span class=\"sr-only\" id=\"date-desc\">. Unavailable dates will be indicated by a message.<\/span>",
+		"molcoreLabelClosePos1" : "<\/label>",
+		"molcoreLabelClosePos2" : ""
+    }
+}

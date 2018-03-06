@@ -1,0 +1,14 @@
+{	
+	"inputCheckbox" : {
+		"type": "checkbox",
+		"name": "...",
+		"id": "inputcheckbox",
+		"value": "...",
+		"checkedstate": "",
+		"arialabel": "",
+		"ariadescribedby": "",
+		"placeholder": "Checkbox Option",
+		"disabled": ""
+    }   
+
+}

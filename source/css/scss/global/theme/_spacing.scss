@@ -1,0 +1,84 @@
+
+/*
+TABLE OF CONTENTS
+- Margin
+  - Positive
+  - Negative
+- Padding
+  - Positive
+  - Negative
+- Positioning (for absolute/fixed positioning)
+  - Positive
+  - Negative
+*/
+
+
+/* MARGIN */
+/* Positive */
+$margin-none: 0;
+$margin-xxs: .3rem;
+$margin-xs: .5rem;
+$margin-sm: .8rem;
+$margin-md: 1.2rem;
+$margin-lg: 1.6rem;
+$margin-xl: 2.4rem;
+$margin-xxl: 3.2rem;
+
+/* Negative */
+$margin-none: 0;
+$margin-neg-xxs: -.3rem;
+$margin-neg-xs: -.5rem;
+$margin-neg-sm: -.8rem;
+$margin-neg-md: -1.2rem;
+$margin-neg-lg: -1.6rem;
+$margin-neg-xl: -2.4rem;
+$margin-neg-xxl: -3.2rem;
+
+
+/*----------------------------*/
+
+
+/* PADDING */
+/* Positive */
+$padding-none: 0;
+$padding-xxs: .3rem;
+$padding-xs: .5rem;
+$padding-sm: .8rem;
+$padding-md: 1.2rem;
+$padding-lg: 1.6rem;
+$padding-xl: 2.4rem;
+$padding-xxl: 3.2rem;
+
+/* Negative */
+$padding-none: 0;
+$padding-neg-xxs: -.3rem;
+$padding-neg-xs: -.5rem;
+$padding-neg-sm: -.8rem;
+$padding-neg-md: -1.2rem;
+$padding-neg-lg: -1.6rem;
+$padding-neg-xl: -2.4rem;
+$padding-neg-xxl: -3.2rem;
+
+/*----------------------------*/
+
+
+/* POSITIONING */
+$positioning-none: 0;
+
+/* Positive */
+$positioning-xxs: .3rem;
+$positioning-xs: .5rem;
+$positioning-sm: .8rem;
+$positioning-md: 1.2rem;
+$positioning-lg: 1.6rem;
+$positioning-xl: 2.4rem;
+$positioning-xxl: 3.2rem;
+
+/* Negative */
+$positioning-neg-xxs: -.3rem;
+$positioning-neg-xs: -.5rem;
+$positioning-neg-sm: -.8rem;
+$positioning-neg-md: -1.2rem;
+$positioning-neg-lg: -1.6rem;
+$positioning-neg-xl: -2.4rem;
+$positioning-neg-xxl: -3.2rem;

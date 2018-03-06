@@ -1,0 +1,48 @@
+
+/*
+TABLE OF CONTENTS
+- Show/Hide class for demonstrating states
+- Icons
+*/
+
+/* SHOW/HIDE CLASS FOR DEMONSTRATING STATES */
+.exi-transitional .demo-only-hide {
+	display: none;
+}
+
+.exi-transitional .demo-only {
+    display: block;
+    border: 5px dashed #ccc;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.exi-transitional  h4.demo-only {
+    color: red;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    border: none;
+}
+
+/* ICONS */
+.exi-transitional .list-unstyled.icons.demo-only li {
+	font-size: 3em;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: .3em;
+    width: 3em;
+    text-align: center;
+    float: left;
+}
+
+.exi-transitional .list-unstyled.icons.demo-only li span {
+	display: block;
+}
+
+.exi-transitional .list-unstyled.icons.demo-only li span:first-child {
+	margin-bottom: .3em;
+}
+
+
+/*----------------------------------------*/

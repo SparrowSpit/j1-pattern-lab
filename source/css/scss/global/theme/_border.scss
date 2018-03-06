@@ -1,0 +1,136 @@
+
+/*
+TABLE OF CONTENTS
+- Global Border Radius
+- Global Border Widths
+  - Default
+  - Medium
+  - Heavy
+- Border Radii
+  - All
+  - Left (Top and Bottom)
+  - Right (Top and Bottom)
+  - Top Left
+  - Top Right
+  - Bottom Right
+  - Bottom Left
+- Default Border
+  - All
+  - Top
+  - Right
+  - Bottom
+  - Left
+*/
+
+
+/* NOTE: BORDER COLOR VARIABLES ARE DEFINED IN _color.scss */
+
+
+/* GLOBAL BORDER RADIUS */
+$border-radius-default: .3em;
+
+
+/*----------------------------------------*/
+
+
+
+/* GLOBAL BORDER WIDTHS */
+$border-width-default: 1px;
+$border-width-medium: .4rem;
+$border-width-heavy: .64rem;
+
+
+
+/*----------------------------------------*/
+
+
+
+/* BORDER RADII */
+/* All */
+@mixin border-radius {
+  -webkit-border-radius: $border-radius-default;
+     -moz-border-radius: $border-radius-default;
+      -ms-border-radius: $border-radius-default;
+          border-radius: $border-radius-default;
+}
+
+/* Left */
+@mixin border-left-radius {
+  -webkit-border-top-left-radius: $border-radius-default;
+     -moz-border-top-left-radius: $border-radius-default;
+      -ms-border-top-left-radius: $border-radius-default;
+          border-top-left-radius: $border-radius-default;
+  -webkit-border-bottom-left-radius: $border-radius-default;
+     -moz-border-bottom-left-radius: $border-radius-default;
+      -ms-border-bottom-left-radius: $border-radius-default;
+          border-bottom-left-radius: $border-radius-default;
+}
+
+/* Right */
+@mixin border-right-radius {
+  -webkit-border-top-right-radius: $border-radius-default;
+     -moz-border-top-right-radius: $border-radius-default;
+      -ms-border-top-right-radius: $border-radius-default;
+          border-top-right-radius: $border-radius-default;
+  -webkit-border-bottom-right-radius: $border-radius-default;
+     -moz-border-bottom-right-radius: $border-radius-default;
+      -ms-border-bottom-right-radius: $border-radius-default;
+          border-bottom-right-radius: $border-radius-default;
+}
+
+/* Top Left */
+@mixin border-top-left-radius {
+  -webkit-border-top-left-radius: $border-radius-default;
+     -moz-border-top-left-radius: $border-radius-default;
+      -ms-border-top-left-radius: $border-radius-default;
+          border-top-left-radius: $border-radius-default;
+}
+
+/* Top Right */
+@mixin border-top-right-radius {
+  -webkit-border-top-right-radius: $border-radius-default;
+     -moz-border-top-right-radius: $border-radius-default;
+      -ms-border-top-right-radius: $border-radius-default;
+          border-top-right-radius: $border-radius-default;
+}
+
+/* Bottom Right */
+@mixin border-bottom-right-radius {
+  -webkit-border-bottom-right-radius: $border-radius-default;
+     -moz-border-bottom-right-radius: $border-radius-default;
+      -ms-border-bottom-right-radius: $border-radius-default;
+          border-bottom-right-radius: $border-radius-default;
+}
+
+/* Bottom Left */
+@mixin border-bottom-left-radius {
+  -webkit-border-bottom-left-radius: $border-radius-default;
+     -moz-border-bottom-left-radius: $border-radius-default;
+      -ms-border-bottom-left-radius: $border-radius-default;
+          border-bottom-left-radius: $border-radius-default;
+}
+
+
+/*----------------------------------------*/
+
+
+/* DEFAULT BORDER */
+%border-default {
+  border: $border-width-default solid $color-border-default;
+}
+
+%border-top-default {
+  border-top: $border-width-default solid $color-border-default;
+}
+
+%border-right-default {
+  border-right: $border-width-default solid $color-border-default;
+}
+
+%border-bottom-default {
+  border-bottom: $border-width-default solid $color-border-default;
+}
+
+%border-left-default {
+  border-left: $border-width-default solid $color-border-default;
+}
