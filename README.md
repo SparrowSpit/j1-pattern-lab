@@ -5,9 +5,9 @@
 
 The Pattern Lab Standard Edition for Mustache is the evolution of Pattern Lab 1. Pattern Lab is still, at its core, a prototyping tool focused on encouraging communication between content creators, designers, devs, and clients. It combines platform-agnostic assets, like the [Mustache](http://mustache.github.io/)-based patterns, with a PHP-based "builder." Pattern Lab 2 introduces [the beginnings of an ecosystem](http://patternlab.io/docs/advanced-ecosystem-overview.html) that will allow teams to mix, match and extend Pattern Lab to meet their specific needs. It will also make it easier for the Pattern Lab team to push out new features. Pattern Lab Standard Edition for Mustache is just [one of the four PHP-based Editions currently available](http://patternlab.io/docs/installation.html).
 
-## Demo
+## Used for
 
-You can play with a demo of the front-end of Pattern Lab at [demo.patternlab.io](http://demo.patternlab.io).
+This is an instance of the PL for Jzb1. 
 
 ## Requirements
 
