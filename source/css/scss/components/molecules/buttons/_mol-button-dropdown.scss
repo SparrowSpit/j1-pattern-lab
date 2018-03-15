@@ -1,10 +1,8 @@
 
-.exi-transitional .btn-toolbar > .btn-group {
-    margin: 0 0 0 $margin-sm;
-}
 
-.exi-transitional .btn-toolbar > .btn-group:first-child {
-    margin: 0;
+/* BUTTON */
+.exi-transitional .btn-group.mol-button-dropdown {
+    margin: 0 0 $margin-lg 0;
 }
 
 .caret {
@@ -17,3 +15,13 @@
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
 	}
+
+
+/*-----------------------------*/
+
+
+
+/* DROPDOWN MENU */
+.exi-transitional .btn-group.mol-button-dropdown .dropdown-menu a {
+    text-decoration: none;
+}

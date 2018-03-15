@@ -1,0 +1,118 @@
+
+/*
+TABLE OF CONTENTS
+- GENERAL
+- Row Selection Section
+  - Selection Count
+  - Scroll Indicator
+  - Row Selection Table
+- Detail Update Section
+*/
+
+
+
+/* GENERAL */
+/* Modal Content container - Set heights so no scrolling */
+.exi-transitional .modal.mol-modal.mol-batch-edit-modal .modal-content {
+    max-height: none;
+    min-height: 28.5rem;
+}
+
+/* Modal Body - Set heights so no scrolling */
+.exi-transitional .modal.mol-modal.mol-batch-edit-modal .modal-body {
+    max-height: none;
+    min-height: 18rem;
+}
+
+
+
+/*-------------------------------------*/
+
+
+
+/* ROW SELECTION SECTION */
+/* Row selection - Container */
+.exi-transitional .mol-batch-edit-modal .mol-batch-edit-modal--selection {
+    max-height: 22rem;
+    min-height: 5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 2rem;
+}
+
+/* FOR SASS, CHANGE TO USE TEXT-STYLE--SUBTEXT PLACEHOLDER!!! */
+/* Selection Count and Scroll Indicator - Set text styling */
+.exi-transitional .modal.mol-modal.mol-batch-edit-modal .modal-body .mol-batch-edit-modal--count,
+.exi-transitional .modal.mol-modal.mol-batch-edit-modal .modal-body .mol-batch-edit-modal--scroll {
+    font-size: $text-size-sm;
+    font-weight: $text-weight-default;
+    color: $color-text-muted;
+}
+
+/* Set scroll indicator positioning */
+.exi-transitional .modal.mol-modal.mol-batch-edit-modal .modal-body .mol-batch-edit-modal--scroll {
+    margin: $margin-neg-md 0 $margin-md 0;
+    text-align: center;
+}
+
+/* Row Selection Table */
+.exi-transitional .mol-batch-edit-modal table tr th,
+.exi-transitional .mol-batch-edit-modal table tr td {
+    max-width: 15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+/*-------------------------------------*/
+
+
+
+/* DETAIL UPDATE SECTION */
+/* TEMPORARY UNTIL SELECT IS FIXED */
+.exi-transitional .mol-batch-edit-modal .mol-batch-edit-modal--inputs [class*="-input"] {
+    margin-bottom: $margin-md;
+}
+
+/* Modal Row Column 2 - Adjust right margin for remove button */
+.exi-transitional .mol-batch-edit-modal .mol-batch-edit-modal--inputs .modal-col-2 {
+    width: calc(50% - 3rem);
+}
+    /* Modal Row Column 2, Remove Button - Positioning */
+    .exi-transitional .mol-batch-edit-modal .mol-batch-edit-modal--inputs .modal-col-2 .mol-remove-button {
+        position: absolute;
+        top: 0;
+        right: -3rem;
+    }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Selection Section Table Cells - Narrow max width */
+    .exi-transitional .mol-batch-edit-modal table tr th,
+    .exi-transitional .mol-batch-edit-modal table tr td {
+        max-width: 10rem;
+    }
+
+    /* Selection Section Table Rows - Bottom spacing and border for mobile visual clarity */
+    .exi-transitional .mol-batch-edit-modal .mol-batch-edit-modal--inputs .row:not(:only-child) {
+        position: relative;
+        margin-bottom: $margin-md;
+        border-bottom: $border-width-default solid $color-border-default;
+    }
+
+    /* Detail Update Section Row Columns - Set static position and adjust width for remove button positioning */
+    .exi-transitional .mol-batch-edit-modal .mol-batch-edit-modal--inputs .modal-col-1,
+    .exi-transitional .mol-batch-edit-modal .mol-batch-edit-modal--inputs .modal-col-2 {
+        position: static;
+        width: calc(100% - 3rem);
+    }
+
+        /* Modal Row Column 2, Remove Button - Mobile positioning */
+        .exi-transitional .mol-batch-edit-modal .mol-batch-edit-modal--inputs .modal-col-2 .mol-remove-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+}

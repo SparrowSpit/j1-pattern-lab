@@ -1,7 +1,6 @@
 
 /* TO BE CONVERTED TO SASS */
 
-
 /* Initial input field (actually a UL styled to look like an input field) */
 .exi-transitional {
     
@@ -51,11 +50,6 @@
 
         &:hover {
           border: 1px solid darken(#d2d6db, 15%);
-        }
-
-        &:focus,
-        &:active {
-          border-color: #66afe9;
         }
   }
 } 
@@ -221,15 +215,4 @@
   font-size: 1.15em;
   margin: -.45em 0 0 0;
 }
-
-// .typeahead-hidden-accessible{
-//   border:0 !important;
-//   clip:rect(0 0 0 0) !important;
-//   height:1px !important;
-//   margin:-1px !important;
-//   overflow:hidden !important;
-//   padding:0 !important;
-//   position:absolute !important;
-//   width:1px !important
-// }
 
