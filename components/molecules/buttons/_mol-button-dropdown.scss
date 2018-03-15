@@ -1,0 +1,19 @@
+
+.exi-transitional .btn-toolbar > .btn-group {
+    margin: 0 0 0 $margin-sm;
+}
+
+.exi-transitional .btn-toolbar > .btn-group:first-child {
+    margin: 0;
+}
+
+.caret {
+	display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+	}

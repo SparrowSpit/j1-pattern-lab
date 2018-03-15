@@ -1,0 +1,36 @@
+
+/* SKIP NAVIGATION */
+/* Skip Nav Button */
+.exi-transitional .btn-group.mol-skipnav button:first-child {
+    border-top: none;
+    border-left: none;
+    border-radius: 0 0 4px 0;
+}
+
+
+/*-----------------------------*/
+
+
+
+/* GENERAL */
+.exi-transitional main {
+    display: block;
+    position: relative;
+    width: auto;
+    max-width: 1170px;
+    margin: 0 auto $margin-xl auto;
+}
+
+/* Wider left/right margin for medium viewports */
+@media (max-width: 1200px) {
+    .exi-transitional main {
+        margin: 0 $margin-xl;
+    }
+}
+
+/* Narrow left/right margin for small viewports */
+@media (max-width: 768px) {
+    .exi-transitional main {
+        margin: 0 $margin-sm;
+    }
+}

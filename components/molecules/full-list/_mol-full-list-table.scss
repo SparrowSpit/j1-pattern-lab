@@ -1,0 +1,144 @@
+
+/* 
+TABLE OF CONTENTS
+- DEMO ONLY
+- Main Table
+- Rows
+	- Sort Icons
+	- Optional Row Styles
+		- Disabled
+		- Past
+		- Success
+		- Caution
+		- Danger
+	- Collapsible Detail Rows
+	- Collapsible Detail Toggle (plus/minus)
+*/
+
+
+/* TEMPORARY DEMO ONLY - DO NOT INCLUDE IN FINAL PRODUCT */
+.exi-transitional table.mol-full-list-table tfoot {
+    display: none;
+}
+
+
+/*------------------------------------------*/
+
+
+
+/* MAIN TABLE */
+/* Reset the full list table margin/padding */
+.exi-transitional table.mol-full-list-table {
+    margin: 0 0 $margin-md 0;
+    padding: 0;
+}
+
+    /* Set the heading/cell margin/padding */
+    .exi-transitional table.table.mol-full-list-table tbody tr.footable-detail-row > th,
+    .exi-transitional table.table.mol-full-list-table tbody tr.footable-detail-row > td {
+        margin: 0;
+        padding: $padding-md;
+    }
+
+
+
+/*------------------------------------------*/
+
+
+
+/* ROWS */
+/* Headings */
+.exi-transitional table.table.mol-full-list-table > thead > tr > th {
+    background-color: $color-default-default;
+}
+
+/* Heading sort icons */
+.exi-transitional table.table.mol-full-list-table > thead > tr > th .btn.btn-link {
+    margin: 0 0 0 $margin-xxs;
+	padding: 0;
+	vertical-align: top;
+}
+
+.exi-transitional table.table.mol-full-list-table > thead > tr > th .btn .fooicon {
+    position: relative;
+	opacity: 1;
+	color: $color-text-default;
+	position: relative;
+	vertical-align: middle;
+	top: 0;
+	left: 0;
+	font-family: 'Glyphicons Halflings';
+}
+
+/* Default sort icon */
+.exi-transitional table.table.mol-full-list-table > thead > tr > th .fooicon.fooicon-sort:before {
+    content: "\e150";
+}
+
+/* Ascending sort icon */
+.exi-transitional table.table.mol-full-list-table > thead > tr > th .fooicon.fooicon-sort-asc:before {
+    content: "\e094";
+}
+
+/* Descending sort icon */
+.exi-transitional table.table.mol-full-list-table > thead > tr > th .fooicon.fooicon-sort-desc:before {
+   content: "\e093";
+}
+
+
+/* Optional Row Styles */
+/* Disabled */
+.exi-transitional table.mol-full-list-table tbody tr.row-inactive {
+	@extend %gradient-inactive;
+}
+
+.exi-transitional table.mol-full-list-table tbody tr.row-past {
+	background-color: $color-past-background;
+}
+
+.exi-transitional table.mol-full-list-table tbody tr.row-success {
+	background-color: $color-success-background;
+}
+
+.exi-transitional table.mol-full-list-table tbody tr.row-warning {
+	background-color: $color-warning-background;
+}
+
+.exi-transitional table.mol-full-list-table tbody tr.row-danger {
+	background-color: $color-danger-background;
+}
+
+
+
+/* Collapsible Detail Rows */
+    /* Collapsible Detail Rows */
+    /* Set spacing for collapsible detail table */
+    .exi-transitional table.footable-details.table {
+        width: auto;
+        margin-left: $margin-lg;
+    }
+
+    /* Collapsible detail row container TD */
+    .exi-transitional table tbody tr.footable-detail-row > th,
+    .exi-transitional table tbody tr.footable-detail-row > td {
+        padding: 0 0 $padding-lg 0;
+        border: none;
+    }
+
+    /* Remove border from an expanded row and its collapsible detail rows */
+    .exi-transitional table tbody tr.footable-detail-row td,
+    .exi-transitional table tbody tr.footable-detail-row td table tbody tr th, 
+    .exi-transitional table tbody tr.footable-detail-row td table tbody tr td {
+        padding: 0 0 $padding-lg 0;
+		border: none;
+    }
+
+/* Collapsible Detail Toggle */
+    /* Collapsible detail toggle properties */
+    table.table.mol-full-list-table > tbody > tr > td .footable-toggle {
+        color: $color-text-link;
+        opacity: 1;
+        margin-right: $margin-sm;
+		cursor: pointer;
+		padding: 0;
+    }

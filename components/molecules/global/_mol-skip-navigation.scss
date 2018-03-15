@@ -1,0 +1,261 @@
+.exi-transitional .mol-skip-navigation .skipTo.atom-button {
+    position: absolute;
+    background: transparent;
+    border-radius: 0 0 $border-radius-default 0;
+    -webkit-transition: top .5s ease-out,background .5s linear;
+    -moz-transition: top .5s ease-out,background .5s linear;
+    -o-transition: top .5s ease-out,background .5s linear;
+    transition: top .5s ease-out,background .5s linear;
+    z-index: 100000;
+}
+
+   .exi-transitional .mol-skip-navigation .skipTo.atom-button:focus {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $color-default-default;
+        z-index: 100000;
+        text-decoration: none;
+        -webkit-transition: top .1s ease-in,background .3s linear;
+        -moz-transition: top .1s ease-in,background .3s linear;
+        -o-transition: top .1s ease-in,background .3s linear;
+        transition: top .1s ease-in,background .3s linear;
+    }
+
+.exi-transitional .mol-skip-navigation .onFocus {
+    top: -5rem;
+    left: 0;
+}
+
+.exi-transitional .mol-skip-navigation .onLoad {
+    top: 0;
+    left: 0;
+    background: $color-default-default;
+}
+
+.exi-transitional .mol-skip-navigation .dropup, 
+.exi-transitional  .dropMenu.mol-skip-navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25rem;
+}
+
+.exi-transitional  .mol-skip-navigation.dropMenu-toggle {
+    margin-bottom: -3px;
+}
+
+    .exi-transitional .mol-skip-navigation.dropMenu-toggle:active, 
+	.exi-transitional .mol-skip-navigation.open .dropMenu-toggle {
+        outline: 0;
+    }
+
+.exi-transitional #skipToMenu.mol-skip-navigation .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-top: $margin-sm;
+    margin-left: $margin-xs;
+    vertical-align: top;
+    border-top: 4px solid #000;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: '';
+    pointer-events: none;
+}
+
+.exi-transitional .mol-skip-navigation .dropMenu-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 0 0 $padding-xs 0;
+    margin: 0;
+    list-style: none;
+    background-color: $color-default-default;
+    @extend %border-right-default;
+    @extend %border-bottom-default;
+    -webkit-border-radius: 0 0 $border-radius-default 0;
+    -moz-border-radius: 0 0 $border-radius-default 0;
+    border-radius: 0 0 $border-radius-default 0;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+    .exi-transitional .mol-skip-navigation .dropMenu-menu.pull-right {
+        right: 0;
+        left: auto;
+    }
+
+    .exi-transitional .mol-skip-navigation .dropMenu-menu .divider {
+        width: 100%;
+        height: 1px;
+        margin: $margin-sm .1rem;
+        overflow: hidden;
+    }
+
+    .exi-transitional .mol-skip-navigation .dropMenu-menu > li > a {
+        display: block;
+        padding: $padding-xs $padding-md;
+        clear: both;
+        font-weight: normal;
+        line-height: 1.4;
+        color: $color-text-dark;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+
+        .exi-transitional .mol-skip-navigation .dropMenu-menu > li > a.po-h1 {
+            
+        }
+
+        .exi-transitional .mol-skip-navigation .dropMenu-menu > li > a.po-h2 {
+            padding-left: 2.6rem;
+        }
+
+        .exi-transitional .mol-skip-navigation .dropMenu-menu > li > a.po-h3 {
+            padding-left: 3.6rem;
+        }
+
+        .exi-transitional .mol-skip-navigation .dropMenu-menu > li > a.po-h4 {
+            padding-left: 4.4rem;
+        }
+
+        .exi-transitional .mol-skip-navigation .dropMenu-menu > li > a.po-h5 {
+            padding-left: 5.2rem;
+        }
+
+        .exi-transitional .mol-skip-navigation .dropMenu-menu > li > a.po-6 {
+            padding-left: 6rem;
+        }
+
+    .exi-transitional .mol-skip-navigation .dropMenu-menu > li[role=separator] {
+        padding-left: $padding-md;
+        margin-top: $padding-sm;
+        font-weight: $text-weight-bold;
+        font-size: $text-size-md;
+    }
+
+    .exi-transitional .mol-skip-navigation .dropMenu-menu > li > a:hover, 
+	.exi-transitional .mol-skip-navigation .dropMenu-menu > li > a:focus, 
+	.exi-transitional .mol-skip-navigation .dropMenu-submenu:hover > a, 
+	.exi-transitional .mol-skip-navigation .dropMenu-submenu:focus > a,
+	.exi-transitional .mol-skip-navigation .dropMenu-menu > .active > a, 
+	.exi-transitional .mol-skip-navigation .dropMenu-menu > .active > a:hover, 
+	.exi-transitional .mol-skip-navigation .dropMenu-menu > .active > a:focus {
+        text-decoration: none;
+        color: $color-text-dark;
+        background: $color-branding-background;
+    }
+
+    .exi-transitional .mol-skip-navigation .dropMenu-menu > .disabled > a, 
+	.exi-transitional .mol-skip-navigation .dropMenu-menu > .disabled > a:hover, 
+	.exi-transitional .mol-skip-navigation .dropMenu-menu > .disabled > a:focus {
+        color: #999;
+    }
+
+        .exi-transitional .mol-skip-navigation .dropMenu-menu > .disabled > a:hover, 
+		.exi-transitional .mol-skip-navigation .dropMenu-menu > .disabled > a:focus {
+            text-decoration: none;
+            background-color: transparent;
+            background-image: none;
+            filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+            cursor: default;
+        }
+
+.exi-transitional .mol-skip-navigation.open {
+    z-index: 100000;
+}
+
+    .exi-transitional .mol-skip-navigation.open > .dropMenu-menu {
+        display: block;
+    }
+
+.exi-transitional .mol-skip-navigation .pull-right > .dropMenu-menu {
+    right: 0;
+    left: auto;
+}
+
+.exi-transitional #skipToMenu.mol-skip-navigation .dropup .caret, 
+.exi-transitional #skipToMenu.mol-skip-navigation .navbar-fixed-bottom .dropMenu .caret {
+    border-top: 0;
+    border-bottom: 4px solid #000;
+    content: '';
+}
+
+.exi-transitional #skipToMenu.mol-skip-navigation .dropup .dropMenu-menu, 
+.exi-transitional #skipToMenu.mol-skip-navigation .navbar-fixed-bottom .dropMenu .dropMenu-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 1px;
+}
+
+.exi-transitional .mol-skip-navigation .dropMenu-submenu {
+    position: relative;
+}
+
+    .exi-transitional .mol-skip-navigation .dropMenu-submenu > .dropMenu-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 $border-radius-default $border-radius-default $border-radius-default;
+        -moz-border-radius: 0 $border-radius-default $border-radius-default $border-radius-default;
+        border-radius: 0 $border-radius-default $border-radius-default $border-radius-default;
+    }
+
+    .exi-transitional .mol-skip-navigation .dropMenu-submenu:hover > .dropMenu-menu {
+        display: block;
+    }
+
+.exi-transitional .mol-skip-navigation .dropup .dropMenu-submenu > .dropMenu-menu {
+    top: auto;
+    bottom: 0;
+    margin-top: 0;
+    margin-bottom: -2px;
+    -webkit-border-radius: $border-radius-default $border-radius-default $border-radius-default 0;
+    -moz-border-radius: $border-radius-default $border-radius-default $border-radius-default 0;
+    border-radius: $border-radius-default $border-radius-default $border-radius-default 0;
+}
+
+.exi-transitional .mol-skip-navigation .dropMenu-submenu > a:after {
+    display: block;
+    content: ' ';
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.exi-transitional .mol-skip-navigation .dropMenu-submenu:hover > a:after {
+    border-left-color: #fff;
+}
+
+.exi-transitional .mol-skip-navigation .dropMenu-submenu.pull-left {
+    float: none;
+}
+
+    .exi-transitional .mol-skip-navigation .dropMenu-submenu.pull-left > .dropMenu-menu {
+        left: -100%;
+        margin-left: 10px;
+        -webkit-border-radius: $border-radius-default 0 $border-radius-default $border-radius-default;
+        -moz-border-radius: $border-radius-default 0 $border-radius-default $border-radius-default;
+        border-radius: $border-radius-default 0 $border-radius-default $border-radius-default;
+    }
+
+.exi-transitional .dropMenu.mol-skip-navigation .dropMenu-menu .nav-header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

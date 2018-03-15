@@ -1,0 +1,88 @@
+
+/*
+.exi-transitional .panel.mol-panel.mol-advanced-filter-saved-filters {
+	margin: 0 0 $margin-md 0;
+}*/
+
+
+/* Adv Filter main additions */
+.exi-transitional .org-advanced-filter .panel .panel-footer {
+    padding: 0 $padding-md $padding-md $padding-md; 
+}
+
+    /* Place spacing between action buttons in the advanced filter panel */
+    .exi-transitional .org-advanced-filter .panel .panel-footer button:not(:last-child) {
+        margin-right: $margin-sm;
+    }
+
+/* Make a text heading look like a label */
+.exi-transitional .label {
+    display: inline-block;
+    font-size: $text-size-md;
+    color: $color-text-default;
+    font-weight: $text-weight-bold;
+    margin: 0 0 $margin-xxs 0;
+    padding: 0;
+}
+
+/*----------------------*/
+
+/* Saved filters (GENERAL) */
+.exi-transitional .panel.mol-panel.mol-advanced-filter-saved-filters {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    background: $color-branding-background;
+}
+
+    .exi-transitional .panel.mol-panel.mol-advanced-filter-saved-filters .panel-body {
+        padding-bottom: 0;
+    }
+
+.exi-transitional .mol-advanced-filter-saved-filters .saved-filter-editing {
+    position: absolute;
+    top: $positioning-sm;
+    right: $positioning-md;
+    margin: 0;
+    padding: 0;
+}
+
+/* RESPONSIVE STYLING */
+@media (max-width:78em) {
+    .exi-transitional .mol-advanced-filter-saved-filters .saved-filter-editing {
+        position: relative;
+        display: block;
+        top: 0;
+        right: 0;
+        margin: 0 0 $margin-sm 0;
+        padding: 0;
+    }
+}
+
+.exi-transitional .mol-advanced-filter-saved-filters .mol-select-input, .exi-transitional .mol-advanced-filter-saved-filters .mol-input-text, .exi-transitional .mol-advanced-filter-saved-filters .checkbox {
+    margin: 0 0 $margin-md 0;
+    padding: 0;
+}
+
+    .exi-transitional .mol-advanced-filter-saved-filters .table tr {
+        @extend %border-top-default;
+    }
+
+    .exi-transitional .mol-advanced-filter-saved-filters .table tr:nth-child(2) {
+        border-top: none;
+    }
+
+	.exi-transitional .mol-advanced-filter-saved-filters .table tr td:last-child {
+            text-align: right;
+        }
+
+        .exi-transitional .mol-advanced-filter-saved-filters .table tr th, .exi-transitional .mol-advanced-filter-saved-filters .table tr td {
+            padding: $padding-sm 0;
+            border: none;
+        }
+
+            .exi-transitional .mol-advanced-filter-saved-filters .table tr td .btn {
+                padding: 0;
+            }
+
+

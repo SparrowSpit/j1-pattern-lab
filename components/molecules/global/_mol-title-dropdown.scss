@@ -1,0 +1,28 @@
+
+.exi-transitional .mol-title-dropdown {
+    display: block;
+	line-height: 1;
+	margin: $margin-neg-sm 0 $margin-neg-sm $margin-neg-md;
+    padding: 0;
+}
+
+    .exi-transitional .mol-title-dropdown > button.dropdown-toggle {
+        float: none;
+        line-height: 1;
+		color: $color-text-light;
+        font-size: $text-size-lg;
+        margin: 0;
+        padding: $padding-sm $padding-md;
+        @extend %border-right-default;
+        border-radius: $border-radius-default 0 0 0;
+    }
+
+        .exi-transitional .mol-title-dropdown > button.dropdown-toggle:hover, .exi-transitional .mol-title-dropdown > button.dropdown-toggle:focus, .exi-transitional .mol-title-dropdown > button.dropdown-toggle:active, .exi-transitional .mol-title-dropdown.open > button.dropdown-toggle {
+            text-decoration: none;
+            color: $color-text-light;
+            background: $color-hover-background-dark;
+        }
+
+	.exi-transitional .mol-title-dropdown > button.dropdown-toggle .caret {
+        border-top-color: $color-default-default;
+    }

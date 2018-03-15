@@ -1,0 +1,132 @@
+.exi-transitional {
+
+	.org-data-entry-form {
+
+		position: relative;
+
+		.panel {
+			background-color: #fff;
+			border-radius: 4px;
+			margin: 0 0 2em 0;
+			padding: 0;
+			border: 1px solid #d2d6db;
+			box-shadow: none;
+		}
+
+		.panel-body {
+			padding: 3rem;
+			max-width: 1000px;
+			width: 85%;
+		}
+
+		// any combo of buttons can be used here
+		.org-data-entry-form--save-button {
+			position: fixed;
+			top: 150px;
+			right: 7%;
+			z-index: 600;
+
+				@media (min-width: 1000px) {
+					right: 10%;
+				}
+		}
+
+		// each label and input are wrapped in this
+		.form-group {
+			margin: 0 0 2rem 0;
+		}
+
+
+		.form-section--wrapper {
+			max-width: 640px;
+		}		
+
+		// each section form has these styles
+		// besides the last section in the form
+		.form-section:not(:last-of-type) {
+			margin-bottom: 5rem;
+
+				// creates a border after each section
+				&:after {
+					content: "";
+					border-bottom: 2px solid #D2D6DB;
+					width: 100%; 
+					height: 2px; 
+					display: block;
+					padding-top: 3rem;
+				}
+
+		}
+
+		// the main form title
+		.form-title {
+			margin-bottom: 2.6rem;
+		}	
+
+		// each section has a title, legend
+		.form-section--title {
+			font-size: 2rem;
+			margin-bottom: 1.6rem;
+
+				@media (min-width: 1000px) {
+					font-size: 2.25rem;
+				}
+		}
+
+		// create two columns on desktop, one on mobile
+		.data-entry-form--twosidebyside .form-group {
+			width: auto;
+			margin: 0 0 2.4rem 0;
+
+				@media (min-width: 768px) {
+					float: left;
+					width: calc(50% - 1.6rem);
+					margin: 0 1.6rem 2.4rem 0;					
+				}
+		}
+
+		// get rid of margin-right on last column
+		.data-entry-form--twosidebyside .form-group:last-of-type {
+
+				@media (min-width: 768px) {
+					margin: 0 0 2.4rem 1.6rem;				
+				}			
+		}
+
+
+		// create three columns on desktop, one on mobile
+		.data-entry-form--threesidebyside .form-group {
+			width: auto;
+			margin: 0 0 2.4rem 0;
+
+				@media (min-width: 768px) {
+					float: left;
+					width: calc(33% - 1.6rem);
+					margin: 0 1.6rem 2.4rem 0;					
+				}
+		}
+
+		// get rid of margin-right on last column		
+		.data-entry-form--threesidebyside .form-group:last-of-type {
+			
+			@media (min-width: 768px) {
+				margin: 0 0 2.4rem 1.6rem;				
+			}			
+		}
+
+		// to clear floats on these columns
+		.clearfix {
+			&:before, 
+			&:after {
+				content: '';
+				display: table;
+			}
+
+			&:after {
+				clear: both;
+			}
+		}
+
+	}
+
+}

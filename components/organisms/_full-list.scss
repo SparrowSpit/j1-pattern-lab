@@ -1,0 +1,54 @@
+
+/*
+TABLE OF CONTENTS
+- General
+- Context-specific Styles for Components
+  - Full List Batch Options Dropdown
+  - List Key
+  - Pagination Controls
+*/
+
+
+/* FULL LIST BATCH OPTIONS DROPDOWN */
+.exi-transitional .org-full-list .mol-full-list-batch-options-dropdown {
+    float: right;
+    margin-bottom: $margin-lg;
+}
+
+@media (max-width: 768px) {
+    .exi-transitional .org-full-list .mol-full-list-batch-options-dropdown {
+        float: none;
+        display: block;
+        clear: left;
+    }
+
+	.exi-transitional .org-full-list .mol-full-list-batch-options-dropdown ul.dropdown-menu-right {
+		right: auto;
+		left: 0;
+	}
+}
+
+
+
+/*----------------------------------*/
+
+
+
+/* LIST KEY */
+.exi-transitional .org-full-list .mol-list-key {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+
+/*----------------------------------*/
+
+
+
+/* PAGINATION CONTROLS */
+.exi-transitional .mol-pagination {
+	float: left;
+	margin-bottom: $margin-lg;
+}

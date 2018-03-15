@@ -1,0 +1,59 @@
+
+/*
+TABLE OF CONTENTS
+- General
+- "Show 15" Button
+- Mobile Viewports
+*/
+
+/* GENERAL */
+/* Pagination Button Toolbar */
+.exi-transitional .mol-pagination.btn-toolbar {
+    margin: 0 0 $margin-md 0;
+}
+
+/* Pagination Button Group */
+.exi-transitional .mol-pagination.btn-toolbar > .btn-group {
+    margin: 0;
+}
+
+/* Vertically align the text buttons with the other buttons */
+.exi-transitional .mol-pagination .btn.btn-link.btn-sm {
+    padding: $padding-sm $padding-md 0 $padding-md;
+}
+
+/* Pagination ellipses */
+.exi-transitional .mol-pagination div.btn.btn-link.btn-sm {
+    cursor: default;
+	color: $color-text-muted;
+}
+
+/* Pagination page indicator */
+.exi-transitional .mol-pagination div.btn.btn-primary {
+    cursor: default;
+	background: $color-primary-default;
+	border-color: $color-primary-default;
+}
+
+
+
+/*------------------------------------------*/
+
+
+
+/* "SHOW 15 BUTTON */
+
+
+
+
+/*------------------------------------------*/
+
+
+
+/* MOBILE VIEWPORTS */
+@media (max-width: 768px) {
+	/* Shrink padding for smallest viewport */
+	.exi-transitional .mol-pagination div.btn.btn-link.btn-sm {
+    padding: $padding-sm $padding-xs 0 $padding-xs;
+}
+}

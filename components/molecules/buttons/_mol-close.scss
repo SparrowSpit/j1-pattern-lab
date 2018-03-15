@@ -1,0 +1,16 @@
+
+
+.exi-transitional .mol-close {
+	margin: 0;
+	padding: $padding-xs;
+	line-height: 1;
+	/* White background for accessible contrast 
+	background: $color-default-default;
+	border-radius: 50%;
+	*/
+}
+
+.exi-transitional .mol-close .glyphicon.glyphicon-remove {
+	color: $color-text-link;
+}
+

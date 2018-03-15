@@ -1,0 +1,25 @@
+
+/*
+TABLE OF CONTENTS
+- Full List Context
+*/
+
+
+/* FULL LIST CONTEXT */
+/* Zero the panel margins and delete the default panel border/box shadow */
+.exi-transitional .org-full-list .mol-full-list-control-bar  {
+	margin: 0;
+	border: none;
+	box-shadow: none;
+}
+
+/* Set the panel body padding to align content with other full list items */
+.exi-transitional .org-full-list .mol-full-list-control-bar .panel-body  {
+	position:relative;
+	padding: 0;
+}
+
+
+
+/*------------------------------------------*/
+

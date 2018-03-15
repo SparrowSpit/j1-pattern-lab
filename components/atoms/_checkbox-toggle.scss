@@ -1,0 +1,144 @@
+// to remove original input,  
+// push it outside of the viewport
+%input-remove {
+  position: absolute;
+  left: -1000em;
+  opacity: 0;	
+}
+
+// positioning for pseudo elements
+%pseudo-pos {
+	position: absolute;
+	content: ""; 
+	display: inline-block;	
+}
+
+
+// THIS MARGIN IS JUST FOR THE DEMO
+.fpo-checkbox-wrapper {
+	margin: 6rem 2rem;	
+}
+
+.exi-transitional {
+
+	.atom-checkbox-toggle {
+
+		input[type=checkbox] {
+		  @extend %input-remove;
+		}
+
+		// SMALL CHECKBOX
+		&.checkbox-toggle--sm {
+			
+			label {
+				position: relative;
+				padding: 0 2.4rem 0 2.4rem; 
+
+					&:before, 
+					&:after {
+						@extend %pseudo-pos;
+					}
+
+					&:before {
+						height: 16px; 
+						width: 16px;
+						left: 0;
+						top: 1px; 
+						background: #f4f4f4;
+						border: 1px solid #bbb;
+					}
+
+					&:after {
+						left: 6px;
+						top: 2px; 
+						width: 5px; 
+						height: 10px; 
+						border: solid #ffffff;
+						border-width: 0 2px 2px 0;
+						transform: rotate(45deg);
+					}
+			}			
+		}
+
+		// LARGE CHECKBOX
+		&.checkbox-toggle--lg {
+			
+			label {
+					position: relative;
+					padding: 0 3rem 0 3rem; 
+
+						&:before, 
+						&:after {
+							@extend %pseudo-pos;
+						}
+
+						&:before {
+							height: 22px; 
+							width: 22px;
+							left: 0;
+							top: 1px; 
+							background: #f4f4f4;
+							border: 1px solid #bbb;
+						}
+
+						&:after {
+							top: 3px; 
+							left: 7px;							
+							height: 14px; 
+							width: 8px; 							
+							border: solid #ffffff;
+							border-width: 0 2px 2px 0;
+							transform: rotate(45deg);
+						}
+				}			
+		}
+
+		input[type='checkbox'] + label::after {
+  			content: none; 
+  		}
+
+		input[type='checkbox']:checked + label::after {
+  			content: ''; 
+  		}
+
+		input[type='checkbox']:checked + label::before {
+  			background: #337ab7; 
+  		}
+
+		// ADDING THE FOCUS
+		input[type='checkbox']:focus + label::before {
+		  outline: auto 2px Highlight;
+		  outline: auto 5px -webkit-focus-ring-color; 
+		}
+
+
+		// DISABLED STATE
+		&.checkbox-toggle--disabled {
+			
+			label {
+					&:before {
+		  				background: #D3D3D3; 
+		  				border: #D3D3D3;
+		  			}
+  			}
+		}
+
+		// DISABLED & CHECKED STATE
+		&.checkbox-toggle--disabled--checked	{
+			@extend .checkbox-toggle--disabled;
+			
+				label {
+						&:after {
+							border: solid #BBBBBB;
+							border-width: 0 2px 2px 0;
+						}
+	  			}
+
+				input[type='checkbox']:checked + label::before {
+		  			background: #d3d3d3; 
+		  		}
+  		}	
+	
+	}
+
+}

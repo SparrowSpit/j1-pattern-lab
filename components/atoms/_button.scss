@@ -1,0 +1,439 @@
+
+/*
+TABLE OF CONTENTS
+- Button
+  - Default
+  	- Disabled
+  - Variations
+    - Primary
+	  - Disabled
+	- Success
+	  - Disabled
+	- Warning
+	  - Disabled
+	- Danger
+	  - Disabled
+	- Text
+	  - Disabled
+- Sizes
+  - XS
+  - SM
+  - LG  
+- Demo styling   
+*/
+
+
+
+/* DEFAULT */
+.exi-transitional .atom-button {
+    color: $color-text-dark;
+    margin: 0;
+    padding: $padding-sm $padding-md;
+	line-height: 1.2;
+    background: $color-default-default;
+    @extend %transition-default;
+    @extend %border-default;
+    border-radius: $border-radius-default;
+}
+
+.exi-transitional .atom-button:hover, 
+.exi-transitional .atom-button:focus,
+.exi-transitional .atom-button:active,
+.exi-transitional .atom-button:active:focus, 
+.exi-transitional .atom-button:active:hover {
+    color: $color-text-dark;
+	background: darken($color-default-default,5%);
+}
+
+/* Disabled */
+.exi-transitional .atom-button.disabled, 
+.exi-transitional .atom-button:disabled, 
+.exi-transitional .dropdown-menu > li > .atom-button:disabled {
+    cursor: not-allowed;
+	color: lighten($color-text-dark,30%);
+    background: rgba($color-default-default,.4);
+}
+
+
+
+/*--------------------------------*/
+
+
+
+/* VARIATIONS */
+/* Primary */
+.exi-transitional .atom-button.atom-button--primary {
+    color: $color-text-light;
+    background: $color-primary-default;
+    border: 1px solid transparent;
+}
+
+.exi-transitional .atom-button.atom-button--primary:hover, 
+.exi-transitional .atom-button.atom-button--primary:focus,
+.exi-transitional .atom-button.atom-button--primary:active,
+.exi-transitional .atom-button.atom-button--primary:active:focus, 
+.exi-transitional .atom-button.atom-button--primary:active:hover {
+    background: darken($color-primary-default,15%);
+}
+
+/* Disabled */
+.exi-transitional .atom-button.atom-button--primary.disabled, 
+.exi-transitional .atom-button.atom-button--primary:disabled, 
+.exi-transitional .dropdown-menu > li > .atom-button.atom-button--primary:disabled {
+	color: darken($color-text-light,10%);
+    background: rgba($color-primary-default,.6);
+}
+
+
+/* Success */
+.exi-transitional .atom-button.atom-button--success {
+    color: $color-text-light;
+    background: $color-success-default;
+    border: 1px solid transparent;
+}
+
+.exi-transitional .atom-button.atom-button--success:hover, 
+.exi-transitional .atom-button.atom-button--success:focus,
+.exi-transitional .atom-button.atom-button--success:active,
+.exi-transitional .atom-button.atom-button--success:active:focus, 
+.exi-transitional .atom-button.atom-button--success:active:hover {
+    background: darken($color-success-default,15%);
+}
+
+/* Disabled */
+.exi-transitional .atom-button.atom-button--success.disabled,
+.exi-transitional .atom-button.atom-button--success:disabled, 
+.exi-transitional .dropdown-menu > li > .atom-button.atom-button--success:disabled {
+	color: darken($color-text-light,10%);
+    background: rgba($color-success-default,.6);
+}
+
+
+/* Warning */
+.exi-transitional .atom-button.atom-button--warning {
+    color: $color-text-light;
+    background: $color-warning-default;
+    border: 1px solid transparent;
+}
+
+.exi-transitional .atom-button.atom-button--warning:hover, 
+.exi-transitional .atom-button.atom-button--warning:focus,
+.exi-transitional .atom-button.atom-button--warning:active,
+.exi-transitional .atom-button.atom-button--warning:active:focus, 
+.exi-transitional .atom-button.atom-button--warning:active:hover {
+    background: darken($color-warning-default,15%);
+}
+
+/* Disabled */
+.exi-transitional .atom-button.atom-button--warning.disabled, 
+.exi-transitional .atom-button.atom-button--warning:disabled, 
+.exi-transitional .dropdown-menu > li > .atom-button.atom-button--warning:disabled {
+	color: darken($color-text-light,10%);
+    background: rgba($color-warning-default,.6);
+}
+
+
+/* Danger */
+.exi-transitional .atom-button.atom-button--danger {
+    color: $color-text-light;
+    background: $color-danger-default;
+    border: 1px solid transparent;
+}
+
+.exi-transitional .atom-button.atom-button--danger:hover, 
+.exi-transitional .atom-button.atom-button--danger:focus,
+.exi-transitional .atom-button.atom-button--danger:active,
+.exi-transitional .atom-button.atom-button--danger:active:focus, 
+.exi-transitional .atom-button.atom-button--danger:active:hover {
+    background: darken($color-danger-default,15%);
+}
+
+/* Disabled */
+.exi-transitional .atom-button.atom-button--danger.disabled, 
+.exi-transitional .atom-button.atom-button--danger:disabled, 
+.exi-transitional .dropdown-menu > li > .atom-button.atom-button--danger:disabled {
+	color: darken($color-text-light,10%);
+    background: rgba($color-danger-default,.6);
+}
+
+
+/* Text */
+.exi-transitional .atom-button.atom-button--text {
+    display: inline-block;
+	color: $color-text-link;
+	margin: 0;
+	padding: 0;
+    background: none;
+    border: none;
+}
+
+.exi-transitional .atom-button.atom-button--text:hover, 
+.exi-transitional .atom-button.atom-button--text:focus,
+.exi-transitional .atom-button.atom-button--text:active,
+.exi-transitional .atom-button.atom-button--text:active:focus, 
+.exi-transitional .atom-button.atom-button--text:active:hover {
+    color: $color-text-link-highlight;
+	background: none;
+}
+
+/* Disabled */
+.exi-transitional .atom-button.atom-button--text.disabled, 
+.exi-transitional .atom-button.atom-button--text:disabled, 
+.exi-transitional .dropdown-menu > li > .atom-button.atom-button--text:disabled {
+	color: lighten($color-text-link,40%);
+}
+
+
+
+/*--------------------------------*/
+
+
+
+/* SIZES */
+.exi-transitional .atom-button.atom-button--xs {
+	font-size: $text-size-sm;
+	padding: .1rem $padding-xs;
+}
+
+.exi-transitional .atom-button.atom-button--sm {
+	font-size: $text-size-sm;
+    padding: $padding-xs $padding-md;
+}
+
+.exi-transitional .atom-button.atom-button--lg {
+    font-size: $text-size-lg;
+	padding: $padding-md $padding-lg;
+}
+
+
+
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+
+
+
+/* TEMPORARY DUPLICATE STYLING UNTIL LEGACY BOOTSTRAP CLASSES ARE REPLACED IN ALL COMPONENTS */
+
+/*
+TABLE OF CONTENTS
+- Button Core
+  - Disabled
+- Default
+- Primary
+- Success
+- Warning
+- Danger
+- Text
+*/
+
+
+/* BUTTON CORE */
+.exi-transitional .btn {
+    @extend %transition-default;
+	margin: 0;
+	padding: $padding-sm $padding-md;
+	@include border-radius;
+}
+
+.exi-transitional .btn.btn-xs {
+	font-size: 12px;
+	padding: 1px 5px;
+}
+
+.exi-transitional .btn.btn-sm {
+	font-size: 12px;
+    padding: 5px 10px;
+}
+
+.exi-transitional .btn.btn-lg {
+    font-size: 18px;
+	padding: 10px 16px;
+}
+
+/* Disabled */
+.exi-transitional button:disabled, .exi-transitional .dropdown-menu > li > button:disabled {
+    cursor: not-allowed;
+}
+
+
+
+/*--------------------------------*/
+
+
+
+/* DEFAULT */
+%btn-style-default {
+	background-color: $color-default-default;
+}
+
+.exi-transitional .btn-default {
+    @extend %btn-style-default;
+}
+
+.exi-transitional .btn-default:hover, 
+.exi-transitional .btn-default:focus,
+.exi-transitional .btn-default:active,
+.exi-transitional .btn-default:active:focus, 
+.exi-transitional .btn-default:active:hover,
+.exi-transitional .btn-default:active.focus,
+.exi-transitional .btn-default.focus, 
+.exi-transitional .btn-default.active,
+.exi-transitional .btn-default.active:focus, 
+.exi-transitional .btn-default.active:hover,
+.exi-transitional .btn-default.active.focus {
+    background-color: darken( $color-default-default, 10% );
+}
+
+
+
+/*--------------------------------*/
+
+
+
+/* PRIMARY */
+%btn-style-primary {
+	background-color: $color-primary-default;
+    border-color: $color-primary-default;
+}
+
+.exi-transitional .btn-primary {
+    @extend %btn-style-primary;
+}
+
+.exi-transitional .btn-primary:hover, 
+.exi-transitional .btn-primary:focus,
+.exi-transitional .btn-primary:active,
+.exi-transitional .btn-primary:active:focus, 
+.exi-transitional .btn-primary:active:hover,
+.exi-transitional .btn-primary:active.focus,
+.exi-transitional .btn-primary.focus, 
+.exi-transitional .btn-primary.active,
+.exi-transitional .btn-primary.active:focus, 
+.exi-transitional .btn-primary.active:hover,
+.exi-transitional .btn-primary.active.focus {
+    background-color: darken( $color-primary-default, 10% );
+}
+
+
+
+/*--------------------------------*/
+
+
+
+/* SUCCESS */
+%btn-style-success {
+	background-color: $color-success-default;
+    border-color: $color-success-default;
+}
+
+.exi-transitional .btn-success {
+    @extend %btn-style-primary;
+}
+
+.exi-transitional .btn-success:hover, 
+.exi-transitional .btn-success:focus,
+.exi-transitional .btn-success:active,
+.exi-transitional .btn-success:active:focus, 
+.exi-transitional .btn-success:active:hover,
+.exi-transitional .btn-success:active.focus,
+.exi-transitional .btn-success.focus, 
+.exi-transitional .btn-success.active,
+.exi-transitional .btn-success.active:focus, 
+.exi-transitional .btn-success.active:hover,
+.exi-transitional .btn-success.active.focus {
+    background-color: darken( $color-success-default, 10% );
+}
+
+
+
+/*--------------------------------*/
+
+
+
+/* WARNING */
+%btn-style-warning {
+	background-color: $color-warning-default;
+    border-color: $color-warning-default;
+}
+
+.exi-transitional .btn-warning {
+    @extend %btn-style-warning;
+}
+
+.exi-transitional .btn-warning:hover, 
+.exi-transitional .btn-warning:focus,
+.exi-transitional .btn-warning:active,
+.exi-transitional .btn-warning:active:focus, 
+.exi-transitional .btn-warning:active:hover,
+.exi-transitional .btn-warning:active.focus,
+.exi-transitional .btn-warning.focus, 
+.exi-transitional .btn-warning.active,
+.exi-transitional .btn-warning.active:focus, 
+.exi-transitional .btn-warning.active:hover,
+.exi-transitional .btn-warning.active.focus {
+    background-color: darken( $color-warning-default, 10% );
+}
+
+
+
+/*--------------------------------*/
+
+
+
+/* DANGER */
+%btn-style-danger {
+	background-color: $color-danger-default;
+    border-color: $color-danger-default;
+}
+
+.exi-transitional .btn-danger {
+    @extend %btn-style-danger;
+}
+
+.exi-transitional .btn-danger:hover, 
+.exi-transitional .btn-danger:focus,
+.exi-transitional .btn-danger:active,
+.exi-transitional .btn-danger:active:focus, 
+.exi-transitional .btn-danger:active:hover,
+.exi-transitional .btn-danger:active.focus,
+.exi-transitional .btn-danger.focus, 
+.exi-transitional .btn-danger.active,
+.exi-transitional .btn-danger.active:focus, 
+.exi-transitional .btn-danger.active:hover,
+.exi-transitional .btn-danger.active.focus {
+    background-color: darken( $color-danger-default, 10% );
+}
+
+
+
+/*--------------------------------*/
+
+
+
+/* TEXT */
+%btn-style-link {
+	color: $color-primary-default;
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+}
+
+.btn-link, .btn-link.btn-xs, .btn-link.btn-sm, .btn-link.btn-lg {
+    @extend %btn-style-link;
+}
+
+.exi-transitional .btn-link:hover, 
+.exi-transitional .btn-link:focus,
+.exi-transitional .btn-link:active,
+.exi-transitional .btn-link:active:focus, 
+.exi-transitional .btn-link:active:hover,
+.exi-transitional .btn-link:active.focus,
+.exi-transitional .btn-link.focus, 
+.exi-transitional .btn-link.active,
+.exi-transitional .btn-link.active:focus, 
+.exi-transitional .btn-link.active:hover,
+.exi-transitional .btn-link.active.focus {
+    color: darken( $color-primary-default, 10% );
+}
