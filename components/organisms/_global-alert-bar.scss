@@ -1,0 +1,238 @@
+
+$bp-med: 64rem;
+
+.exi-transitional {
+
+  .org-global-alert-bar {
+    background: #ffffff;
+    box-shadow: 0px -4px 14px rgba(124, 124, 124, .25);
+    color: #232323;
+    font-size: $text-size-md;  
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: $padding-lg 0 0 0;
+    width: 100%;
+    @extend %transition-default;
+    z-index: 6000;
+
+      @media (min-width: 1024px) {
+        left: 50%;
+        margin-left: -520px;
+        max-width: 1040px;
+      }
+
+    .container-message {
+
+      &[mode="all"] {
+        max-height: 300px; 
+        overflow-y: scroll;
+
+        .alert-single:not(:last-of-type):after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          width: 92%;
+          height: 2px;
+          background: #eceef1;
+          margin-left: -47%;
+
+        }        
+      }
+
+      // border below alert header
+      &[mode="all"]:before {
+        content: "";
+        display: block;
+        background: #ECEEF1; 
+        height: 4px;
+        margin-bottom: 1.5rem;
+        width: 100%; 
+      }
+
+
+    }
+
+    .init-alert {
+      display: block;
+      margin-bottom: $margin-lg;
+      text-align: center; 
+
+        .atom-button {
+          margin: 0 0 0 0.5rem;
+        }
+    }
+
+    .alert-single {
+      margin: 0 auto 3rem auto;  
+      padding: 0 4rem 1rem 4rem;
+      position: relative;
+      width: 94%;
+
+        @media (min-width: 1024px) {
+          width: 75%;
+        }
+
+      &.success-alert {
+        border-left: 3px solid $color-success-default;
+        
+        .alert-single-icon {
+          color: $color-success-default;
+        }
+      }
+      
+      &.warning-alert {
+        border-left: 3px solid $color-warning-default; 
+        
+        .alert-single-icon {
+          color: $color-warning-default;
+        }
+      }
+
+      &.danger-alert {
+        border-left: 3px solid $color-danger-default; 
+
+        .alert-single-icon {
+          color: $color-danger-default;
+        }        
+      }
+
+    }
+
+    .alert-single-icon {
+      position: absolute;
+      top: 4px;
+      left: 10px;
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+    }
+
+    .glyphicon {
+      display: inline-block;
+      margin-right: $margin-sm;
+    }
+  
+    p {
+      display: inline;
+      font-size: 1.6rem;
+      margin: 0 auto;
+      max-width: 62rem;
+    }
+
+    .btn {
+
+        @media (min-width: $bp-med) {
+          margin: 0 0 $margin-lg $margin-lg;
+          vertical-align: baseline;
+        }
+    }
+  
+    a {
+      font-weight: normal;
+      text-decoration: underline;
+      transition: 300ms ease-in-out;
+
+        &:hover {
+          text-decoration: none;
+        }
+    }
+
+    .mol-close-button {
+      position: absolute; 
+      top: 0px; 
+      right: 0px;
+    }
+    
+  }
+
+  .slideInUp {
+    animation-name: slideInUp;
+    -webkit-animation-name: slideInUp;  
+    animation-duration: 1.5s; 
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out;
+  }
+
+  .slideOutDown {
+    animation-name: slideOutDown;
+  }
+    .alert-hide {
+    display: none;
+  }
+
+}
+
+  // ANIMATIONS
+@-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+
+  50%{
+    -webkit-transform: translateY(-4%);
+  }
+
+  80%{
+    -webkit-transform: translateY(2%);
+  }
+  
+  100% {
+    -webkit-transform: translateY(0%);
+  } 
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+  }
+
+  50%{
+    transform: translateY(-4%);
+  }
+
+  80%{
+    transform: translateY(2%);
+  }
+  
+  100% {
+    transform: translateY(0%);
+  } 
+
+}
+
+x-alert-bar-message-list, 
+x-alert-bar-message {
+  display: block;
+} 
+
+
+// Slide Out Down
+@-webkit-keyframes slideOutDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes slideOutDown {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+
+

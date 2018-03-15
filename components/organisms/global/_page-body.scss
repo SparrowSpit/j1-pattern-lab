@@ -1,0 +1,144 @@
+/*
+TABLE OF CONTENTS
+- General
+- Heading
+- Body
+- Footer
+- Alternate Styles
+  - Outside
+  - Filled 
+*/
+
+
+
+/* GENERAL */
+/* Generic Page Panel styles (Page Banner, Alerts, Main Page Panel, etc.) */
+.exi-transitional main .org-page-body {
+    position: relative;
+	margin: 0 0 $margin-xl 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/* Put space between blocks on rows */
+@media (min-width: 769px) {
+    .exi-transitional main [class^="col-"]:first-of-type .org-page-body {
+    margin: 0 $margin-xl $margin-xl 0;
+    }
+}
+
+
+
+/*----------------------------------*/
+
+
+
+/* HEADING */
+.exi-transitional main .org-page-body .org-page-body--heading {
+    position: relative;
+    margin: 0;
+    padding: $padding-md 4rem 0 $padding-lg;
+    background: #fff;
+    border-radius: $border-radius-default $border-radius-default 0 0;
+    @extend %border-default;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+/* Page Body Title */
+.exi-transitional main .org-page-body .org-page-body--heading h3 {
+    font-size: $text-size-xxl;
+    margin: 0;
+}
+
+/* Help Button */
+.exi-transitional main .org-page-body .org-page-body--heading .mol-help-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+
+
+/*----------------------------------*/
+
+
+
+/* BODY */
+.exi-transitional main .org-page-body .org-page-body--body {
+    margin: 0;
+    padding: $padding-lg $padding-lg 0 $padding-lg;
+    background: $color-default-default;
+    border-radius: 0 0 $border-radius-default $border-radius-default;
+    @extend %border-default;
+    border-top: none;
+    @include clearfix();
+}
+
+
+
+/*----------------------------------*/
+
+
+
+/* FOOTER */
+.exi-transitional main .org-page-body .org-page-body--footer {
+    text-align: right;
+    margin: $margin-neg-xxs 0 0 0;
+    padding: 0 $padding-lg $padding-lg $padding-lg;
+    background: $color-default-default;
+	border-radius: 0 0 $border-radius-default $border-radius-default;
+    @extend %border-default;
+    border-top: none;
+    box-shadow: none;
+}
+
+
+
+/*----------------------------------*/
+
+
+/* ALTERNATE STYLES */
+/* OUTSIDE STYLE */
+.exi-transitional main .org-page-body.outside .org-page-body--heading {
+    padding: 0 4rem $padding-md 0;
+    background: none;
+    border: none;
+}
+
+/* Help Button */
+.exi-transitional main .org-page-body.outside .org-page-body--heading .mol-help-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.exi-transitional main .org-page-body.outside .org-page-body--body {
+    border-radius: $border-radius-default;
+    @extend %border-default;
+}
+
+
+
+/*----------------------------------*/
+
+
+
+/* FILLED STYLE */
+.exi-transitional main .org-page-body.filled .org-page-body--heading {
+    padding: $padding-sm 4rem $padding-sm $padding-lg;
+    background: $color-branding-header;
+    border: none;
+}
+
+/* Page Body Title */
+.exi-transitional main .org-page-body.filled .org-page-body--heading h3 {
+    color: $color-text-light;
+}
+
+/* Help Button */
+.exi-transitional main .org-page-body.filled .org-page-body--heading .mol-help-button {
+    position: absolute;
+    color: $color-text-light;
+}

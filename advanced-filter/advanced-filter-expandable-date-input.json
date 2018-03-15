@@ -1,0 +1,16 @@
+{
+	"advfilterCheckboxDate" : {
+		"checkboxClass": "checkbox",
+		"checkboxType": "checkbox",
+		"checkboxId": "switch-mol-date-input",
+		"checkboxName": "",
+		"checkboxValue": "",
+		"checkboxText": "Date"
+    },
+	"molDefaultInput" : {
+		"molcoreMolClass": " mol-date-input showhide",
+		"molcoreLabelClass": " class=\"sr-only\"",
+		"molcoreLabelTextPos1": "Select a Date",
+		"molcoreLabelDesc": " <span id=\"date-desc\">. Unavailable dates will be indicated by a message.<\/span>"
+	}
+}

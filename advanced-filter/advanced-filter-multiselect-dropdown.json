@@ -1,0 +1,14 @@
+{
+	"advfilterCheckboxMultiselect" : {
+		"checkboxClass": "checkbox",
+		"checkboxType": "checkbox",
+		"checkboxId": "switch-mol-multiselect-dropdown",
+		"checkboxName": "",
+		"checkboxValue": "",
+		"checkboxText": "Multi-Select Dropdown"
+    },
+	"molAdvfilterMultiselectDropdown" : {
+		"molClass": " showhide",
+		"molLabel": "<label class=\"sr-only\" for=\"multiselect-dropdown\">Make a selection from the list<\/label>"
+	}
+}

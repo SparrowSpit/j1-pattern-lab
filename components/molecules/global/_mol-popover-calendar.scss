@@ -1,0 +1,60 @@
+.exi-transitional {
+
+	.mol-popover-calendar {
+
+		.popover {
+			display: block;
+			background: #eceef1;
+		}
+		
+		.popover-display-content {
+		    background: none repeat scroll 0 0 #eceef1;
+		    border-color: #d6d5d5;
+		    padding: 0;
+		}
+
+		.popover-display-content hr {
+		    border-top: 1px solid #ddd;
+		    margin: .5em 1em .5em 1em;
+		}
+
+        h3.popover-calendar-title {
+            font-size: $text-size-lg;
+            color: $color-text-dark;
+            margin: 0;
+            padding: $padding-sm $padding-xl $padding-sm 0; 
+            background: none;
+            border: none;
+        }	
+
+        .mol-close {
+        	position: absolute;
+		    top: 1rem;
+		    right: 0;
+		    padding: 0;
+        }
+
+        .arrow {
+        	&:after {
+        		border-bottom-color: #eceef1;
+        	}
+        }	
+
+        .event-content--intro {
+        	margin-bottom: 1rem;
+        }
+
+        .event-details--coordinator, 
+        .event-details--when {
+        	span {
+        		display: block;
+        	}
+        }
+	}
+
+}
+
+
+.fpo-pop-cal-container {
+	margin: 5rem auto;
+}

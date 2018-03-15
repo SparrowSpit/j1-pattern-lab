@@ -1,0 +1,166 @@
+
+// CONTAINER FOR DEMO
+.fpo-container {
+  background: #fff;
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  max-width: 60rem;
+  margin: $margin-xl auto;
+  padding: 5%;
+  position: relative;
+  
+  p {
+    line-height: 1.75;
+    color: #232323;
+  }
+}
+
+
+// DIM THE LIGHTS ON THE BLOCK
+.loader-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 999; 
+}
+
+// ERROR ON MODAL
+.modal.mol-modal .modal-content .loader-overlay-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 103%;
+  width: 101%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 999;
+  border-top: .4rem $color-danger-default solid;
+  border-bottom: .4rem $color-danger-default solid;
+  border-radius: .4rem;
+  transform: translate(-50%, -50%);
+}
+
+//ERROR, GENERAL
+.loader-overlay-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 999;
+  border-top: .4rem $color-danger-default solid;
+  border-bottom: .4rem $color-danger-default solid;
+  border-radius: .4rem;
+  transform: translate(-50%, -50%);
+}
+
+.mol-loading-indicator {
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+
+  .loader {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+
+      @media (min-width: 50rem) {
+          width: 8rem;
+          height: 8rem;
+        }
+  }
+
+
+  .loader div {
+    width: 6%;
+    height: 16%;
+    background: #000000;
+    position: absolute;
+    left: 49%;
+    top: 43%;
+    opacity: 0;
+    border-radius: 50px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    animation: spinner-fade 1s linear infinite;
+  }
+
+  @keyframes spinner-fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.25;
+    }
+  }
+
+  div.loader div.bar1 {
+    transform: rotate(0deg) translate(0, -130%);
+    animation-delay: 0s;
+  }
+
+  div.loader div.bar2 {
+    transform: rotate(30deg) translate(0, -130%);
+    animation-delay: -0.9167s;
+  }
+
+  div.loader div.bar3 {
+    transform: rotate(60deg) translate(0, -130%);
+    animation-delay: -0.833s;
+  }
+
+  div.loader div.bar4 {
+    transform: rotate(90deg) translate(0, -130%);
+    animation-delay: -0.7497s;
+  }
+
+  div.loader div.bar5 {
+    transform: rotate(120deg) translate(0, -130%);
+    animation-delay: -0.667s;
+  }
+
+  div.loader div.bar6 {
+    transform: rotate(150deg) translate(0, -130%);
+    animation-delay: -0.5837s;
+  }
+
+  div.loader div.bar7 {
+    transform: rotate(180deg) translate(0, -130%);
+    animation-delay: -0.5s;
+  }
+
+  div.loader div.bar8 {
+    transform: rotate(210deg) translate(0, -130%);
+    animation-delay: -0.4167s;
+  }
+
+  div.loader div.bar9 {
+    transform: rotate(240deg) translate(0, -130%);
+    animation-delay: -0.333s;
+  }
+
+  div.loader div.bar10 {
+    transform: rotate(270deg) translate(0, -130%);
+    animation-delay: -0.2497s;
+  }
+
+  div.loader div.bar11 {
+    transform: rotate(300deg) translate(0, -130%);
+    animation-delay: -0.167s;
+  }
+
+  div.loader div.bar12 {
+    transform: rotate(330deg) translate(0, -130%);
+    animation-delay: -0.0833s;
+  }
+}
+

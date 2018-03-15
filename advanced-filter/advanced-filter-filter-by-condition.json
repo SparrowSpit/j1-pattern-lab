@@ -1,0 +1,88 @@
+{
+	"advfilterCheckboxMultiselect" : {
+		"checkboxClass": "checkbox",
+		"checkboxType": "checkbox",
+		"checkboxId": "switch-mol-advanced-filter-filter-by-condition",
+		"checkboxName": "",
+		"checkboxValue": "",
+		"checkboxText": "Advanced Filter Filter by Condition"
+    }, 
+
+    "advfilterFilterByCondition" : {
+    	"showHide": " showhide",
+
+		"atomSelectInput" : {
+			"molcoreLabelId": "select-input2",
+			"name": "select-input",
+			"optiontext1": "Greater than",
+			"optiontext2": "Greater than or equal to",
+			"optiontext3": "Less than",
+			"optiontext4": "Less than or equal to",
+			"optiontext5": "Equal to",
+			"optiontext6": "Is not equal to"
+		},
+
+		"atomcoreType" : "number",
+		"inputRadioGroup" : {
+		"type": "radio",
+		"name": "...",
+		"id": "inputRadioGroup",
+		"value": "...",
+		"checkedstate": "",
+		"arialabel": "",
+		"ariadescribedby": "",
+		"disabled": ""
+    	},
+
+		"filter-by-condition" : {
+
+			"atomcoreType" : "number",
+			"inputRadioGroup" : {
+			"type": "radio",
+			"name": "...",
+			"id": "inputRadioGroup",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"disabled": ""
+	    	}
+
+		},
+
+		"inputRadioGroup" : {
+				"type": "radio",
+				"name": "...",
+				"id": "inputRadioGroup",
+				"value": "...",
+				"checkedstate": "",
+				"arialabel": "",
+				"ariadescribedby": "",
+				"disabled": ""
+		},
+
+		"atomSelectInput" : {
+			"id": "select-input-tater",
+			"name": "select-input",
+			"optiontext1": "Greater than",
+			"optiontext2": "Greater than or equal to",
+			"optiontext3": "Less than",
+			"optiontext4": "Less than or equal to",
+			"optiontext5": "Equal to",
+			"optiontext6": "Is not equal to",
+			"disabled" : ""
+		}	
+
+	},
+
+	 	"inputRadioGroup" : {
+			"type": "radio",
+			"name": "...",
+			"id": "inputRadioGroup",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"disabled": ""
+	}
+}

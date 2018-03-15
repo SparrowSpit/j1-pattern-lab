@@ -1,0 +1,54 @@
+
+/*
+TABLE OF CONTENTS
+- Transitions
+*/
+
+
+/* TRANSITIONS */
+/* .3sec transition for fade, slide or combo of both  */
+/* Use this placeholder within other components where you need a transition */
+%transition {
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+/* Use this class directly within HTML when you need a transition outside of a component */
+.exi-transitional .transition {
+    @extend %transition;
+}
+
+/* Pattern lab demo styles start */
+.exi-transitional .transition-block { 
+	background: $color-danger-default; 
+	width: 8em; 
+	height: 4em; 
+	margin-bottom: 1em; 
+	border-radius: .4em; 
+}
+.exi-transitional .transition-fade { 
+	opacity: 1; 
+	width: 50%; 
+}
+    .transition-fade:hover { 
+		opacity: 0; 
+	}
+.exi-transitional .transition-slide { 
+	width: 50%; 
+}
+    .exi-transitional .transition-slide:hover { 
+		width: 100%; 
+	}
+.exi-transitional .transition-fadeslide { 
+	opacity: .2; 
+	width: 50%;
+}
+    .exi-transitional .transition-fadeslide:hover { 
+		opacity: 1; 
+		width: 100%; 
+	}
+/* Pattern lab demo styles end */
+
+/*--------------------------------*/

@@ -1,0 +1,130 @@
+
+/* TABLE OF CONTENTS
+- Input Field
+- Dropdown Section
+- Selection Chips
+*/
+
+
+/* INPUT FIELD */
+/* Initial input field styling */
+.exi-transitional .mol-multiselect-dropdown .select2-container--default .select2-selection, 
+.exi-transitional .mol-multiselect-dropdown .select2-container--default .select2-selection--multiple {
+    height: auto;
+    min-height: 2.5em;
+    border: 1px solid #d2d6db;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+/* Initial input field on-focus styling */
+.exi-transitional .mol-multiselect-dropdown .select2-container--default .select2-selection--multiple:focus, 
+.exi-transitional .mol-multiselect-dropdown .select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+/* Padding within main input field */
+.exi-transitional .mol-multiselect-dropdown .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    padding: 0 0 0 .25em;
+}
+
+
+/*--------------------------------*/
+
+
+/* DROPDOWN SECTION */
+/* Dropdown border coloring */
+.exi-transitional .mol-multiselect-dropdown .select2-dropdown {
+    @extend %border-default;
+}
+
+.exi-transitional .select2-container--default .select2-results>.select2-results__options {
+    max-height: 100%;
+	overflow-y: auto;
+}
+
+/* Dropdown options */
+.exi-transitional .select2-container--default .select2-results__options .select2-results__option {
+    width: 100%;
+}
+
+/* Dropdown option (on-hover) styling */
+.exi-transitional .select2-container--default .select2-results__option--highlighted,
+.exi-transitional .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    color: $color-text-dark;
+    background: #eceef1;
+}
+
+/* Dropdown option (selected) styling */
+.exi-transitional .select2-container--default .select2-results__option[aria-selected=true] {
+    color: $color-text-muted;
+    background-color: #fff;
+}
+
+/* Dropdown option (selected & on-hover) styling */
+.exi-transitional .select2-container--default .select2-results__option.select2-results__option--highlighted[aria-selected=true] {
+    color: $color-text-muted;
+    background: #eceef1;
+}
+
+/* Second line of data within a selection option */
+.exi-transitional .select2-container--default .select2-results__option > span {
+    display: block;
+	font-size: $text-size-sm;
+	color: $color-text-muted;
+}
+
+/* Optional text coloring */
+.exi-transitional .select2-container--default .select2-results__option > span.color-text-success,
+.exi-transitional .select2-container--default .select2-results__option > span.color-text-warning,
+.exi-transitional .select2-container--default .select2-results__option > span.color-text-danger {
+    display: inline;
+	font-size: $text-size-md;
+}
+.exi-transitional .select2-container--default .select2-results__option > span.color-text-success { color: $color-text-success; }
+.exi-transitional .select2-container--default .select2-results__option > span.color-text-warning { color: $color-text-warning; }
+.exi-transitional .select2-container--default .select2-results__option > span.color-text-danger { color: $color-text-danger; }
+
+/* Truncate line text with ellipsis 
+.exi-transitional .mol-multiselect-dropdown.mol-multiselect-dropdown--ellipsis .select2-container--default .select2-results__options .select2-results__option > span {
+	white-space: nowrap;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+}*/
+
+
+
+/*--------------------------------*/
+
+
+
+/* SELECTION CHIPS */
+/* Chips */
+.exi-transitional .mol-multiselect-dropdown .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    position: relative;
+    background: #d7edff;
+    border: 1px solid #a1b6c6;
+    border-radius: 4px;
+    cursor: default;
+    float: left;
+    font-size: 12px;
+    margin: .25em .5em 0 0;
+	max-width: 98.5%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    padding: .4em 2.3em .25em .55em;
+}
+
+/* Chip "remove" icon */
+.exi-transitional .mol-multiselect-dropdown .select2-container--default .select2-selection--multiple .select2-selection__choice span.select2-selection__choice__remove {
+    position: absolute;
+    top: 50%;
+    right: .5em;
+    font-weight: 700;
+    color: #337ab7;
+    font-size: 1.15em;
+    margin: -.45em 0 0 0;
+}

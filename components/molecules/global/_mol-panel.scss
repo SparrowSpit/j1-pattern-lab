@@ -1,0 +1,175 @@
+
+/*
+TABLE OF CONTENTS
+- General
+- Heading
+- Body
+- Footer
+- Alternate Styles
+    - Heading
+        - Light
+        - Outer Heading
+*/
+
+
+/* GENERAL */
+.exi-transitional .panel.mol-panel {
+    position: relative;
+	margin: 0 $margin-md $margin-lg $margin-md;
+    padding: 0;
+    background: $color-text-light;
+    @extend %border-default;
+    border-radius: $border-radius-default;
+}
+
+
+
+    /*-----------------------------------*/
+
+
+
+    /* HEADING */
+    /* Panel heading */
+    .exi-transitional .panel.mol-panel .panel-heading {
+        display: block;
+        position: relative;
+        padding: $padding-sm $padding-md;
+        text-align: left;
+        font-size: $text-size-lg;
+        color: $color-text-light;
+        background: $color-branding-header;
+        border: none;
+    }
+
+	/* Panel title */
+    .exi-transitional .panel.mol-panel .panel-heading .panel-title {
+        font-size: $text-size-lg;
+        color: $color-text-light;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Position help link */
+        .exi-transitional .panel.mol-panel .panel-heading .mol-help-link, .exi-transitional .panel.mol-panel .panel-heading .mol-help-button {
+            position: absolute;
+            top: $positioning-neg-xxs;
+            right: $positioning-neg-xs;
+            margin: 0;
+            color: #fff;
+        }
+
+
+
+    /*-----------------------------------*/
+
+
+
+    /* PANEL BODY */
+    .exi-transitional .panel.mol-panel .panel-body {
+        position: relative;
+		margin: 0;
+        padding: $padding-md $padding-md 0 $padding-md;
+        background: none;
+    }
+
+        /* Panel sub-heading */
+        .exi-transitional .panel.mol-panel .panel-body h5.subtext {
+            font-size: $text-size-sm;
+            color: $color-text-muted;
+            padding-bottom: $padding-xs;
+        }
+
+        /* Left column */
+        /* Central gutter spacing */
+        .exi-transitional .panel.mol-panel .panel-body .panel-col-1 {
+            padding-right: $padding-sm;
+        }
+
+        /* Right column */
+        /* Central gutter spacing */
+        .exi-transitional .panel.mol-panel .panel-body .panel-col-2 {
+            padding-left: $padding-sm;
+        }
+
+/* Responsive styles for col-1 & col-2 */
+@media (max-width:992px) {
+    .exi-transitional .panel.mol-panel .panel-body .panel-col-1 {
+        padding-right: 0;
+    }
+
+    .exi-transitional .panel.mol-panel .panel-body .panel-col-2 {
+        padding-left: 0;
+    }
+}
+
+
+
+/*-----------------------------------*/
+
+
+
+/* PANEL FOOTER */
+.exi-transitional .panel.mol-panel .panel-footer {
+    margin: 0;
+    padding: 0 $padding-md $padding-sm $padding-md;
+    text-align: right;
+    background: none;
+    border: none;
+}
+
+
+
+/*-----------------------------------*/
+
+
+
+/* ALTERNATE STYLES */
+
+/* Light style */
+.exi-transitional .panel.mol-panel.light .panel-heading {
+    color: $color-text-dark;
+	padding-bottom: 0;
+    background: none;
+    }
+
+.exi-transitional .panel.mol-panel.light .panel-heading .panel-title {
+            color: $color-text-dark;
+        }
+
+		/* Change color of help link */
+            .exi-transitional .panel.mol-panel.light .panel-heading .mol-help-link .glyphicon, .exi-transitional .panel.mol-panel.light .panel-heading .mol-help-button .glyphicon {
+                color: $color-text-link;
+            }
+
+
+
+/*-----------------------------------*/
+
+
+
+/* Outer-heading style */
+/* Create space above panel for title and help link */
+.exi-transitional .panel.mol-panel.outer-heading {
+    margin-top: 4.4rem;
+}
+
+    .exi-transitional .panel.mol-panel.outer-heading .panel-heading {
+        margin: -4.4rem 0 0 $margin-neg-md;
+        background: none;
+    }
+
+        .exi-transitional .panel.mol-panel.outer-heading .panel-heading .panel-title {
+            color: $color-text-dark;
+        }
+
+        /* Position help link */
+        .exi-transitional .panel.mol-panel.outer-heading .panel-heading .mol-help-link, .exi-transitional .panel.mol-panel.outer-heading .panel-heading .mol-help-button {
+            top: $positioning-neg-xs;
+            right: $positioning-neg-md;
+            margin: 0;
+        }
+
+            /* Change color of help link */
+            .exi-transitional .panel.mol-panel.outer-heading .panel-heading .mol-help-link .glyphicon, .exi-transitional .panel.mol-panel.outer-heading .panel-heading .mol-help-button .glyphicon {
+                color: $color-text-link;
+            }

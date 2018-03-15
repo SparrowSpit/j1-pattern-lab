@@ -1,0 +1,14 @@
+
+
+.exi-transitional .mol-help-link {
+    font-size: 2.08rem;
+    opacity: .5;
+    text-decoration: none;
+    @extend %transition-default;
+}
+
+    .exi-transitional .mol-help-link:hover, .exi-transitional .mol-help-link:active, .exi-transitional .mol-help-link:focus {
+        opacity: 1;
+		text-decoration: none;
+    }
+

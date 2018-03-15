@@ -1,0 +1,44 @@
+{
+	"advfilterCheckboxText" : {
+		"checkboxClass": "checkbox",
+		"checkboxType": "checkbox",
+		"checkboxId": "switch-mol-text-input",
+		"checkboxName": "",
+		"checkboxValue": "",
+		"checkboxText": "Text Input"
+    },
+	"atomTextInput" : {
+		"id": "mol-text-input",
+		"name": "mol-text-input",
+		"optgroupOpen": "",
+		"optgroupClose": "",
+		"optiontextBlank": "",
+		"optiontext1": "",
+		"optiontext2": "",
+		"optiontext3": "",
+		"ariaLabel": "",
+		"ariaDescribedby": "",
+		"disabled": ""
+	},
+	"molTextInput" : {
+		"atomcoreType": "text",
+		"atomcoreClass": "class=\"form-control\"",
+		"atomcoreId": "text-label",
+		"atomcoreName": "text-label",
+		"atomcoreArialabel": "",
+		"atomcoreAriadescribedby": "",
+		"atomcoreDisabled": "",
+		"atomcorePlaceholder": "",
+		"molcoreFormGroupClass": "form-group",
+		"molcoreMolClass": " mol-text-input showhide",
+		"molcoreMolId": "id=\"mol-text-input\"",
+		"molcoreLabelClass": " class=\"sr-only\"",
+		"molcoreLabelId": "",
+		"molcoreLabelFor": "text-label",
+		"molcoreLabelTextPos1": "Text Label",
+		"molcoreLabelTextPos2": "",
+		"molcoreLabelDesc": "",
+		"molcoreLabelClosePos1" : "<\/label>",
+		"molcoreLabelClosePos2" : ""
+    }
+}
