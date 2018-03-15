@@ -63,7 +63,7 @@ TABLE OF CONTENTS
                 font-size: $text-size-lg;
                 color: $color-text-dark;
                 margin: 0;
-                padding: $padding-sm $padding-xl $padding-sm $padding-sm; 
+                padding: $padding-sm 3.5rem $padding-xs $padding-sm; 
                 background: none;
                 border: none;
             }
@@ -101,7 +101,7 @@ TABLE OF CONTENTS
                 .alert-popover-title {
                     color: $color-warning-default;
                     font-size: $text-size-lg;
-                    display: inline-block;
+                    display: inline;
                 }
 
                 .mol-close {

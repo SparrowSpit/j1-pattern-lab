@@ -1,0 +1,33 @@
+
+.exi-transitional .mol-table {
+    position: relative;
+    width: 100%;
+    margin: 0 0 1.6rem 0;
+    padding: 0;
+}
+
+    .exi-transitional .mol-table [class*="-input"] {
+        margin-bottom: 0;
+    }
+
+    .exi-transitional .mol-table th,
+    .exi-transitional .mol-table td {
+        position: relative;
+        width: auto;
+        margin: 0;
+        padding: .8rem;
+        vertical-align: top;
+    }
+
+    .exi-transitional .mol-table td {
+        border-top: 1px solid #d2d6db;
+    }
+
+    .exi-transitional .mol-table tr:first-child td {
+        border-top: 2px solid #d2d6db;
+    }
+
+.exi-transitional .mol-batch-edit-modal .mol-table td:last-child {
+    width: 3rem;
+    padding: 0 0 0 .8rem;
+}

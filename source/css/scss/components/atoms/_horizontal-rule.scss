@@ -1,0 +1,5 @@
+
+.exi-transitional hr {
+    margin: 0 0 $margin-lg 0;
+	@extend %border-top-default;
+}

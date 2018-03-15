@@ -34,7 +34,19 @@
 		    background-color: $color-branding-header;
 			}
 		}		
+
 	}
 	
 
+}
+
+// USE THE PLAIN mol-page-header-toolbar position styles above
+// this adjusted positioning is strictly for demo purposes for the 
+// bookmark and pin states
+.pin-container .jzb-layout-header-toolbar.mol-page-header-toolbar {
+	top: 11rem;
+}
+
+.bookmark-container .jzb-layout-header-toolbar.mol-page-header-toolbar {
+	top: 21rem;
 }

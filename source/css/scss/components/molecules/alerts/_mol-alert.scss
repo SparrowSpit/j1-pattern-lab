@@ -1,0 +1,141 @@
+
+/*
+TABLE OF CONTENTS
+- General
+- States
+  - Success
+  - Warning
+  - Danger
+  - Setting
+- Mobile Styles
+*/
+
+
+/* GENERAL */
+.exi-transitional .mol-alert::before {
+    font-family: 'Glyphicons Halflings';
+    font-size: 2rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 1.6rem;
+    content: "\e086";
+}
+
+/* Default */
+.exi-transitional .mol-alert {
+    position: relative;
+    margin: 0 0 $margin-lg 0;
+    padding: $padding-lg $padding-lg $padding-lg 4.8rem;
+    color: $color-info-default;
+    background: $color-info-background;
+    border: 1px solid darken($color-info-background, 5%);
+    border-radius: $border-radius-default;
+}
+
+/* Removes bottom margin from the last item in the alert */
+.exi-transitional .mol-alert :last-child {
+    margin-bottom: 0;
+}
+
+/* Headings */
+.exi-transitional .mol-alert h4,
+.exi-transitional .mol-alert h5,
+.exi-transitional .mol-alert h6 {
+    color: inherit;
+}
+
+
+
+    /*----------------------------*/
+
+
+
+    /* Success */
+    .exi-transitional .mol-alert.mol-alert--success {
+       color: $color-success-default;
+        background: $color-success-background;
+        border: 1px solid darken($color-success-background, 5%);
+    }
+        
+        /* Checkmark icon */
+        .exi-transitional .mol-alert.mol-alert--success::before {
+            content: "\e084";
+        }
+
+
+
+    /*----------------------------*/
+
+
+
+    /* Warning */
+    .exi-transitional .mol-alert.mol-alert--warning {
+        color: $color-warning-default;
+        background: $color-warning-background;
+        border: 1px solid darken($color-warning-background, 5%);
+    }
+
+        /* Exclamation point icon */
+        .exi-transitional .mol-alert.mol-alert--warning::before {
+            content: "\e101";
+        }
+
+
+
+    /*----------------------------*/
+
+
+
+    /* Danger */
+    .exi-transitional .mol-alert.mol-alert--danger {
+        color: $color-danger-default;
+        background: $color-danger-background;
+        border: 1px solid darken($color-danger-background, 5%);
+    }
+
+        /* Exclamation point icon */
+        .exi-transitional .mol-alert.mol-alert--danger::before {
+            content: "\e101";
+        }
+
+
+
+    /*----------------------------*/
+
+
+
+    /* Setting */
+    .exi-transitional .mol-alert.mol-alert--setting {
+        color: #333;
+        background: #d2d6db;
+        border: 1px solid #ccc; /* CHANGE TO SASS COLOR DARKENING VARIABLE */
+		color: $color-text-dark;
+        background: $color-past-background;
+        border: 1px solid darken($color-past-background, 5%);
+    }
+
+        /* Cog icon */
+        .exi-transitional .mol-alert.mol-alert--setting::before {
+            content: "\e019";
+        }
+
+
+
+/*----------------------------*/
+
+
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+
+    /* Decrease padding of alert */
+    .exi-transitional .mol-alert {
+        padding: $padding-sm $padding-sm $padding-sm 3.5rem;
+    }
+
+    /* Reposition icon based on smaller alert padding */
+    .exi-transitional .mol-alert::before {
+        top: .4rem;
+        left: .8rem;
+    }
+}

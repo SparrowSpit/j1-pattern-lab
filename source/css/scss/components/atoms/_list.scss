@@ -1,0 +1,86 @@
+
+/*
+TABLE OF CONTENTS
+- General
+- List Items
+- List Options
+  - Unstyled
+  - Inline
+  - Ordered Numeric
+  - Ordered Alpha
+*/
+
+
+/* GENERAL */
+.exi-transitional ul.atoms-list,
+.exi-transitional ul.atoms-list ul {
+	margin: 0 0 $margin-lg $margin-xl;
+	padding: 0;
+}
+
+.exi-transitional ul.atoms-list ul {
+	margin-top: $margin-sm;
+	margin-bottom: $margin-sm;
+}
+
+
+
+/*-------------------------------*/
+
+
+
+/* LIST ITEMS */
+.exi-transitional ul.atoms-list li {
+	margin: 0 0 $margin-sm 0;
+	padding: 0;
+}
+
+.exi-transitional ul.atoms-list li:last-child {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*-------------------------------*/
+
+
+
+/* LIST OPTIONS */
+/* Unstyled */
+.exi-transitional ul.atoms-list.atoms-list--unstyled {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+/* Inline */
+.exi-transitional ul.atoms-list.atoms-list--inline,
+.exi-transitional ul.atoms-list.atoms-list--inline ul {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 0 $margin-lg 0;
+}
+
+.exi-transitional ul.atoms-list.atoms-list--inline ul {
+	margin: 0 0 0 $margin-lg;
+}
+
+.exi-transitional ul.atoms-list.atoms-list--inline li {
+	display: inline-block;
+	margin: 0 $margin-lg 0 0;
+}
+
+.exi-transitional ul.atoms-list.atoms-list--inline li:last-child {
+	display: inline-block;
+	margin: 0;
+}
+
+/* Ordered Numeric */
+.exi-transitional ul.atoms-list.atoms-list--ordered---numeric {
+	list-style-type: decimal;
+}
+
+/* Ordered Alpha */
+.exi-transitional ul.atoms-list.atoms-list--ordered---alpha {
+	list-style-type: upper-alpha;
+}
