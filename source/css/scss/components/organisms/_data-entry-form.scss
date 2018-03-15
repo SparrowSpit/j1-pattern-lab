@@ -2,7 +2,12 @@
 
 	.org-data-entry-form {
 
+		max-width: 1000px;
 		position: relative;
+		width: 100%;
+    	margin: 0 auto;
+
+
 
 		.panel {
 			background-color: #fff;
@@ -16,24 +21,85 @@
 		.panel-body {
 			padding: 3rem;
 			max-width: 1000px;
-			width: 85%;
+			// width: 85%;
+
 		}
 
+		// columns for the form and button 
+
+		//form column
+    	.org-data-entry-form--col-3 {
+    		width: 100%;
+
+    			@media (min-width: 768px) {
+		    		float: left;
+		    		width: calc(100% - 20rem);    				
+    			}
+    	}	
+
+		// button(s) on the right
+    	.org-data-entry-form--col-1 {
+			float: none;
+			width: 100%;
+
+		    	@media (min-width: 768px) {
+		    		float: left;
+				    width: 16rem;
+				    margin-left: 3rem;	
+				    padding-top: 16rem;	    		
+		    	}
+    	}	
+
+		// fix position the buttons
+    	.org-data-entry-form--action-buttons-desktop {
+    		display: none;
+
+    			@media (min-width: 768px) {
+    				display: block;
+		    		position: fixed;
+		    		min-width: 16rem;
+		    		
+    			}
+    	}
+
+    	.org-data-entry-form--action-buttons-mobile {
+		    display: block;
+		    position: fixed;
+		    bottom: 0;
+		    right: 0;
+		    min-width: 16rem;
+
+    			@media (min-width: 768px) {
+		    		display: none;
+    			}
+    	}    	
+
+		// any combo of buttons can be used here
 		.org-data-entry-form--save-button {
-			position: fixed;
-			top: 50px;
-			right: 10%;
-			z-index: 600;
+			display: inline-block;
+    		width: 100%;
+
+    			@media (min-width: 768px) {
+		    		margin: 0 0 1.6rem 0;
+    			}    				
 		}
 
+		// each label and input are wrapped in this
 		.form-group {
 			margin: 0 0 2rem 0;
-			max-width: 640px;
 		}
 
-		.form-section {
+
+		.form-section--wrapper {
+			max-width: 640px;
+		}		
+
+		// each section form has these styles
+		// besides the last section in the form
+		.form-section:not(:last-of-type) {
 			margin-bottom: 5rem;
 
+				// creates a border after each section
 				&:after {
 					content: "";
 					border-bottom: 2px solid #D2D6DB;
@@ -45,33 +111,77 @@
 
 		}
 
+		// the main form title
 		.form-title {
 			margin-bottom: 2.6rem;
 		}	
 
-		// .form-control {
-		// 	margin-bottom: 1rem;
-		// }	
-
-		.form-section:last-of-type:after {
-			border: none;
-		}
-
+		// each section has a title, legend
 		.form-section--title {
+			font-size: 2rem;
 			margin-bottom: 1.6rem;
+
+				@media (min-width: 1000px) {
+					font-size: 2.25rem;
+				}
 		}
 
-	}
+		// create two columns on desktop, one on mobile
+		.data-entry-form--twosidebyside .form-group {
+			width: auto;
+			margin: 0 0 2.4rem 0;
 
-	.pad-rt-2r {
-
-		@media (min-width: 768px) {
-			padding-right: 2rem;
+				@media (min-width: 768px) {
+					float: left;
+					width: calc(50% - 1.6rem);
+					margin: 0 1.6rem 2.4rem 0;					
+				}
 		}
-	}
 
-	.mar-btm-2r {
-		margin-bottom: 2rem;
+		// get rid of margin-right on last column
+		.data-entry-form--twosidebyside .form-group:last-of-type {
+
+				@media (min-width: 768px) {
+					margin: 0 0 2.4rem 1.6rem;				
+				}			
+		}
+
+
+		// create three columns on desktop, one on mobile
+		.data-entry-form--threesidebyside .form-group {
+			width: auto;
+			margin: 0 0 2.4rem 0;
+
+				@media (min-width: 768px) {
+					float: left;
+					width: calc(33% - 2rem);
+					margin: 0 0 2.4rem 0;					
+				}
+		}
+
+		// add margin to all form groups in this column except the first
+		.data-entry-form--threesidebyside .form-group:nth-child(n+2) {
+			margin-left: 0;
+
+				@media (min-width: 768px) {
+					margin-left: 3.2rem;
+				}
+		}
+
+
+		// to clear floats on these columns
+		.clearfix {
+			&:before, 
+			&:after {
+				content: '';
+				display: table;
+			}
+
+			&:after {
+				clear: both;
+			}
+		}
+
 	}
 
 }
