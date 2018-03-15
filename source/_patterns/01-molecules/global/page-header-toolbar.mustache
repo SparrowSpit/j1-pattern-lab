@@ -1,10 +1,5 @@
-<!-- checkbox to hide/show -->
-<!-- <div class="fpo-checkbox-init">
-	<input type="checkbox" id="checkbox1" />
-	<label for="checkbox1">Show/Hide Page Header Toolbar</label>
-</div> -->
 	
-<!-- begin side nav -->
+<!-- begin page header toolbar nav -->
 <div id="" class="jzb-layout-header-toolbar mol-page-header-toolbar">       
 	<div class="btn-group visible-xs pull-right">
 		
@@ -14,7 +9,6 @@
 			<span class="caret" aria-hidden="true"></span>
 		</button>
 		
-		<!-- Hidden menu. Should we keep it? -->
 		<ul class="dropdown-menu" role="group" aria-label="secondary">
 			<li role="menuitem">
 				<a class="OpenSendMessageModalLink" href="#" data-toggle="modal" data-target="#SendMessageModal">
@@ -67,15 +61,132 @@
 	<!-- end btn-group -->
 </div> <!-- end .jzb-layout-header-toolbar .mol-side-nav -->
 
-<!-- for the checkbox, show/hide -->
-<!-- <script type="text/javascript">
-	$(document).ready(function(){
-		$('.jzb-layout-header-toolbar').hide();
-	    $('#checkbox1').change(function(){
-	        if(this.checked)
-	            $('.jzb-layout-header-toolbar').fadeIn();
-	        else
-	            $('.jzb-layout-header-toolbar').fadeOut();
-	    });
-	});
-</script> -->
+
+<!-- begin page-header-toolbar with Unpin -->
+<div class="pin-container">
+	<div id="" class="jzb-layout-header-toolbar mol-page-header-toolbar">       
+		<div class="btn-group visible-xs pull-right">
+			
+			<button type="button" class="btn btn-navigation btn-sm dropdown-toggle" data-toggle="dropdown">
+				<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+				<span class="sr-only">Show toolbar options</span>
+				<span class="caret" aria-hidden="true"></span>
+			</button>
+			
+			<!-- Hidden menu. Should we keep it? -->
+			<ul class="dropdown-menu" role="group" aria-label="secondary">
+				<li role="menuitem">
+					<a class="OpenSendMessageModalLink" href="#" data-toggle="modal" data-target="#SendMessageModal">
+						<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+						<span>Message colleague</span>
+					</a>
+				</li>
+				<li role="menuitem">
+					<a class="OpenAddTaskModalLink" href="#" data-toggle="modal" data-target="#AddTaskModal">
+						<span class="glyphicon glyphicon-check" aria-hidden="true"></span> 
+						<span>Add Task</span>
+					</a>
+				</li> 
+				<li role="menuitem">
+					<a id="BookmarkHeaderToolbarXS" class="manage-bookmark-link" href="#" data-target="AddBookmark?source=page&amp;page=My+Course+List+-+Faculty+Hub" data-areaname="Faculty" data-controllername="MyCourseList" data-actionname="CourseList" data-entitygoid="0" data-isfromactionbutton="true">
+	                    <span class="glyphicon glyphicon-bookmark"></span>
+	                    <span class="UnbookmarkText">Bookmark this page</span> <span class="BookmarkIcon glyphicon glyphicon-bookmark"></span>
+	                </a>
+				</li> 
+				<li role="menuitem">
+					<a id="PinningHeaderToolbarXS" class="manage-pinning-link" href="#" data-title="My+Course+List+-+Faculty+Hub" data-areaname="Faculty" data-controllername="MyCourseList" data-actionname="CourseList" data-entitygoid="0">
+	                    <span class="PinningIcon glyphicon glyphicon-pushpin"></span><span class="sr-only">Pin this page</span>
+	                    <span class="UnpinText">Pin this page</span>
+	                </a>
+				</li> 						      
+			</ul>
+		</div><!-- end btn-group -->
+
+		<!-- Visible buttons -->
+		<div id="CommonActionsGroupButton" class="btn-group hidden-xs" role="group" aria-label="Page Header buttons">	
+			<button type="button" class="OpenSendMessageModalLink btn btn-navigation " data-toggle="modal" data-target="#SendMessageModal" title="Message colleague">
+				<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+				<span class="sr-only">Send a message</span>
+			</button>
+			<button type="button" class="OpenAddTaskModalLink btn btn-navigation" data-toggle="modal" data-target="#AddTaskModal" title="Add Task">
+				<span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+				<span class="sr-only">Send a task</span>
+			</button>
+			<button id="BookmarkHeaderToolbar" type="button" class="manage-bookmark-link btn btn-navigation" data-target="AddBookmark?source=page&amp;page=My+Course+List+-+Faculty+Hub" data-toggle="tooltip" data-areaname="Faculty" data-controllername="MyCourseList" data-actionname="CourseList" data-entitygoid="0" data-isfromactionbutton="true" title="Bookmark this page">
+		        <span class="UnbookmarkText"></span>
+		        <span class="BookmarkIcon glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+		        <span class="sr-only">Bookmark this page</span>
+	    	</button>
+			<button id="PinningHeaderToolbar" type="button" class="manage-pinning-link btn btn-navigation" data-title="Pay+Statements+-+Employee+Hub" data-areaname="Employee" data-controllername="PayStatements" data-actionname="Index" data-entitygoid="0" data-toggle="tooltip" title="Pin this page">
+			        <span class="UnpinText">Unpin </span>
+			        <span class="PinningIcon glyphicon glyphicon-pushpin text-danger"></span><span class="sr-only">Pin this page</span>
+			</button>			
+		</div>
+		<!-- end btn-group -->
+	</div> <!-- end .jzb-layout-header-toolbar .mol-side-nav -->
+</div>
+
+
+<!-- begin page-header-toolbar with Unbookmark -->
+<div class="bookmark-container">
+	<div id="" class="jzb-layout-header-toolbar mol-page-header-toolbar">       
+		<div class="btn-group visible-xs pull-right">
+			
+			<button type="button" class="btn btn-navigation btn-sm dropdown-toggle" data-toggle="dropdown">
+				<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+				<span class="sr-only">Show toolbar options</span>
+				<span class="caret" aria-hidden="true"></span>
+			</button>
+			
+			<!-- Hidden menu. Should we keep it? -->
+			<ul class="dropdown-menu" role="group" aria-label="secondary">
+				<li role="menuitem">
+					<a class="OpenSendMessageModalLink" href="#" data-toggle="modal" data-target="#SendMessageModal">
+						<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+						<span>Message colleague</span>
+					</a>
+				</li>
+				<li role="menuitem">
+					<a class="OpenAddTaskModalLink" href="#" data-toggle="modal" data-target="#AddTaskModal">
+						<span class="glyphicon glyphicon-check" aria-hidden="true"></span> 
+						<span>Add Task</span>
+					</a>
+				</li> 
+				<li role="menuitem">
+					<a id="BookmarkHeaderToolbarXS" class="manage-bookmark-link" href="#" data-target="AddBookmark?source=page&amp;page=My+Course+List+-+Faculty+Hub" data-areaname="Faculty" data-controllername="MyCourseList" data-actionname="CourseList" data-entitygoid="0" data-isfromactionbutton="true">
+	                    <span class="glyphicon glyphicon-bookmark"></span>
+	                    <span class="UnbookmarkText">Bookmark this page</span> <span class="BookmarkIcon glyphicon glyphicon-bookmark"></span>
+	                </a>
+				</li> 
+				<li role="menuitem">
+					<a id="PinningHeaderToolbarXS" class="manage-pinning-link" href="#" data-title="My+Course+List+-+Faculty+Hub" data-areaname="Faculty" data-controllername="MyCourseList" data-actionname="CourseList" data-entitygoid="0">
+	                    <span class="PinningIcon glyphicon glyphicon-pushpin"></span><span class="sr-only">Pin this page</span>
+	                    <span class="UnpinText">Pin this page</span>
+	                </a>
+				</li> 						      
+			</ul>
+		</div><!-- end btn-group -->
+
+		<!-- Visible buttons -->
+		<div id="CommonActionsGroupButton" class="btn-group hidden-xs" role="group" aria-label="Page Header buttons">	
+			<button type="button" class="OpenSendMessageModalLink btn btn-navigation " data-toggle="modal" data-target="#SendMessageModal" title="Message colleague">
+				<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+				<span class="sr-only">Send a message</span>
+			</button>
+			<button type="button" class="OpenAddTaskModalLink btn btn-navigation" data-toggle="modal" data-target="#AddTaskModal" title="Add Task">
+				<span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+				<span class="sr-only">Send a task</span>
+			</button>
+			<button id="BookmarkHeaderToolbar" type="button" class="manage-bookmark-link btn btn-navigation" data-target="AddBookmark?source=page&amp;page=Pay+Statements+-+Employee+Hub" data-toggle="tooltip" data-areaname="Employee" data-controllername="PayStatements" data-actionname="Index" data-entitygoid="0" data-isfromactionbutton="true" title="Bookmark this page">
+		        <span class="UnbookmarkText">Un-bookmark </span>
+		        <span class="BookmarkIcon glyphicon glyphicon-bookmark text-danger"></span><span class="sr-only">Bookmark this page</span>
+			</button>
+			<button id="PinningHeaderToolbar" type="button" class="manage-pinning-link btn btn-navigation" data-title="My+Course+List+-+Faculty+Hub" data-areaname="Faculty" data-controllername="MyCourseList" data-actionname="CourseList" data-entitygoid="0" data-toggle="tooltip" title="Pin this page">
+		        <span class="UnpinText"></span>
+		        <span class="PinningIcon glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+		        <span class="sr-only">Pin this page</span>
+	    	</button>		
+		</div>
+		<!-- end btn-group -->
+	</div> <!-- end .jzb-layout-header-toolbar .mol-side-nav -->
+</div>

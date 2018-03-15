@@ -1,23 +1,6 @@
 {
 	"filter-by-condition" : {
 
-		"atomSelectInput" : {
-			"id": "select-input",
-			"name": "select-input",
-			"optgroupOpen": "",
-			"optgroupClose": "",
-			"optiontextBlank": "",
-			"optiontext1": "Greater than",
-			"optiontext2": "Greater than or equal to",
-			"optiontext3": "Less than",
-			"optiontext4": "Less than or equal to",
-			"optiontext5": "Equal to",
-			"optiontext6": "Is not equal to",
-			"ariaLabel": "",
-			"ariaDescribedby": "",
-			"disabled": ""			
-		},
-
 		"atomcoreType" : "number",
 		"inputRadioGroup" : {
 		"type": "radio",
@@ -28,11 +11,11 @@
 		"arialabel": "",
 		"ariadescribedby": "",
 		"disabled": ""
-    	} 
+    	}
 
 	},
 
-	 	"inputRadioGroup" : {
+	"inputRadioGroup" : {
 			"type": "radio",
 			"name": "...",
 			"id": "inputRadioGroup",
@@ -41,5 +24,17 @@
 			"arialabel": "",
 			"ariadescribedby": "",
 			"disabled": ""
+	},
+
+	"atomSelectInput" : {
+		"id": "select-input-tater",
+		"name": "select-input",
+		"optiontext1": "Greater than",
+		"optiontext2": "Greater than or equal to",
+		"optiontext3": "Less than",
+		"optiontext4": "Less than or equal to",
+		"optiontext5": "Equal to",
+		"optiontext6": "Is not equal to",
+		"disabled" : ""
 	}	
 }

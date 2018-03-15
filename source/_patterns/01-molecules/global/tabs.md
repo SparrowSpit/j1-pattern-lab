@@ -1,18 +1,13 @@
 ## Description
 * Tabs are an easy way to organize content by grouping similar information on the same page. This allows content to be viewed in a single container without having to navigate away from that page. 
-
 * They’re like tabbed dividers in a filing cabinet—by clicking a tab, users can easily locate a view of related content. Tabs should be used for alternating between views within the same context, not to navigate to different areas.
-
 * Tabs with related content should be grouped adjacent to each other.
-
 * Tab labels provide clear and concise explanations of the content within. 
 	* Tab labels should be short and succinct and adequately describe the content.
 	* Keep in mind that at mobile widths, the character length of a title will impact the experience.
 
 * The preference is that a maximum of six tabs may be displayed. This is to maintain an uncluttered UI and reduce cognitive load for users. If an instance necessitates more tabs than this, it is allowed, but the preferred max is six tabs. 
-
 * There can only be one selected tab at a time.
-
 * Tab components are contained within a block.
 
 * **Don’t:** 
@@ -47,7 +42,11 @@
 	* Clicking the label of tab will switch the view to that corresponding tab’s content. 
 * 768px and below:
 	* Clicking/tapping the accordion panel heading/title will open the associated accordion panel to reveal the content below it. Only one panel may be open at a time. 
+* By default, (on mobile) when an accordion section is closed the associated arrow glyphicon within the header will be pointed down. When the section is opened, the glyphicon is rotated to point up. 
 * On page load, it is optional for the developer to only load the first tab's content. Then when a user clicks on a tab that is not visible on page load, the content of the clicked/non-visible tabs may be loaded dynamically (rather than loading all the tabs' content at one time). Essentially, the developer may program the non-visible tabs to "lazy-load" or load as needed when a user clicks on a tab.
+* When a header is activated and opened, the heading title color changes from #666666 to #2f70a9.  
+* When a header is activated and opened, there is a "flash" of light blue in the background of the section content when it is opened. 
+* The content within the tabs may be paragraphs, links, buttons, a small table, etc. This content container needs to be flexible to contain a variety of elements.   
 
 
 ## Responsive Behavior

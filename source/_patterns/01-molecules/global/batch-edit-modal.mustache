@@ -1,0 +1,393 @@
+<!-- Modal triggers start -->
+<div class="col-sm-3 mol-select-input">
+  <label for="modal-trigger">Launch a batch edit modal example!</label>
+  <select class="form-control" id="modal-trigger" name="modal-trigger">
+    <option></option>
+    <option value="modal-initial">Initial State</option>
+    <option value="modal-filled">Filled</option>
+  </select>
+</div>
+<!-- Modal triggers end -->
+
+
+<!-- INITIAL STATE BATCH EDIT MODAL START -->
+{{> molecules-modal-container-open}}
+
+
+<!-- MODAL HEADING START -->
+{{> molecules-modal-heading-open}}
+{{> molecules-modal-heading-close}}
+
+<!-- MODAL HEADING END -->
+
+<!-- MODAL BODY START -->
+{{> molecules-modal-body-open}}
+
+<!-- SELECTION AREA START -->
+<h4 class="mol-batch-edit-modal--count" id="mol-batch-edit-modal--selection-title">
+  <span class="sr-only">A table list of </span>x selected [entity type]s
+</h4>
+
+<!-- Scrollable selection area start -->
+<section class="mol-batch-edit-modal--selection" aria-describedby="mol-batch-edit-modal--selection-title">
+  <!-- Selection table start -->
+  <table class="mol-table">
+    <thead>
+      <tr>
+        <th scope="col">Heading 1</th>
+        <th scope="col">Heading 2</th>
+        <th scope="col">Heading 3</th>
+        <th scope="col" class="sr-only">Remove a selection row</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>BIO101</td>
+        <td>* Local</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>BIO102</td>
+        <td>Duke University</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>BIO101</td>
+        <td>* Local</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Selection table end -->
+</section>
+<!-- Scrollable selection area end -->
+<!-- SELECTION AREA END -->
+
+<!-- DETAIL UPDATE SECTION START -->
+<section class="mol-batch-edit-modal--inputs">
+  <h4>Select a Detail to Update</h4>
+
+  <div class="row">
+    <div class="col-sm-6 modal-col-1">
+      <div class="mol-select-input">
+        <label for="select-input-parent1" class="sr-only">Row 1 - Detail to update</label>
+        <select class="form-control" id="select-input-parent1" name="select-input">
+          <option></option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-sm-6 modal-col-2">
+    </div>
+  </div>
+
+  <button class="atom-button atom-button--text" disabled>Add another detail</button>
+
+</section>
+<!-- DETAIL UPDATE SECTION END -->
+
+{{> molecules-modal-body-close}}
+<!-- MODAL BODY END -->
+
+<!-- MODAL FOOTER START -->
+{{> molecules-modal-footer-open}}
+{{#modalFooterBtn1}}
+{{> atoms-button-core}}
+{{/modalFooterBtn1}}
+{{#modalFooterBtn2}}
+{{> atoms-button-core}}
+{{/modalFooterBtn2}}
+{{> molecules-modal-footer-close}}
+
+<!-- MODAL FOOTER END -->
+
+{{> molecules-modal-container-close}}
+
+<!-- INITIAL STATE BATCH EDIT MODAL END -->
+
+
+
+
+<!-- FILLED BATCH EDIT MODAL START -->
+{{#batchEditModalFilled}}
+{{> molecules-modal-container-open}}
+
+
+<!-- MODAL HEADING START -->
+{{> molecules-modal-heading-open}}
+{{> molecules-modal-heading-close}}
+
+<!-- MODAL HEADING END -->
+
+<!-- MODAL BODY START -->
+{{> molecules-modal-body-open}}
+
+<!-- SELECTION AREA START -->
+<h4 class="mol-batch-edit-modal--count" id="mol-batch-edit-modal--selection-title">
+  <span class="sr-only">A table list of </span>x selected [entity type]s
+</h4>
+
+<!-- Scrollable selection area start -->
+<section class="mol-batch-edit-modal--selection" aria-describedby="mol-batch-edit-modal--selection-title">
+  <!-- Selection table start -->
+  <table class="mol-table">
+    <thead>
+      <tr>
+        <th scope="col">Heading 1</th>
+        <th scope="col">Heading 2</th>
+        <th scope="col">Heading 3</th>
+        <th scope="col" class="sr-only">Remove a selection row</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>BIO101</td>
+        <td>* Local</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>BIO102</td>
+        <td>Duke University</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>BIO101</td>
+        <td>* Local</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>BIO102</td>
+        <td>Duke University</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>BIO101</td>
+        <td>* Local</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>BIO102</td>
+        <td>Duke University</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>BIO101</td>
+        <td>* Local</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>BIO102</td>
+        <td>Duke University</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>BIO101</td>
+        <td>* Local</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>BIO102</td>
+        <td>Duke University</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>BIO101</td>
+        <td>* Local</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>BIO102</td>
+        <td>Duke University</td>
+        <td>Undergraduate</td>
+        <td>
+          <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove this selection row</span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Selection table end -->
+</section>
+<!-- Scrollable selection area end -->
+
+<!-- Selection "Scroll to view" indicator -->
+<div class="mol-batch-edit-modal--scroll" aria-hidden="true">
+  Scroll to view <span class="caret"></span>
+</div>
+<!-- SELECTION AREA END -->
+
+<!-- DETAIL UPDATE SECTION START -->
+<section class="mol-batch-edit-modal--inputs">
+  <h4>Select a Detail to Update</h4>
+
+  <div class="row">
+    <div class="col-sm-6 modal-col-1">
+      <div class="mol-select-input">
+        <label for="select-input-parent1" class="sr-only">Row 1 - Detail to update</label>
+        <select class="form-control" id="select-input-parent1" name="select-input">
+          <option></option>
+          <option selected>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-sm-6 modal-col-2">
+      <div class="mol-select-input">
+        <label for="select-input-child1" class="sr-only">Row 1- Update detail to...</label>
+        <select class="form-control" id="select-input-child1" name="select-input">
+          <option></option>
+          <option>Option 1</option>
+          <option selected>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </div>
+
+      <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+        <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+        <span class="sr-only">Remove this selection row</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 modal-col-1">
+      <div class="mol-select-input">
+        <label for="select-input-parent2" class="sr-only">Row 2 - Detail to update</label>
+        <select class="form-control" id="select-input-parent2" name="select-input">
+          <option></option>
+          <option selected>This is a really long option that will be truncated by the dropdown</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-sm-6 modal-col-2">
+      <div class="mol-select-input">
+        <label for="select-input-child2" class="sr-only">Row 2 - Update detail to...</label>
+        <select class="form-control" id="select-input-child2" name="select-input">
+          <option></option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option selected>Option 3</option>
+        </select>
+      </div>
+
+      <button type="button" id="" class="atom-button atom-button--text mol-remove-button">
+        <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+        <span class="sr-only">Remove this selection row</span>
+      </button>
+    </div>
+  </div>
+
+  <button class="atom-button atom-button--text">Add another detail</button>
+
+</section>
+<!-- DETAIL UPDATE SECTION END -->
+
+{{> molecules-modal-body-close}}
+<!-- MODAL BODY END -->
+
+<!-- MODAL FOOTER START -->
+{{> molecules-modal-footer-open}}
+{{#modalFooterBtn1}}
+{{> atoms-button-core}}
+{{/modalFooterBtn1}}
+{{#modalFooterBtn2}}
+{{> atoms-button-core}}
+{{/modalFooterBtn2}}
+{{> molecules-modal-footer-close}}
+
+<!-- MODAL FOOTER END -->
+
+{{> molecules-modal-container-close}}
+{{/batchEditModalFilled}}
+<!-- FILLED BATCH EDIT MODAL END -->

@@ -1,10 +1,29 @@
 <div class="{{formGroup}} mol-advanced-filter-typeahead-dropdown">
   {{#advfilterCheckboxTypeahead}}
-  {{> molecules-advanced-filter-checkbox}}
+  	{{> molecules-advanced-filter-checkbox}}
   {{/advfilterCheckboxTypeahead}}
-
-  {{# molAdvfilterTypeaheadDropdown}}
-  {{> molecules-typeahead-dropdown}}
-  {{/ molAdvfilterTypeaheadDropdown}}
   
 </div>
+
+<div class="{{formGroup}} mol-advanced-filter-typeahead-dropdown">
+
+  {{# molAdvfilterTypeaheadDropdown}}
+  	{{>molecules-typeahead-dropdown-multiple-core}}
+  {{/ molAdvfilterTypeaheadDropdown}}
+
+</div>
+
+<!-- <div class="{{formGroup}} mol-advanced-filter-typeahead-dropdown">
+  {{#advfilterCheckboxTypeahead}}
+  	{{> molecules-advanced-filter-checkbox}}
+  {{/advfilterCheckboxTypeahead}}
+  
+</div>
+
+<div class="{{formGroup}} mol-advanced-filter-typeahead-dropdown">
+
+  {{# molAdvfilterTypeaheadDropdown}}
+  	{{>molecules-typeahead-dropdown-single-core}}
+  {{/ molAdvfilterTypeaheadDropdown}}
+
+</div> -->

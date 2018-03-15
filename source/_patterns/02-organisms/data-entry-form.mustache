@@ -1,87 +1,49 @@
-<form action="" id="" method="" class="org-data-entry-form">
-	<div class="panel">
+<!-- Read the specs on how this can be used but keep in mind ... form elements within here are mainly placeholders, use the form, fieldset, legend, div.form-groups and then place your elements within. This is meant to be a starting point for the structure and body of a data entry form -->
+<form action="" id="" method="" class="org-data-entry-form" aria-labelledby="dat-entry-form-title">
+	<div class="panel clearfix">
 		<div class="panel-body">
-			<h3 class="form-title">Data Entry Form Title</h3>
+			<div class="org-data-entry-form--col-3">
+				<h3 class="form-title" id="dat-entry-form-title">Data Entry Form Title</h3>
 
-			<div class="form-group">
-				<span class="text-danger">Required *</span>
-			</div>
-
-			<button class="org-data-entry-form--save-button btn btn-primary btn-lg">Save</button>
-			{{#atoms-button-core}}
-				{{> data-entry-form.atom-buttonPrimary}}
-			{{/atoms-button-core}}
-
-			<section class="form-section" id="">
-				<h4 class="form-section--title">First Section Title</h4>
-
-				<!-- wrap form elements within .form-group -->
 				<div class="form-group">
-					<div class="row">
-						<div class="col-sm-12 col-md-6 pad-rt-2r">
-							<label for="" class="">Course Title<span class="jzb-required-text text-danger"> *</span></label>
-							<input type="text" id="" class="form-control">
-						</div>
-					</div>
+					<span class="text-danger" aria-hidden="true">Required *</span>
 				</div>
 
-				<div class="form-group">
-					<div class="row">
-						<div class="col-sm-6 pad-rt-2r mar-btm-2r">
-		 					<label for="" class="">Short Label</label>
-							<input type="text" id="" class="form-control">
-						</div>
-					
-						<div class="col-sm-6">
-		 					<label for="" class="">Short Label</label>
-							<input type="text" id="" class="form-control">
-						</div>
-					</div>	
-				</div>			
+				<!-- this section has one and two columns, use a fieldset to group sections of related content together. Then use the legend element as a section title -->
+				<fieldset class="form-section" id="">
+					<div class="form-section--wrapper clearfix">
+						<legend class="form-section--title">First Section Title</legend>
 
-			</section>
-
-			<section class="form-section" id="">
-				<h4 class="form-section--title">Second Section Title</h4>
-				<div class="form-group">
-					<label for="">Course Division</label>
-					<select name="" id="" class="form-control"></select>
-				</div>
-				<div class="form-group">
-					<label for="">Institutional Division<span class="jzb-required-text text-danger"> *</span></label>
-					<select name="" id="" class="form-control"></select>
-				</div>
-			</section>
-
-			<section class="form-section" id="">
-				<h4 class="form-section--title">Third Section Title</h4>
-					<div class="row">
-						<div class="col-sm-4 pad-rt-2r form-group">
-							<label for="">Capacity<span class="jzb-required-text text-danger"> *</span></label>
-							<input type="number" id="" class="form-control">
+						<!-- wrap form elements within .form-group -->
+						<div class="form-group">
+							<div class="">
+								<label for="course-title" class="">Course Title<span class="jzb-required-text text-danger" aria-hidden="true"> *</span></label>
+								<input type="text" id="course-title" class="form-control" aria-required="true">
+							</div>
 						</div>
+
+
+						<div class="data-entry-form--twosidebyside">
+							<div class="form-group">
+				 				<label for="short-label1" class="">Short Label</label>
+								<input type="text" id="short-label1" class="form-control">
+							</div>
 						
-						<div class="col-sm-4 pad-rt-2r form-group">
-							<label for="">Max Enrollment<span class="jzb-required-text text-danger"> *</span></label>
-							<input type="number" id="" class="form-control">
+							<div class="form-group">
+			 					<label for="short-label2" class="">Short Label</label>
+								<input type="text" id="short-label2" class="form-control">
+							</div>
 						</div>
 
-						<div class="col-sm-4 form-group">
-							<label for="">Min Enrollment<span class="jzb-required-text text-danger"> *</span></label>
-							<input type="number" id="" class="form-control">
-						</div>						
-					</div>
-			</section>
+					</div>			
 
-			<section class="form-section" id="">
-				<h4 class="form-section--title">Fourth Section Title</h4>
-					<div class="row">
-						<div class="col-sm-6 pad-rt-2r form-group">
-								<label for="">Status</label>
-								<select class="form-control"></select>
-						</div>
-						<div class="col-sm-6 form-group">
-							<label for="select1">Date Inactive</label>
+				</fieldset>
+
+				<fieldset class="form-section" id="">
+					<div class="form-section--wrapper">
+						<legend class="form-section--title">Second Section Title</legend>
+						<div class="form-group">
+							<label for="select1">Course Division</label>
 							<select class="{{formClass}}" id="select1" name="{{atomSelectInput.name}}"{{{atomSelectInput.ariaLabel}}} {{{atomSelectInput.ariaDescribedby}}} {{{atomSelectInput.disabled}}}>
 							    {{{atomSelectInput.optgroupOpen}}}
 							        <option>{{atomSelectInput.optiontextBlank}}</option>
@@ -89,65 +51,158 @@
 							        <option>Option 2</option>
 							        <option>Option 3</option>
 							    {{{atomSelectInput.optgroupClose}}}
-							</select>
+							</select>				
+						</div>
+						<div class="form-group">
+							<label for="select2">Institutional Division<span class="jzb-required-text text-danger" aria-hidden="true"> *</span></label>
+							<select class="{{formClass}}" id="select2" name="{{atomSelectInput.name}}"{{{atomSelectInput.ariaLabel}}} {{{atomSelectInput.ariaDescribedby}}} {{{atomSelectInput.disabled}}} aria-required="true">
+							    {{{atomSelectInput.optgroupOpen}}}
+							        <option>{{atomSelectInput.optiontextBlank}}</option>
+									<option>Option 1</option>
+							        <option>Option 2</option>
+							        <option>Option 3</option>
+							    {{{atomSelectInput.optgroupClose}}}
+							</select>				
 						</div>
 					</div>
+				</fieldset>
 
-				<div class="form-group">
-					<div class="row">
-						<div class="col-sm-6 pad-rt-2r">
-							<label for="">Date Approved</label>
-							<select class="form-control"></select>
-						</div>
+				<!-- this section has three columns -->
+				<fieldset class="form-section" id="">
+					<div class="form-section--wrapper clearfix">
+						<legend class="form-section--title">Third Section Title</legend>
+							<div class="data-entry-form--threesidebyside">
+								<div class=" form-group">
+									<label for="capacity">Capacity<span class="jzb-required-text text-danger" aria-hidden="true"> *</span></label>
+									<input type="number" id="capacity" class="form-control" aria-required="true">
+								</div>
+								
+								<div class="form-group">
+									<label for="max-enrollment">Max Enrollment<span class="jzb-required-text text-danger" aria-hidden="true"> *</span></label>
+									<input type="number" id="max-enrollment" class="form-control">
+								</div>
+
+								<div class="form-group">
+									<label for="min-enroll">Min Enrollment<span class="jzb-required-text text-danger" aria-hidden="true"> *</span></label>
+									<input type="number" id="min-enroll" class="form-control">
+								</div>						
+							</div>
 					</div>
-				</div>
+				</fieldset>
 
-			</section>				
+				<fieldset class="form-section" id="">
+					<div class="form-section--wrapper clearfix">				
+						<legend class="form-section--title">Fourth Section Title</legend>
+						
+						<div class="data-entry-form--twosidebyside">
 
-			<section class="form-section">
-				<h4 class="form-section--title">Fifth Section Title</h4>
-				<div class="form-group">
-					{{#data-entry-form}}
-						<div class="atom-checkbox-toggle checkbox-toggle--sm">
-							<input type="{{checkboxSmall.type}}" name="{{checkboxSmall.name}}" id="cb1" value="{{checkboxSmall.value}}" {{checkboxSmall.checkedstate}}{{{checkboxSmall.arialabel}}}{{{checkboxSmall.ariadescribedby}}}{{{checkboxSmall.disabled}}}>
-							<label class="" for="cb1">Checkbox Toggle Small</label>
+							<div class="form-group">
+								<label for="select3">Status</label>
+								<select class="{{formClass}}" id="select3" name="{{atomSelectInput.name}}"{{{atomSelectInput.ariaLabel}}} {{{atomSelectInput.ariaDescribedby}}} {{{atomSelectInput.disabled}}}>
+								    {{{atomSelectInput.optgroupOpen}}}
+								        <option>{{atomSelectInput.optiontextBlank}}</option>
+										<option>Option 1</option>
+								        <option>Option 2</option>
+								        <option>Option 3</option>
+								    {{{atomSelectInput.optgroupClose}}}
+								</select>						
+							</div>
+
+							<div class="form-group">
+								<label for="select4">Date Inactive</label>
+								<select class="{{formClass}}" id="select4" name="{{atomSelectInput.name}}"{{{atomSelectInput.ariaLabel}}} {{{atomSelectInput.ariaDescribedby}}} {{{atomSelectInput.disabled}}}>
+								    {{{atomSelectInput.optgroupOpen}}}
+								        <option>{{atomSelectInput.optiontextBlank}}</option>
+										<option>Option 1</option>
+								        <option>Option 2</option>
+								        <option>Option 3</option>
+								    {{{atomSelectInput.optgroupClose}}}
+								</select>
+							</div>
+
 						</div>
-					{{/data-entry-form}}
-				</div>
-				<div class="form-group">
-					{{#data-entry-form}}
-						<div class="atom-checkbox-toggle checkbox-toggle--sm">
-							<input type="{{checkboxSmall.type}}" name="{{checkboxSmall.name}}" id="cb2" value="{{checkboxSmall.value}}" {{checkboxSmall.checkedstate}}{{{checkboxSmall.arialabel}}}{{{checkboxSmall.ariadescribedby}}}{{{checkboxSmall.disabled}}}>
-							<label class="" for="cb2">Checkbox Toggle Small</label>
-						</div>
-					{{/data-entry-form}}					
 
-				</div>
-			</section>		
-
-			<section class="form-section">
-				<h4 class="form-section--title">Six Section Title</h4>
-				<div class="form-group">
-					{{#data-entry-form}}
-						<div class="atoms-radio-button">
-							<div class="radio-group">
-							{{>atoms-radio-button-open}}
-								{{>atoms-radio-button-core-group}}
-							{{>atoms-radio-button-close}}
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-6 pad-rt-2r">
+									<label for="select5">Date Approved</label>
+									<select class="{{formClass}}" id="select5" name="{{atomSelectInput.name}}"{{{atomSelectInput.ariaLabel}}} {{{atomSelectInput.ariaDescribedby}}} {{{atomSelectInput.disabled}}}>
+									    {{{atomSelectInput.optgroupOpen}}}
+									        <option>{{atomSelectInput.optiontextBlank}}</option>
+											<option>Option 1</option>
+									        <option>Option 2</option>
+									        <option>Option 3</option>
+									    {{{atomSelectInput.optgroupClose}}}
+									</select>						</div>
 							</div>
 						</div>
-					{{/data-entry-form}}
-				</div>
-			</section>			
+					</div>
 
-			<section class="form-section">
-				<h4 class="form-section--title">Seventh Section Title</h4>
-				<div class="form-group">
-					{{#data-entry-form}}
-						{{> atoms-text-area }}
-					{{/data-entry-form}}
+				</fieldset>				
+
+				<fieldset class="form-section">
+					<div class="form-section--wrapper clearfix">
+					
+						<legend class="form-section--title">Fifth Section Title</legend>
+						<div class="form-group">
+							{{#data-entry-form}}
+								<div class="atom-checkbox-toggle checkbox-toggle--sm">
+									<input type="{{checkboxSmall.type}}" name="{{checkboxSmall.name}}" id="cb1" value="{{checkboxSmall.value}}" {{checkboxSmall.checkedstate}}{{{checkboxSmall.arialabel}}}{{{checkboxSmall.ariadescribedby}}}{{{checkboxSmall.disabled}}}>
+									<label class="" for="cb1">Checkbox Toggle Small</label>
+								</div>
+							{{/data-entry-form}}
+						</div>
+						<div class="form-group">
+							{{#data-entry-form}}
+								<div class="atom-checkbox-toggle checkbox-toggle--sm">
+									<input type="{{checkboxSmall.type}}" name="{{checkboxSmall.name}}" id="cb2" value="{{checkboxSmall.value}}" {{checkboxSmall.checkedstate}}{{{checkboxSmall.arialabel}}}{{{checkboxSmall.ariadescribedby}}}{{{checkboxSmall.disabled}}}>
+									<label class="" for="cb2">Checkbox Toggle Small</label>
+								</div>
+							{{/data-entry-form}}					
+
+						</div>
+					</div>
+				</fieldset>		
+
+				<fieldset class="form-section">
+					<div class="form-section--wrapper clearfix">
+						<legend class="form-section--title">Six Section Title</legend>
+						<div class="form-group">
+							{{#data-entry-form}}
+								<div class="atoms-radio-button">
+									<div class="radio-group">
+									{{>atoms-radio-button-open}}
+										{{>atoms-radio-button-core-group}}
+									{{>atoms-radio-button-close}}
+									</div>
+								</div>
+							{{/data-entry-form}}
+						</div>
+					</div>
+				</fieldset>			
+
+				<fieldset class="form-section">
+					<div class="form-section--wrapper clearfix">				
+						<legend class="form-section--title">Seventh Section Title</legend>
+						<div class="form-group">
+							{{#data-entry-form}}
+								{{> atoms-text-area }}
+							{{/data-entry-form}}
+						</div>
+					</div>
+				</fieldset>	
+			</div>
+
+			<div class="org-data-entry-form--col-1">
+				<div class="org-data-entry-form--action-buttons-desktop">
+					<button type="button" class="atom-button atom-button--primary org-data-entry-form--save-button">Save</button>
 				</div>
-			</section>						
+				<div class="org-data-entry-form--action-buttons-mobile">
+					<button type="button" class="atom-button atom-button--primary org-data-entry-form--save-button">Save</button>
+				</div>				
+			</div>
+		
+
 
 		</div>
 	</div>

@@ -5,7 +5,7 @@
 		"checkboxId": "switch-mol-typeahead-dropdown",
 		"checkboxName": "",
 		"checkboxValue": "",
-		"checkboxText": "Typeahead Dropdown"
+		"checkboxText": "Adv. Filter Typeahead Dropdown"
     },
 	"molAdvfilterTypeaheadDropdown" : {
 		"showHide": " showhide",

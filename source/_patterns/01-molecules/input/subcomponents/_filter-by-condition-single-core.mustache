@@ -1,0 +1,18 @@
+	<div class="mol-filter-by-condition" role="group">
+		
+		<div class="form-group">
+			<span class="sr-only">Make a selection combo box 1 of 9</span>
+			{{#atomSelectInput}}
+				{{>atoms-select-input-core}}
+			{{/atomSelectInput}}
+		</div>
+		
+		<div class="form-group">
+			{{#filter-by-condition}}
+				{{>atoms-text-field}}
+			{{/filter-by-condition}}
+		</div>
+		
+		<!-- add another text button -->
+		<button href="#" class="filter-add" aria-label="Use this to add another filter condition">Add another condition</button>
+	</div>

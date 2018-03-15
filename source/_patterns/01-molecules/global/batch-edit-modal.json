@@ -1,0 +1,58 @@
+{
+	"modalXtag" : "x-modal",
+	"modalXtagMode" : "default",
+	"modalXtagHeaderText" : "...",
+	"modalXtagBodyText" : "...",
+	"modalXtagIsShown" : "",
+	"modalTag" : "div",
+	"modalClass" : " class=\"modal fade mol-modal mol-batch-edit-modal\"",
+	"modalId" : " id=\"modal-initial\"",
+	"modalTabIndex" : " tabindex=\"-1\"",
+	"modalRole" : " role=\"dialog\"",
+	"modalAriaLabelledBy" : " aria-labelledby=\"modalInitial\"",
+	"modalType" : " type=\"default\"",
+	"modalLev2Tag" : "div",
+	"modalLev2Class" : " class=\"modal-dialog\"",
+	"modalLev2Role" : " role=\"document\"",
+	"modalLev3Tag" : "div",
+	"modalLev3Class" : " class=\"modal-content\"",
+	"modalHeadingTag" : "div",
+	"modalHeadingClass" : " class=\"modal-header\"",
+	"modalHeadingTitleOpen" : "<h3 class=\"modal-title\" id=\"modalInitial\">",
+	"modalHeadingTitleGlyph" : "<span class=\"glyphicon glyphicon-ok-sign\" aria-hidden=\"true\"><\/span><span class=\"glyphicon glyphicon-exclamation-sign\" aria-hidden=\"true\"><\/span> ",
+	"modalHeadingTitleText" : "Edit [Entity Type]s",
+	"modalHeadingTitleClose" : "<\/h3>",
+	"modalBodyTag" : "div",
+	"modalBodyClass" : " class=\"modal-body\"",
+	"modalFooterTag" : "div",
+	"modalFooterClass" : " class=\"modal-footer\"",
+	"buttonText" : "Batch edit modal",
+	"buttonDataToggle" : " data-toggle=\"modal\" data-target=\"#modal-initial\"",
+	"buttonClose": {
+		"buttonClass": "btn btn-link mol-close",
+		"buttonDisabled": "",
+		"buttonText": "<span class=\"sr-only\">Close<\/span>",
+		"buttonCaret": "",
+		"buttonGlyphicon": "<span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"><\/span>",
+		"buttonGlyphicon2": "",
+		"buttonDataToggle": " data-dismiss=\"modal\"",
+		"buttonAriaPopup": "",
+		"buttonAriaExpanded": "",
+		"buttonAriaLabel": ""
+	},
+	"modalFooterBtn1" : {
+		"buttonText" : "Cancel",
+		"buttonClass" : "atom-button"
+	},
+	"modalFooterBtn2" : {
+		"buttonText" : "Update",
+		"buttonClass" : "atom-button atom-button--primary"
+	},
+	"batchEditModalFilled" : {
+		"modalXtagMode" : "default",
+		"modalId" : " id=\"modal-filled\"",
+		"modalAriaLabelledBy" : " aria-labelledby=\"modalFilled\"",
+		"modalHeadingTitleOpen" : "<h3 class=\"modal-title\" id=\"modalFilled\">",
+		"buttonDataToggle" : " data-toggle=\"modal\" data-target=\"#modal-filled\""
+	}
+}

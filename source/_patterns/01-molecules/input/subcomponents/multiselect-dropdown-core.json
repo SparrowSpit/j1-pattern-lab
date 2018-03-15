@@ -1,0 +1,13 @@
+{
+	"molClass": "",
+	"molLabel": "<label for=\"multiselect-dropdown\">Text Label<\/label>",
+	"selectClass": "js-example-basic-multiple js-states form-control select2-hidden-accessible",
+	"molId": "id=\"multiselect-dropdown\"",
+	"molMultiple": "multiple=\"multiple\"",
+	"option1": "<option value=\"AL\">Alabama<\/option>",
+	"option2": "<option value=\"AK\">Alaska<\/option>",
+	"option3": "<option value=\"TX\">Something really long to force the selection to wrap<\/option>",
+	"option4": "<option value=\"TX\">Texas<\/option>",
+	"option5": "<option value=\"VA\">Virginia<\/option>",
+	"option6": "<option value=\"WY\">Wyoming<\/option>"
+}

@@ -1,10 +1,181 @@
-<div class="{{formGroup}} mol-multiselect-dropdown{{molClass}}">
-  {{{molLabel}}}
-  <select class="{{selectClass}}" {{{molId}}} {{{molMultiple}}}>
-    {{{option1}}}
-    {{{option2}}}
-    {{{option3}}}
-    {{{option4}}}
-    {{{option5}}}
+<!-- DEFAULT EXAMPLE -->
+<h4 class="demo-only">Default Single-Line Dropdown</h4>
+{{> molecules-multiselect-dropdown-core}}
+
+
+<!-- STATIC MULTI-LINE DROPDOWN EXAMPLES START -->
+<h4 class="demo-only">Optional Feature Examples (Static)</h4>
+
+<!-- OPTIONAL MULTI-LINE DROPDOWN START -->
+<div class="form-group mol-multiselect-dropdown" style="position: relative;">
+  <label for="multiselect-dropdown-multiline">Multi-Row Single Item and Text Coloring</label>
+  <select class="form-control select2-hidden-accessible" id="multiselect-dropdown-multiline" multiple="multiple">
+    <option value="AL">Alabama</option>
+    <option value="AK">Alaska</option>
+    <option value="TX">Something really long to force the selection to wrap</option>
+    <option value="TX">Texas</option>
+    <option value="VA">Virginia</option>
   </select>
+  <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;">
+    <span class="selection">
+      <span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+        <ul class="select2-selection__rendered">
+          <li class="select2-search select2-search--inline">
+            <input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" aria-label="Make a selection from the list" placeholder="" style="width: 0.75em;">
+          </li>
+        </ul>
+      </span>
+    </span>
+    <span class="dropdown-wrapper" aria-hidden="true"></span>
+  </span>
+  <span class="select2-container select2-container--default select2-container--open" style="position: relative; top: 0; left: 0; width: 100%;">
+    <span class="select2-dropdown select2-dropdown--below" dir="ltr" style="position: relative; width: 100%;">
+      <span class="select2-results">
+        <ul class="select2-results__options" role="tree" aria-multiselectable="true" id="select2-multiselect-dropdown2-results" aria-expanded="true" aria-hidden="false">
+          <li class="select2-results__option select2-results__option--highlighted" id="select2-multiselect-dropdown2-result-hbjc-AL" role="treeitem" aria-selected="false">Alabama</li>
+          <li class="select2-results__option" id="select2-multiselect-dropdown2-result-4rpe-AK" role="treeitem" aria-selected="false">
+            Alaska
+            <span>56721 Soaring Eagle Blvd, Anchorage, AK 55643</span>
+          </li>
+          <li class="select2-results__option" id="select2-multiselect-dropdown2-result-4mkd-TX" role="treeitem" aria-selected="false">Colorado</li>
+          <li class="select2-results__option" id="select2-multiselect-dropdown2-result-mzsq-TX" role="treeitem" aria-selected="false">
+            Texas
+            <span>2190 Mulholland Rd, Dallas, TX 97832</span>
+          </li>
+          <li class="select2-results__option" id="select2-multiselect-dropdown2-result-p27n-VA" role="treeitem" aria-selected="false">
+            Virginia
+            <span>1443 Rockingham Drive, Harrisonburg, VA 22801</span>
+          </li>
+        </ul>
+      </span>
+    </span>
+  </span>
 </div>
+<!-- OPTIONAL MULTI-LINE DROPDOWN END -->
+
+<!-- OPTIONAL TEXT COLORING START -->
+<div class="form-group mol-multiselect-dropdown mol-multiselect-dropdown--ellipsis" style="position: relative;">
+  <label for="multiselect-dropdown-range">Dropdown Item Text Coloring</label>
+
+  <!-- Shift key help  -->
+  <a href="help.html" class="atom-button atom-button--text mol-info-button">
+    <span class="glyphicon glyphicon-info-sign"></span>
+    <span class="sr-only">Help hint for this control</span>
+  </a>
+
+  <select class="form-control select2-hidden-accessible" id="multiselect-dropdown-range" multiple="multiple">
+    <option value="">1 - Department Range 1A</option>
+    <option value="">2 - Department Range 1B</option>
+    <option value="">3 - Department Range 1C</option>
+  </select>
+  <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;">
+    <span class="selection">
+      <span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+        <ul class="select2-selection__rendered">
+          <li class="select2-search select2-search--inline">
+            <input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" aria-label="Make a selection from the list" placeholder="" style="width: 0.75em;">
+          </li>
+        </ul>
+      </span>
+    </span>
+    <span class="dropdown-wrapper" aria-hidden="true"></span>
+  </span>
+  <span class="select2-container select2-container--default select2-container--open" style="position: relative; top: 0; left: 0; width: 100%;">
+    <span class="select2-dropdown select2-dropdown--below" dir="ltr" style="position: relative; width: 100%;">
+      <span class="select2-results">
+        <ul class="select2-results__options" role="tree" aria-multiselectable="true" id="select2-multiselect-dropdown2-results" aria-expanded="true" aria-hidden="false">
+          <li class="select2-results__option" id="select2-multiselect-dropdown2-result-4rpe-1" role="treeitem" aria-selected="true">
+            Dropdown Item 1 - <span class="color-text-success">Success Text</span>
+          </li>
+          <li class="select2-results__option" id="select2-multiselect-dropdown2-result-4rpe-1" role="treeitem" aria-selected="true">
+            Dropdown Item 2 - <span class="color-text-warning">Warning Text</span>
+          </li>
+          <li class="select2-results__option" id="select2-multiselect-dropdown2-result-4rpe-1" role="treeitem" aria-selected="true">
+            Dropdown Item 3 - <span class="color-text-danger">Danger Text</span>
+          </li>
+        </ul>
+      </span>
+    </span>
+  </span>
+</div>
+<!-- OPTIONAL TEXT COLORING END -->
+
+<!-- OPTIONAL MULTISELECT DROPDOWN RANGE START -->
+<div class="form-group mol-multiselect-dropdown mol-multiselect-dropdown--ellipsis" style="position: relative;">
+  <label for="multiselect-dropdown-range">Multi-Select Dropdown Range</label>
+
+  <!-- Shift key help  -->
+  <a href="help.html" class="atom-button atom-button--text mol-info-button">
+    <span class="glyphicon glyphicon-info-sign"></span>
+    <span class="sr-only">Help hint for this control</span>
+  </a>
+
+  <select class="form-control select2-hidden-accessible" id="multiselect-dropdown-range" multiple="multiple">
+    <option value="">1 - Department Range 1A</option>
+    <option value="">2 - Department Range 1B</option>
+    <option value="">3 - Department Range 1C</option>
+    <option value="">4 - Department Range 1D</option>
+    <option value="">5 - Department Range 1E</option>
+    <option value="">6 - Department Range 1F</option>
+    <option value="">7 - Department Range 1G</option>
+  </select>
+  <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;">
+    <span class="selection">
+      <span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+        <ul class="select2-selection__rendered">
+          <li class="select2-selection__choice" title="1-5">
+            <span class="select2-selection__choice__remove glyphicon glyphicon-remove-circle" role="presentation"></span>1
+          </li>
+          <li class="select2-selection__choice" title="1-5">
+            <span class="select2-selection__choice__remove glyphicon glyphicon-remove-circle" role="presentation"></span>3-6
+          </li>
+          <li class="select2-search select2-search--inline">
+            <input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" aria-label="Make a selection from the list" placeholder="" style="width: 0.75em;">
+          </li>
+        </ul>
+      </span>
+    </span>
+    <span class="dropdown-wrapper" aria-hidden="true"></span>
+  </span>
+  <span class="select2-container select2-container--default select2-container--open" style="position: relative; top: 0; left: 0; width: 100%;">
+    <span class="select2-dropdown select2-dropdown--below" dir="ltr" style="position: relative; width: 100%;">
+      <span class="select2-results">
+        <ul class="select2-results__options" role="tree" aria-multiselectable="true" id="select2-multiselect-dropdown2-results" aria-expanded="true" aria-hidden="false">
+          <li class="select2-results__option select2-results__option--disabled" id="select2-multiselect-dropdown2-result-4rpe-1" role="treeitem" aria-selected="true">
+            1 - Department Range 1A
+          </li>
+          <li class="select2-results__option" id="select2-multiselect-dropdown2-result-4rpe-2" role="treeitem" aria-selected="false">
+            2 - Department Range 1B
+          </li>
+          <li class="select2-results__option" id="select2-multiselect-dropdown2-result-4rpe-3" role="treeitem" aria-selected="true">
+            3 - Department Range 1C
+          </li>
+          <li class="select2-results__option" id="select2-multiselect-dropdown2-result-4rpe-4" role="treeitem" aria-selected="true">
+            4 - Department Range 1D
+          </li>
+          <li class="select2-results__option" id="select2-multiselect-dropdown2-result-4rpe-5" role="treeitem" aria-selected="true">
+            5 - Department Range 1E
+          </li>
+          <li class="select2-results__option" id="select2-multiselect-dropdown2-result-4rpe-6" role="treeitem" aria-selected="true">
+            6 - Department Range 1F
+          </li>
+          <li class="select2-results__option" id="select2-multiselect-dropdown2-result-4rpe-7" role="treeitem" aria-selected="false">
+            7 - Department Range 1G
+          </li>
+          <li class="select2-results__option select2-results__option--highlighted" id="select2-multiselect-dropdown2-result-4rpe-8" role="treeitem" aria-selected="true">
+            8 - Department Range 1G
+          </li>
+          <li class="select2-results__option select2-results__option--highlighted" id="select2-multiselect-dropdown2-result-4rpe-9" role="treeitem" aria-selected="true">
+            9 - Department Range 1G
+          </li>
+          <li class="select2-results__option select2-results__option--highlighted" id="select2-multiselect-dropdown2-result-4rpe-10" role="treeitem" aria-selected="true">
+            10 - Department Range 1G
+          </li>
+        </ul>
+      </span>
+    </span>
+  </span>
+</div>
+<!-- OPTIONAL MULTISELECT DROPDOWN RANGE END -->
+
+<!-- STATIC MULTI-LINE DROPDOWN EXAMPLES END -->

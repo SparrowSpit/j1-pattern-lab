@@ -13,7 +13,14 @@
           - Margin: 0 0 $margin-xxs 0 (.3rem)
 ## Behavior
 - The input fields should allow only alphanumeric characters.
-- Allow for validation of both numbers and give feedback using a standard warning alert component (not yet developed)
+- Allow for validation of both input fields and give feedback using a standard validation alert component 
+     - **Min/max values**
+          - If a minimum value is defined and validation fails for an entered value, display the following text, "Range Start must be greater than x" in a validation alert where x is the defined minimum value.
+          - If a maximum value is defined and validation fails for an entered value, display the following text, "Range End must be greater than x" in a validation alert where x is the defined maximum value.
+          - If both values fail, concatenate the messages together into one validation alert.
+     - **Range Start less than Range End**
+          - If this option is enabled and validation fails, display a validation alert with the text, "Range Start must be less than Range End".
+
 ## Responsive Behavior
 - For viewports below 420px, stack the input fields and "to" text
 ## Defaults
@@ -23,9 +30,13 @@
 - End field label text of "Range End"
 ## Optional Features
 - Pre-entered values for either input field
-- Validation (with customizable message)
-- Lower and upper limits on each field? (hint text indicators for each)
-- Hint text
+- Clear input fields using a button press
+- Reset input fields to a default value using a button press
+- Ability to disable/enable input fields
+- Validations (with customizable message)
+  - Range Start value must be less than Range End value
+  - Minimum value / Maximum value
+- Hint text beneath labels
 - Ability to hide labels (screen reader only labels)
 - Ability to customize labels
 - Hidden screen-reader-only text to allow for extended description

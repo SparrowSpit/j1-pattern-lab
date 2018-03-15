@@ -3,6 +3,7 @@
 * It typically contains
 	* Copyright information
 	* Release information
+* _Important:_ The "Show Technical Documentation Link(s)" link is included here but not to be included in the product. _It is only for Jenzabar PD use._
 
 
 ## Styling
@@ -28,8 +29,7 @@
 * Contains
 	* Copyright
 	* Release notes
-	* Technical links for dev 
-
+	* Technical links for dev (not to be included in final production use)
 
 
 ## Optional Features
