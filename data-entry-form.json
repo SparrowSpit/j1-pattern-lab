@@ -1,0 +1,81 @@
+{
+	"data-entry-form" : {
+
+		"inputCheckbox" : {
+			"type": "checkbox",
+			"name": "...",
+			"id": "inputcheckbox",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"placeholder": "Checkbox Option",
+			"disabled": ""
+    	},
+
+		"checkboxSmall" : {
+			"type": "checkbox",
+			"name": "...",
+			"id": "checkboxSmall",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"placeholder": "Checkbox Option",
+			"disabled": ""
+	    },
+
+		"inputRadio" : {
+			"type": "radio",
+			"name": "...",
+			"id": "inputRadio",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"disabled": ""
+		},
+
+	 	"inputRadioDisabled" : {
+			"type": "radio",
+			"name": "...",
+			"id": "inputRadioDisabled",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"disabled": "disabled"
+	    },
+
+	 	"inputRadioGroup" : {
+			"type": "radio",
+			"name": "...",
+			"id": "inputRadioGroup",
+			"value": "...",
+			"checkedstate": "",
+			"arialabel": "",
+			"ariadescribedby": "",
+			"disabled": ""
+		},
+
+		"atomSelectInput" : {
+			"id": "select-input",
+			"name": "select-input",
+			"optgroupOpen": "",
+			"optgroupClose": "",
+			"optiontextBlank": "",
+			"optiontext1": "Option 1",
+			"optiontext2": "Option 2",
+			"optiontext3": "Option 3",
+			"ariaLabel": "",
+			"ariaDescribedby": "",
+			"disabled": ""
+		}, 
+
+		"atom-buttonPrimary" : {
+			"buttonClass": "atom-button atom-button--primary org-data-entry-form--save-button",
+			"buttonText": "Primary"
+		}
+	}
+
+}
